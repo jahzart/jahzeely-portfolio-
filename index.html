@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jahzeely Sinai — Creative Designer & AI Artist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<style>
+  :root {
+    --blue: #5A8BFF;
+    --blue-dark: #3D6FE8;
+    --blue-light: #EEF3FF;
+    --blue-mid: #C8D9FF;
+    --dark: #1A1A2E;
+    --text: #1A1A2E;
+    --text-mid: #5A5A7A;
+    --text-light: #9898B8;
+    --white: #ffffff;
+    --off-white: #F8F9FC;
+    --border: #EAEAF0;
+    --shadow-sm: 0 2px 12px rgba(90,139,255,0.08);
+    --shadow-md: 0 8px 40px rgba(90,139,255,0.12);
+    --shadow-lg: 0 24px 80px rgba(90,139,255,0.16);
+    --font: 'Poppins', sans-serif;
+    --radius: 16px;
+    --radius-sm: 10px;
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--white);
+    color: var(--text);
+    font-family: var(--font);
+    font-weight: 300;
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  /* CURSOR */
+  .cursor { position:fixed; width:8px; height:8px; background:var(--blue); border-radius:50%; pointer-events:none; z-index:9999; }
+  .cursor-ring { position:fixed; width:32px; height:32px; border:1.5px solid var(--blue); border-radius:50%; pointer-events:none; z-index:9998; opacity:0.4; transition:width 0.3s,height 0.3s,opacity 0.3s; }
+  .cursor-ring.expand { width:52px; height:52px; opacity:0.7; }
+
+  /* NAV */
+  nav { position:fixed; top:0; left:0; right:0; z-index:900; padding:0 64px; height:72px; display:flex; align-items:center; justify-content:space-between; background:rgba(255,255,255,0.92); backdrop-filter:blur(20px); border-bottom:1px solid var(--border); transition:box-shadow 0.3s; }
+  nav.scrolled { box-shadow:var(--shadow-sm); }
+  .nav-logo { font-size:1.05rem; font-weight:600; color:var(--dark); text-decoration:none; letter-spacing:-0.01em; }
+  .nav-logo span { color:var(--blue); }
+  .nav-links { display:flex; gap:36px; list-style:none; }
+  .nav-links a { font-size:0.8rem; font-weight:400; color:var(--text-mid); text-decoration:none; transition:color 0.2s; }
+  .nav-links a:hover { color:var(--blue); }
+  .nav-cta { font-size:0.78rem; font-weight:500; color:var(--white); background:var(--blue); text-decoration:none; padding:10px 24px; border-radius:100px; transition:background 0.2s,transform 0.2s; }
+  .nav-cta:hover { background:var(--blue-dark); transform:translateY(-1px); }
+  .nav-right { display:flex; align-items:center; gap:14px; }
+  .lang-toggle { display:flex; align-items:center; background:var(--off-white); border:1.5px solid var(--border); border-radius:100px; padding:3px; gap:2px; }
+  .lang-btn { font-family:var(--font); font-size:0.7rem; font-weight:500; padding:5px 12px; border-radius:100px; border:none; background:transparent; color:var(--text-light); cursor:pointer; transition:all 0.2s; letter-spacing:0.04em; }
+  .lang-btn.active { background:var(--white); color:var(--blue); box-shadow:0 1px 6px rgba(90,139,255,0.15); font-weight:600; }
+
+  /* HERO */
+  .hero { min-height:100vh; display:flex; align-items:center; padding:72px 64px 0; position:relative; overflow:hidden; background:var(--white); }
+  .hero-blob { position:absolute; top:-10%; right:-5%; width:55vw; height:80vh; background:radial-gradient(ellipse at 60% 40%, #dce8ff 0%, #eef3ff 50%, transparent 80%); border-radius:50% 50% 50% 30%/50% 40% 60% 50%; z-index:0; animation:blobFloat 8s ease-in-out infinite; }
+  @keyframes blobFloat { 0%,100%{transform:translate(0,0) scale(1)} 33%{transform:translate(-20px,15px) scale(1.02)} 66%{transform:translate(10px,-10px) scale(0.98)} }
+  .hero-dots { position:absolute; top:80px; right:52%; width:120px; height:120px; background-image:radial-gradient(circle,var(--blue-mid) 1.5px,transparent 1.5px); background-size:18px 18px; opacity:0.5; z-index:0; }
+  .hero-inner { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; width:100%; position:relative; z-index:1; padding:60px 0 80px; }
+  .hero-badge { display:inline-flex; align-items:center; gap:8px; background:var(--blue-light); color:var(--blue-dark); font-size:0.72rem; font-weight:500; padding:6px 16px; border-radius:100px; margin-bottom:28px; opacity:0; animation:fadeUp 0.7s 0.1s ease forwards; }
+  .hero-badge::before { content:''; width:6px; height:6px; background:var(--blue); border-radius:50%; }
+  .hero-title { font-size:clamp(2.6rem,5vw,4.2rem); font-weight:600; line-height:1.12; letter-spacing:-0.03em; color:var(--dark); margin-bottom:22px; opacity:0; animation:fadeUp 0.7s 0.2s ease forwards; }
+  .hero-title .blue { color:var(--blue); }
+  .hero-title .light { font-weight:300; font-style:italic; }
+  .hero-desc { font-size:0.95rem; font-weight:300; line-height:1.8; color:var(--text-mid); margin-bottom:36px; opacity:0; animation:fadeUp 0.7s 0.3s ease forwards; }
+  .hero-actions { display:flex; gap:14px; align-items:center; opacity:0; animation:fadeUp 0.7s 0.4s ease forwards; }
+  .btn-primary { background:var(--blue); color:var(--white); font-family:var(--font); font-size:0.82rem; font-weight:500; padding:14px 32px; border-radius:100px; border:none; cursor:pointer; text-decoration:none; display:inline-block; transition:background 0.2s,transform 0.2s,box-shadow 0.2s; box-shadow:0 4px 20px rgba(90,139,255,0.35); }
+  .btn-primary:hover { background:var(--blue-dark); transform:translateY(-2px); box-shadow:0 8px 28px rgba(90,139,255,0.45); }
+  .btn-outline { background:transparent; color:var(--text-mid); font-family:var(--font); font-size:0.82rem; font-weight:400; padding:14px 28px; border-radius:100px; border:1.5px solid var(--border); cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; gap:8px; transition:border-color 0.2s,color 0.2s; }
+  .btn-outline:hover { border-color:var(--blue); color:var(--blue); }
+  .hero-right { position:relative; display:flex; justify-content:center; align-items:center; opacity:0; animation:fadeUp 0.9s 0.5s ease forwards; }
+  .hero-card-main { width:100%; max-width:420px; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-lg); }
+  .hero-card-main img { width:100%; display:block; }
+  .hero-float-1 { position:absolute; bottom:-20px; left:-30px; background:var(--white); border-radius:var(--radius-sm); padding:16px 20px; box-shadow:var(--shadow-md); display:flex; align-items:center; gap:14px; min-width:190px; animation:float1 4s ease-in-out infinite; }
+  .hero-float-2 { position:absolute; top:20px; right:-24px; background:var(--blue); border-radius:var(--radius-sm); padding:14px 20px; box-shadow:0 12px 40px rgba(90,139,255,0.35); animation:float2 5s ease-in-out infinite; }
+  @keyframes float1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  @keyframes float2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(8px)} }
+  .float-icon { width:40px; height:40px; background:var(--blue-light); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; flex-shrink:0; }
+  .float-label { font-size:0.65rem; font-weight:400; color:var(--text-light); }
+  .float-val { font-size:0.9rem; font-weight:600; color:var(--dark); margin-top:2px; }
+  .float-val-white { font-size:0.72rem; font-weight:300; color:rgba(255,255,255,0.8); }
+  .float-num-white { font-size:1.4rem; font-weight:600; color:white; line-height:1; }
+  .hero-stats-row { display:flex; gap:40px; margin-top:48px; opacity:0; animation:fadeUp 0.7s 0.6s ease forwards; }
+  .hero-stat-num { font-size:1.6rem; font-weight:600; color:var(--dark); line-height:1; }
+  .hero-stat-label { font-size:0.72rem; font-weight:300; color:var(--text-light); margin-top:4px; }
+
+  /* SECTIONS */
+  .section { padding:100px 64px; }
+  .section-alt { background:var(--off-white); }
+  .section-label { display:inline-flex; align-items:center; gap:8px; font-size:0.7rem; font-weight:500; color:var(--blue); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:14px; }
+  .section-label::before { content:''; width:20px; height:2px; background:var(--blue); border-radius:2px; }
+  .section-title { font-size:clamp(1.8rem,3vw,2.6rem); font-weight:600; letter-spacing:-0.02em; color:var(--dark); line-height:1.15; }
+  .section-title .blue { color:var(--blue); }
+  .section-title .light { font-weight:300; font-style:italic; }
+  .section-header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:56px; }
+  .link-more { font-size:0.78rem; font-weight:400; color:var(--text-mid); text-decoration:none; display:inline-flex; align-items:center; gap:6px; transition:color 0.2s; white-space:nowrap; }
+  .link-more:hover { color:var(--blue); }
+
+  /* CAROUSEL */
+  .carousel-wrap { overflow:hidden; margin:0 -64px; padding:0 64px 20px; }
+  .swiper { overflow:visible !important; }
+  .swiper-slide { width:400px !important; }
+  .proj-card { border-radius:var(--radius); overflow:hidden; background:var(--white); box-shadow:var(--shadow-sm); transition:box-shadow 0.35s,transform 0.35s; cursor:pointer; display:block; text-decoration:none; color:inherit; }
+  .proj-card:hover { box-shadow:var(--shadow-lg); transform:translateY(-6px); }
+  .proj-card-img { width:100%; aspect-ratio:4/3; overflow:hidden; position:relative; background:var(--off-white); }
+  .proj-card-img img { width:100%; height:100%; object-fit:cover; transition:transform 0.5s cubic-bezier(0.23,1,0.32,1); display:block; }
+  .proj-card:hover .proj-card-img img { transform:scale(1.05); }
+  .proj-card-body { padding:20px 22px 22px; }
+  .proj-card-cat { font-size:0.65rem; font-weight:500; color:var(--blue); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:6px; }
+  .proj-card-name { font-size:1rem; font-weight:600; color:var(--dark); }
+  .swiper-controls { display:flex; gap:10px; justify-content:flex-end; margin-top:36px; }
+  .swiper-btn { width:44px; height:44px; border:1.5px solid var(--border); background:var(--white); border-radius:50%; color:var(--text-mid); cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:0.9rem; transition:all 0.2s; box-shadow:var(--shadow-sm); }
+  .swiper-btn:hover { border-color:var(--blue); color:var(--blue); background:var(--blue-light); }
+
+  /* TABLET */
+  .tablet-section { padding:100px 64px; background:var(--white); display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; overflow:hidden; }
+  .tablet-text p { font-size:0.92rem; font-weight:300; line-height:1.85; color:var(--text-mid); margin:18px 0 32px; }
+  .tablets-visual { position:relative; display:flex; justify-content:center; align-items:center; min-height:380px; }
+  .tablet-mock { width:300px; background:#f0f0f5; border-radius:22px; padding:12px; box-shadow:var(--shadow-lg); position:relative; z-index:2; }
+  .tablet-mock-inner { width:100%; border-radius:14px; overflow:hidden; background:white; }
+  .tablet-mock-inner img { width:100%; display:block; }
+  .tablet-mock-bar { width:60px; height:4px; background:#ccc; border-radius:4px; margin:10px auto 0; }
+  .tablet-mock-2 { position:absolute; width:220px; right:-20px; bottom:-20px; z-index:1; background:#f0f0f5; border-radius:18px; padding:10px; box-shadow:var(--shadow-md); opacity:0.9; }
+  .tablet-mock-2 .tablet-mock-inner { border-radius:10px; }
+
+  /* CATEGORIES */
+  .cats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .cat-card { background:var(--white); border:1.5px solid var(--border); border-radius:var(--radius); padding:32px 24px; text-decoration:none; color:inherit; display:block; transition:all 0.3s; position:relative; overflow:hidden; }
+  .cat-card::after { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--blue); transform:scaleX(0); transform-origin:left; transition:transform 0.3s; }
+  .cat-card:hover { border-color:var(--blue-mid); box-shadow:var(--shadow-md); transform:translateY(-4px); }
+  .cat-card:hover::after { transform:scaleX(1); }
+  .cat-num { font-size:0.62rem; font-weight:500; color:var(--blue); letter-spacing:0.1em; margin-bottom:20px; display:block; }
+  .cat-icon { width:44px; height:44px; background:var(--blue-light); border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; margin-bottom:16px; }
+  .cat-name { font-size:0.95rem; font-weight:600; color:var(--dark); margin-bottom:8px; display:block; }
+  .cat-desc { font-size:0.78rem; font-weight:300; color:var(--text-light); line-height:1.65; }
+
+  /* PROJECTS GRID */
+  .proj-filter { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:48px; }
+  .filter-btn { font-family:var(--font); font-size:0.75rem; font-weight:400; padding:8px 20px; border:1.5px solid var(--border); background:var(--white); color:var(--text-mid); border-radius:100px; cursor:pointer; transition:all 0.2s; }
+  .filter-btn:hover,.filter-btn.active { border-color:var(--blue); color:var(--blue); background:var(--blue-light); font-weight:500; }
+  .proj-masonry { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .proj-tile { border-radius:var(--radius); overflow:hidden; background:var(--off-white); position:relative; cursor:pointer; display:block; text-decoration:none; transition:box-shadow 0.3s,transform 0.3s; box-shadow:var(--shadow-sm); }
+  .proj-tile:hover { box-shadow:var(--shadow-md); transform:translateY(-4px); }
+  .proj-tile.wide { grid-column:span 2; }
+  .proj-tile img { width:100%; height:100%; object-fit:cover; display:block; min-height:220px; transition:transform 0.5s; }
+  .proj-tile:hover img { transform:scale(1.04); }
+  .proj-tile-info { position:absolute; inset:0; background:linear-gradient(to top,rgba(26,26,46,0.75) 0%,transparent 55%); display:flex; flex-direction:column; justify-content:flex-end; padding:22px; opacity:0; transition:opacity 0.3s; }
+  .proj-tile:hover .proj-tile-info { opacity:1; }
+  .proj-tile-cat { font-size:0.6rem; font-weight:500; color:var(--blue-mid); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:4px; }
+  .proj-tile-name { font-size:0.95rem; font-weight:600; color:white; }
+
+  /* AI LAB */
+  .ailab-intro { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; margin-bottom:64px; }
+  .ailab-intro p { font-size:0.92rem; font-weight:300; line-height:1.85; color:var(--text-mid); }
+  .ailab-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .ailab-card { background:var(--white); border:1.5px solid var(--border); border-radius:var(--radius); overflow:hidden; text-decoration:none; color:inherit; display:block; transition:all 0.3s; }
+  .ailab-card:hover { border-color:var(--blue-mid); box-shadow:var(--shadow-md); transform:translateY(-4px); }
+  .ailab-placeholder { width:100%; aspect-ratio:3/2; background:linear-gradient(135deg,var(--blue-light) 0%,#dce8ff 100%); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; }
+  .ailab-ph-icon { width:52px; height:52px; background:rgba(90,139,255,0.15); border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:1.4rem; }
+  .ailab-placeholder span { font-size:0.65rem; font-weight:500; color:var(--blue-dark); letter-spacing:0.08em; text-transform:uppercase; }
+  .ailab-body { padding:20px 22px 24px; }
+  .ailab-tag { font-size:0.62rem; font-weight:500; color:var(--blue); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:8px; display:block; }
+  .ailab-title { font-size:0.98rem; font-weight:600; color:var(--dark); margin-bottom:6px; }
+  .ailab-desc { font-size:0.78rem; font-weight:300; color:var(--text-light); line-height:1.6; }
+
+  /* ABOUT */
+  .about-section { padding:100px 64px; display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; background:var(--white); }
+  .about-img-wrap { position:relative; }
+  .about-img-main { border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-lg); }
+  .about-img-main img { width:100%; display:block; }
+  .about-badge { position:absolute; bottom:-16px; right:-16px; background:var(--blue); border-radius:var(--radius-sm); padding:18px 22px; color:white; box-shadow:0 12px 36px rgba(90,139,255,0.35); }
+  .about-badge-num { font-size:1.8rem; font-weight:700; line-height:1; }
+  .about-badge-label { font-size:0.65rem; font-weight:300; opacity:0.85; margin-top:4px; }
+  .about-text h2 { margin-bottom:18px; }
+  .about-text p { font-size:0.92rem; font-weight:300; line-height:1.85; color:var(--text-mid); margin-bottom:16px; }
+  .skills-wrap { display:flex; flex-wrap:wrap; gap:8px; margin-top:32px; }
+  .skill-chip { font-size:0.72rem; font-weight:400; color:var(--blue-dark); background:var(--blue-light); padding:7px 16px; border-radius:100px; border:1px solid var(--blue-mid); }
+
+  /* CONTACT */
+  .contact-section { padding:100px 64px; background:var(--dark); text-align:center; position:relative; overflow:hidden; }
+  .contact-glow { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:600px; height:400px; background:radial-gradient(ellipse,rgba(90,139,255,0.2) 0%,transparent 70%); pointer-events:none; }
+  .contact-section .section-label { justify-content:center; color:rgba(200,217,255,0.7); }
+  .contact-section .section-label::before { background:rgba(200,217,255,0.5); }
+  .contact-title { font-size:clamp(2.4rem,5vw,4rem); font-weight:600; letter-spacing:-0.03em; color:white; line-height:1.12; margin-bottom:20px; position:relative; z-index:1; }
+  .contact-title .blue { color:var(--blue); }
+  .contact-sub { font-size:0.95rem; font-weight:300; color:rgba(255,255,255,0.55); max-width:440px; margin:0 auto 40px; line-height:1.8; position:relative; z-index:1; }
+  .contact-email { font-size:1.1rem; font-weight:400; color:white; text-decoration:none; display:inline-block; margin-bottom:48px; position:relative; z-index:1; border-bottom:1px solid rgba(90,139,255,0.5); padding-bottom:4px; transition:border-color 0.2s,color 0.2s; }
+  .contact-email:hover { border-color:var(--blue); color:var(--blue); }
+  .social-row { display:flex; gap:12px; justify-content:center; position:relative; z-index:1; }
+  .social-btn { font-family:var(--font); font-size:0.75rem; font-weight:400; color:rgba(255,255,255,0.65); border:1px solid rgba(255,255,255,0.15); background:transparent; padding:11px 24px; border-radius:100px; text-decoration:none; transition:all 0.2s; }
+  .social-btn:hover { border-color:var(--blue); color:var(--blue); background:rgba(90,139,255,0.08); }
+
+  /* FOOTER */
+  footer { padding:28px 64px; background:#111122; display:flex; justify-content:space-between; align-items:center; border-top:1px solid rgba(255,255,255,0.06); }
+  .footer-name { font-size:0.85rem; font-weight:500; color:rgba(255,255,255,0.5); }
+  .footer-copy { font-size:0.72rem; font-weight:300; color:rgba(255,255,255,0.3); }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+  .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.7s ease,transform 0.7s cubic-bezier(0.23,1,0.32,1); }
+  .reveal.visible { opacity:1; transform:translateY(0); }
+  .reveal-d1 { transition-delay:0.1s; }
+  .reveal-d2 { transition-delay:0.2s; }
+  .reveal-d3 { transition-delay:0.3s; }
+
+  /* RESPONSIVE */
+  @media(max-width:1024px){
+    nav{padding:0 32px;} .nav-links{display:none;}
+    .hero{padding:72px 32px 0;} .hero-inner{grid-template-columns:1fr;gap:48px;} .hero-float-1,.hero-float-2{display:none;}
+    .section{padding:72px 32px;} .tablet-section,.about-section{padding:72px 32px;grid-template-columns:1fr;gap:48px;}
+    .cats-grid{grid-template-columns:repeat(2,1fr);}
+    .proj-masonry{grid-template-columns:1fr 1fr;} .proj-tile.wide{grid-column:span 2;}
+    .ailab-intro{grid-template-columns:1fr;gap:24px;} .ailab-grid{grid-template-columns:1fr 1fr;}
+    .contact-section{padding:72px 32px;}
+    footer{padding:24px 32px;flex-direction:column;gap:8px;text-align:center;}
+    .carousel-wrap{margin:0 -32px;padding:0 32px 16px;}
+  }
+  @media(max-width:640px){
+    .hero-title{font-size:2.2rem;}
+    .cats-grid{grid-template-columns:1fr;}
+    .proj-masonry{grid-template-columns:1fr;} .proj-tile.wide{grid-column:span 1;}
+    .ailab-grid{grid-template-columns:1fr;}
+    .swiper-slide{width:290px !important;}
+    .social-row{flex-direction:column;align-items:center;}
+  }
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo">Jahzeely <span>Sinai</span></a>
+  <ul class="nav-links">
+    <li><a href="#work" data-en="Work" data-es="Trabajo">Work</a></li>
+    <li><a href="#categories" data-en="Categories" data-es="Categorías">Categories</a></li>
+    <li><a href="#ailab">AI Lab</a></li>
+    <li><a href="#about" data-en="About" data-es="Sobre mí">About</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btnEn">EN</button>
+      <button class="lang-btn" id="btnEs">ES</button>
+    </div>
+    <a href="#contact" class="nav-cta" data-en="Let's Talk" data-es="Hablemos">Let's Talk</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-blob"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge" data-en="Graphic Designer · AI Artist · Spain" data-es="Diseñadora Gráfica · AI Artist · España">Graphic Designer · AI Artist · Spain</div>
+      <h1 class="hero-title">
+        <span data-en="Design that" data-es="Diseño que">Design that</span><br>
+        <span class="blue" data-en="connects" data-es="conecta">connects</span> <span data-en="and" data-es="y">and</span><br>
+        <span class="light" data-en="is never forgotten." data-es="no se olvida.">is never forgotten.</span>
+      </h1>
+      <p class="hero-desc" data-en="Branding, visual identity, illustration and digital experiences. Creating soulful work from Spain for the world." data-es="Branding, identidad visual, ilustración y experiencias digitales. Creando trabajo con alma desde España para el mundo.">Branding, visual identity, illustration and digital experiences. Creating soulful work from Spain for the world.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary" data-en="View projects" data-es="Ver proyectos">View projects</a>
+        <a href="https://www.behance.net/jahzeelysinaiperez" target="_blank" class="btn-outline">
+          Behance
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats-row">
+        <div><div class="hero-stat-num">12+</div><div class="hero-stat-label" data-en="Projects" data-es="Proyectos">Projects</div></div>
+        <div><div class="hero-stat-num">8</div><div class="hero-stat-label" data-en="Categories" data-es="Categorías">Categories</div></div>
+        <div><div class="hero-stat-num">7+</div><div class="hero-stat-label" data-en="Years" data-es="Años">Years</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-card-main">
+        <img src="https://mir-s3-cdn-cf.behance.net/projects/404/569f88175818569.Y3JvcCw1ODM0LDQ1NjMsMCww.jpg" alt="Asimov Branding">
+      </div>
+      <div class="hero-float-1">
+        <div class="float-icon">✦</div>
+        <div><div class="float-label" data-en="Featured project" data-es="Proyecto destacado">Featured project</div><div class="float-val">Asimov Branding</div></div>
+      </div>
+      <div class="hero-float-2">
+        <div class="float-num-white">33</div>
+        <div class="float-val-white">appreciations</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAROUSEL -->
+<section class="section section-alt" id="work">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-label" data-en="Featured projects" data-es="Proyectos destacados">Featured projects</div>
+      <h2 class="section-title"><span data-en="Selected" data-es="Trabajo">Selected</span> <span class="blue" data-en="work" data-es="selecto">work</span></h2>
+    </div>
+    <a href="https://www.behance.net/jahzeelysinaiperez" target="_blank" class="link-more" data-en="View all on Behance →" data-es="Ver todo en Behance →">
+      View all on Behance →
+    </a>
+  </div>
+  <div class="carousel-wrap">
+    <div class="swiper" id="featuredSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="project/asimov.html" target="_blank" class="proj-card">
+            <div class="proj-card-img"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/569f88175818569.Y3JvcCw1ODM0LDQ1NjMsMCww.jpg" alt="Asimov"></div>
+            <div class="proj-card-body"><div class="proj-card-cat">Branding</div><div class="proj-card-name">Asimov Branding</div></div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="project/curious-cafe.html" target="_blank" class="proj-card">
+            <div class="proj-card-img"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/0ed9d9170495063.Y3JvcCwxMDEyLDc5MiwzMDAsMA.jpg" alt="Curious Cafe"></div>
+            <div class="proj-card-body"><div class="proj-card-cat">Branding</div><div class="proj-card-name">Curious Cafe Branding</div></div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="project/zen.html" target="_blank" class="proj-card">
+            <div class="proj-card-img"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/9a0fe6163562345.Y3JvcCwxMzE2LDEwMzAsNDIsMA.png" alt="Zen"></div>
+            <div class="proj-card-body"><div class="proj-card-cat">Packaging</div><div class="proj-card-name">Zen Infusiones Naturales</div></div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="project/period-app.html" target="_blank" class="proj-card">
+            <div class="proj-card-img"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/924bfa154142047.Y3JvcCw4MDgsNjMyLDAsMA.png" alt="Period App"></div>
+            <div class="proj-card-body"><div class="proj-card-cat">UI / App Design</div><div class="proj-card-name">Period App</div></div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="project/kenzo.html" target="_blank" class="proj-card">
+            <div class="proj-card-img"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/f2a3b5154626239.Y3JvcCwxNDAwLDEwOTUsMCw2NDg.png" alt="Kenzo"></div>
+            <div class="proj-card-body"><div class="proj-card-cat">Packaging</div><div class="proj-card-name">Kenzo Galletas</div></div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="project/cryptomonitor.html" target="_blank" class="proj-card">
+            <div class="proj-card-img"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/bb9d12126259497.Y3JvcCw4MDAsNjI1LDIzNSwxNzQ.jpg" alt="Crypto"></div>
+            <div class="proj-card-body"><div class="proj-card-cat">Branding & Web</div><div class="proj-card-name">Cryptomonitor</div></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-controls reveal">
+    <button class="swiper-btn" id="prev">←</button>
+    <button class="swiper-btn" id="next">→</button>
+  </div>
+</section>
+
+<!-- TABLET MOCKUP -->
+<section class="tablet-section">
+  <div class="tablet-text reveal">
+    <div class="section-label" data-en="Digital design" data-es="Diseño digital">Digital design</div>
+    <h2 class="section-title"><span data-en="Apps & webs" data-es="Apps & webs">Apps & webs</span><br><span class="blue" data-en="that inspire" data-es="que inspiran">that inspire</span></h2>
+    <p data-en="Every interface starts with deep user research. From health apps to crypto dashboards — clarity, hierarchy and emotion in every screen." data-es="Cada interfaz parte de una investigación profunda del usuario. Desde apps de salud hasta dashboards cripto — claridad, jerarquía y emoción en cada pantalla.">Every interface starts with deep user research. From health apps to crypto dashboards — clarity, hierarchy and emotion in every screen.</p>
+    <a href="https://www.behance.net/jahzeelysinaiperez" target="_blank" class="btn-primary" data-en="View digital projects" data-es="Ver proyectos digitales">View digital projects</a>
+  </div>
+  <div class="tablets-visual reveal">
+    <div class="tablet-mock">
+      <div class="tablet-mock-inner">
+        <img src="https://mir-s3-cdn-cf.behance.net/projects/404/924bfa154142047.Y3JvcCw4MDgsNjMyLDAsMA.png" alt="Period App">
+      </div>
+      <div class="tablet-mock-bar"></div>
+    </div>
+    <div class="tablet-mock-2">
+      <div class="tablet-mock-inner">
+        <img src="https://mir-s3-cdn-cf.behance.net/projects/404/bb9d12126259497.Y3JvcCw4MDAsNjI1LDIzNSwxNzQ.jpg" alt="Crypto">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section section-alt" id="categories">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-label" data-en="Specialties" data-es="Especialidades">Specialties</div>
+      <h2 class="section-title"><span data-en="Work" data-es="Categorías de">Work</span> <span class="blue" data-en="categories" data-es="trabajo">categories</span></h2>
+    </div>
+  </div>
+  <div class="cats-grid">
+    <a href="https://www.behance.net/jahzeelysinaiperez" target="_blank" class="cat-card reveal"><span class="cat-num">01</span><div class="cat-icon">◈</div><span class="cat-name" data-en="Branding" data-es="Branding">Branding</span><p class="cat-desc" data-en="Complete visual identities that communicate the essence of each brand." data-es="Identidades visuales completas que comunican la esencia de cada marca.">Complete visual identities that communicate the essence of each brand.</p></a>
+    <a href="https://www.behance.net/jahzeelysinaiperez" target="_blank" class="cat-card reveal reveal-d1"><span class="cat-num">02</span><div class="cat-icon">◎</div><span class="cat-name" data-en="Logos" data-es="Logos">Logos</span><p class="cat-desc" data-en="Unique and memorable symbols with strategic intention." data-es="Símbolos únicos y memorables con intención estratégica.">Unique and memorable symbols with strategic intention.</p></a>
+    <a href="https://www.behance.net/jahzeelysinaiperez" target="_blank" class="cat-card reveal reveal-d2"><span class="cat-num">03</span><div class="cat-icon">◻</div><span class="cat-name" data-en="Social Media" data-es="Social Media">Social Media</span><p class="cat-desc" data-en="Visual content for social networks that connects and converts." data-es="Contenido visual para redes que conecta y convierte.">Visual content for social networks that connects and converts.</p></a>
+    <a href="https://www.behance.net/jahzeelysinaiperez" target="_blank" class="cat-card reveal reveal-d3"><span class="cat-num">04</span><div class="cat-icon">▣</div><span class="cat-name" data-en="Packaging" data-es="Packaging">Packaging</span><p class="cat-desc" data-en="Packages that live on shelves and in consumer memory." data-es="Empaques que viven en estantes y en la memoria.">Packages that live on shelves and in consumer memory.</p></a>
+    <a href="https://www.behance.net/jahzeelysinaiperez" target="_blank" class="cat-card reveal"><span class="cat-num">05</span><div class="cat-icon">◧</div><span class="cat-name" data-en="Illustration" data-es="Ilustración">Illustration</span><p class="cat-desc" data-en="Original visual worlds — traditional and digital." data-es="Mundos visuales propios — tradicional y digital.">Original visual worlds — traditional and digital.</p></a>
+    <a href="https://www.behance.net/jahzeelysinaiperez" target="_blank" class="cat-card reveal reveal-d1"><span class="cat-num">06</span><div class="cat-icon">▦</div><span class="cat-name" data-en="Flyers" data-es="Flyers">Flyers</span><p class="cat-desc" data-en="Print and digital pieces with immediate visual impact." data-es="Piezas impresas y digitales con impacto visual inmediato.">Print and digital pieces with immediate visual impact.</p></a>
+    <a href="https://www.behance.net/jahzeelysinaiperez" target="_blank" class="cat-card reveal reveal-d2"><span class="cat-num">07</span><div class="cat-icon">▩</div><span class="cat-name" data-en="Websites & Apps" data-es="Websites & Apps">Websites & Apps</span><p class="cat-desc" data-en="UI/UX for user-centered digital interfaces." data-es="UI/UX para interfaces digitales centradas en el usuario.">UI/UX for user-centered digital interfaces.</p></a>
+    <a href="#ailab" class="cat-card reveal reveal-d3"><span class="cat-num">08</span><div class="cat-icon">✦</div><span class="cat-name" data-en="AI Lab" data-es="AI Lab">AI Lab</span><p class="cat-desc" data-en="Photography, video and experiences created with AI." data-es="Fotografía, video y experiencias creadas con IA.">Photography, video and experiences created with AI.</p></a>
+  </div>
+</section>
+
+<!-- ALL PROJECTS -->
+<section class="section" id="allprojects">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-label" data-en="Full portfolio" data-es="Portafolio completo">Full portfolio</div>
+      <h2 class="section-title"><span data-en="All" data-es="Todos los">All</span> <span class="blue" data-en="projects" data-es="proyectos">projects</span></h2>
+    </div>
+  </div>
+  <div class="proj-filter reveal">
+    <button class="filter-btn active" data-filter="all" data-en="All" data-es="Todos">All</button>
+    <button class="filter-btn" data-filter="branding" data-en="Branding" data-es="Branding">Branding</button>
+    <button class="filter-btn" data-filter="packaging" data-en="Packaging" data-es="Packaging">Packaging</button>
+    <button class="filter-btn" data-filter="digital" data-en="Digital" data-es="Digital">Digital</button>
+    <button class="filter-btn" data-filter="illustration" data-en="Illustration" data-es="Ilustración">Illustration</button>
+    <button class="filter-btn" data-filter="logo" data-en="Logo" data-es="Logo">Logo</button>
+  </div>
+  <div class="proj-masonry reveal">
+    <a href="project/asimov.html" target="_blank" class="proj-tile wide" data-cat="branding"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/569f88175818569.Y3JvcCw1ODM0LDQ1NjMsMCww.jpg" alt="Asimov"><div class="proj-tile-info"><div class="proj-tile-cat">Branding</div><div class="proj-tile-name">Asimov Branding</div></div></a>
+    <a href="project/curious-cafe.html" target="_blank" class="proj-tile" data-cat="branding"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/0ed9d9170495063.Y3JvcCwxMDEyLDc5MiwzMDAsMA.jpg" alt="Curious Cafe"><div class="proj-tile-info"><div class="proj-tile-cat">Branding</div><div class="proj-tile-name">Curious Cafe</div></div></a>
+    <a href="project/period-app.html" target="_blank" class="proj-tile" data-cat="digital"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/924bfa154142047.Y3JvcCw4MDgsNjMyLDAsMA.png" alt="Period App"><div class="proj-tile-info"><div class="proj-tile-cat">App Design</div><div class="proj-tile-name">Period App</div></div></a>
+    <a href="project/siker.html" target="_blank" class="proj-tile" data-cat="branding"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/b50935117202311.Y3JvcCw4MTAsNjM0LDMwMCww.gif" alt="Siker"><div class="proj-tile-info"><div class="proj-tile-cat">Branding</div><div class="proj-tile-name">Siker Nutrition</div></div></a>
+    <a href="project/zen.html" target="_blank" class="proj-tile wide" data-cat="packaging"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/9a0fe6163562345.Y3JvcCwxMzE2LDEwMzAsNDIsMA.png" alt="Zen"><div class="proj-tile-info"><div class="proj-tile-cat">Packaging</div><div class="proj-tile-name">Zen Infusiones Naturales</div></div></a>
+    <a href="project/kenzo.html" target="_blank" class="proj-tile" data-cat="packaging"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/f2a3b5154626239.Y3JvcCwxNDAwLDEwOTUsMCw2NDg.png" alt="Kenzo"><div class="proj-tile-info"><div class="proj-tile-cat">Packaging</div><div class="proj-tile-name">Kenzo Galletas</div></div></a>
+    <a href="project/cryptomonitor.html" target="_blank" class="proj-tile" data-cat="digital branding"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/bb9d12126259497.Y3JvcCw4MDAsNjI1LDIzNSwxNzQ.jpg" alt="Crypto"><div class="proj-tile-info"><div class="proj-tile-cat">Branding & Web</div><div class="proj-tile-name">Cryptomonitor</div></div></a>
+    <a href="https://www.behance.net/gallery/162471669/Arepitas-Venezolanas-con-Carlitos-Cuento-ilustrado" target="_blank" class="proj-tile" data-cat="illustration"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/994154162471669.Y3JvcCwxMzE2LDEwMzAsMTksMA.png" alt="Cuento"><div class="proj-tile-info"><div class="proj-tile-cat">Ilustración</div><div class="proj-tile-name">Arepitas Venezolanas</div></div></a>
+    <a href="https://www.behance.net/gallery/146038337/Pack-de-10-iconos-de-gatitos" target="_blank" class="proj-tile" data-cat="illustration"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/c5160e146038337.Y3JvcCwzNjMyLDI4NDAsMTYxLDA.jpg" alt="Iconos"><div class="proj-tile-info"><div class="proj-tile-cat">Ilustración</div><div class="proj-tile-name">Pack Iconos Gatitos</div></div></a>
+    <a href="project/arka.html" target="_blank" class="proj-tile" data-cat="logo"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/a1dc8c145869331.Y3JvcCwxODUwLDE0NDcsMjcsNTY3.png" alt="ARKA"><div class="proj-tile-info"><div class="proj-tile-cat">Logo</div><div class="proj-tile-name">ARKA Logotipo</div></div></a>
+    <a href="https://www.behance.net/gallery/142601487/Neptuno-Card" target="_blank" class="proj-tile" data-cat="branding"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/327622142601487.Y3JvcCwzNDkxLDI3MzAsMCw4Mzg.jpg" alt="Neptuno"><div class="proj-tile-info"><div class="proj-tile-cat">Branding</div><div class="proj-tile-name">Neptuno Card</div></div></a>
+    <a href="https://www.behance.net/gallery/174794993/Portfolio" target="_blank" class="proj-tile" data-cat="branding"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/8cd580174794993.Y3JvcCwzMjYwLDI1NTAsMTYsMA.jpg" alt="Portfolio"><div class="proj-tile-info"><div class="proj-tile-cat">Portafolio</div><div class="proj-tile-name">Portfolio 2024</div></div></a>
+  </div>
+</section>
+
+<!-- AI LAB -->
+<section class="section section-alt" id="ailab">
+  <div class="ailab-intro">
+    <div>
+      <div class="section-label" data-en="Artificial intelligence" data-es="Inteligencia artificial">Artificial intelligence</div>
+      <h2 class="section-title">AI <span class="blue">Lab</span></h2>
+    </div>
+    <p data-en="Creative exploration at the frontier of human design and artificial intelligence. Generative photography, video, interfaces and digital experiences powered by AI. Coming soon!" data-es="Exploración creativa en la frontera entre diseño humano e inteligencia artificial. Fotografía generativa, video, interfaces y experiencias digitales potenciadas con IA. ¡Próximamente!">Creative exploration at the frontier of human design and artificial intelligence. Generative photography, video, interfaces and digital experiences powered by AI. <em>Coming soon!</em></p>
+  </div>
+  <div class="ailab-grid">
+    <a href="#" class="ailab-card reveal">
+      <div class="ailab-placeholder"><div class="ailab-ph-icon">📷</div><span>AI Photography</span></div>
+      <div class="ailab-body"><span class="ailab-tag" data-en="AI · Photography" data-es="AI · Fotografía">AI · Photography</span><div class="ailab-title" data-en="Generative Photography" data-es="Fotografía Generativa">Generative Photography</div><p class="ailab-desc" data-en="Coming soon — replace with your AI photography project." data-es="Próximamente — reemplaza con tu proyecto de fotografía con IA.">Coming soon — replace with your AI photography project.</p></div>
+    </a>
+    <a href="#" class="ailab-card reveal reveal-d1">
+      <div class="ailab-placeholder"><div class="ailab-ph-icon">🎬</div><span>AI Video</span></div>
+      <div class="ailab-body"><span class="ailab-tag" data-en="AI · Video" data-es="AI · Video">AI · Video</span><div class="ailab-title" data-en="Generative Video" data-es="Video Generativo">Generative Video</div><p class="ailab-desc" data-en="Coming soon — replace with your generative video project." data-es="Próximamente — reemplaza con tu proyecto de video generativo.">Coming soon — replace with your generative video project.</p></div>
+    </a>
+    <a href="#" class="ailab-card reveal reveal-d2">
+      <div class="ailab-placeholder"><div class="ailab-ph-icon">⚡</div><span>AI App / Web</span></div>
+      <div class="ailab-body"><span class="ailab-tag" data-en="AI · Application" data-es="AI · Aplicación">AI · Application</span><div class="ailab-title" data-en="AI Digital Experience" data-es="Experiencia Digital AI">AI Digital Experience</div><p class="ailab-desc" data-en="Coming soon — replace with your AI-powered app or website." data-es="Próximamente — reemplaza con tu app o página creada con IA.">Coming soon — replace with your AI-powered app or website.</p></div>
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-img-wrap reveal">
+    <div class="about-img-main">
+      <img src="https://mir-s3-cdn-cf.behance.net/projects/404/0ed9d9170495063.Y3JvcCwxMDEyLDc5MiwzMDAsMA.jpg" alt="Work sample">
+    </div>
+    <div class="about-badge">
+      <div class="about-badge-num">7+</div>
+      <div class="about-badge-label" data-en="Years of experience" data-es="Años de experiencia">Years of experience</div>
+    </div>
+  </div>
+  <div class="about-text reveal">
+    <div class="section-label" data-en="About me" data-es="Sobre mí">About me</div>
+    <h2 class="section-title"><span data-en="Designer with" data-es="Diseñadora con">Designer with</span><br><span data-en="an artist's" data-es="alma de">an artist's</span> <span class="blue" data-en="soul" data-es="artista">soul</span></h2>
+    <p data-en="I'm Jahzeely Sinai, a passionate graphic designer with years of experience creating visual identities that endure. My work connects strategic branding, illustration and technology." data-es="Soy Jahzeely Sinai, diseñadora gráfica apasionada con años de experiencia creando identidades visuales que perduran. Mi trabajo conecta branding estratégico, ilustración y tecnología.">I'm Jahzeely Sinai, a passionate graphic designer with years of experience creating visual identities that endure. My work connects strategic branding, illustration and technology.</p>
+    <p data-en="Currently based in Spain, I work with international clients on projects ranging from full corporate identities to experiences powered by artificial intelligence." data-es="Actualmente basada en España, trabajo con clientes internacionales en proyectos que van desde identidades corporativas hasta experiencias potenciadas con inteligencia artificial.">Currently based in Spain, I work with international clients on projects ranging from full corporate identities to experiences powered by artificial intelligence.</p>
+    <div class="skills-wrap">
+      <span class="skill-chip">Adobe Illustrator</span>
+      <span class="skill-chip">Photoshop</span>
+      <span class="skill-chip">InDesign</span>
+      <span class="skill-chip">After Effects</span>
+      <span class="skill-chip">Figma</span>
+      <span class="skill-chip">Branding</span>
+      <span class="skill-chip">Motion Graphics</span>
+      <span class="skill-chip">AI Tools</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-glow"></div>
+  <div class="section-label reveal" data-en="Contact" data-es="Contacto">Contact</div>
+  <h2 class="contact-title reveal"><span data-en="Got a project" data-es="¿Tienes un proyecto">Got a project</span><br><span data-en="in" data-es="en">in</span> <span class="blue" data-en="mind?" data-es="mente?">mind?</span></h2>
+  <p class="contact-sub reveal" data-en="Tell me your idea and together we'll create something the world hasn't seen yet." data-es="Cuéntame tu idea y juntas creamos algo que el mundo no ha visto todavía.">Tell me your idea and together we'll create something the world hasn't seen yet.</p>
+  <a href="/cdn-cgi/l/email-protection#a3c9c2cbd9c6c6cfdad0cacdc2cae3c4cec2cacf8dc0ccce" class="contact-email reveal"><span class="__cf_email__" data-cfemail="d3b9b2bba9b6b6bfaaa0babdb2ba93b4beb2babffdb0bcbe">[email&#160;protected]</span></a>
+  <div class="social-row reveal">
+    <a href="https://www.behance.net/jahzeelysinaiperez" target="_blank" class="social-btn">Behance</a>
+    <a href="http://instagram.com/jahzartdesign" target="_blank" class="social-btn">Instagram</a>
+    <a href="https://post.pro/profile/jahzeelysinai" target="_blank" class="social-btn">Post.pro</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-name">Jahzeely Sinai Pérez</span>
+  <span class="footer-copy" data-en="© 2025 · Creative Designer & AI Artist · Spain" data-es="© 2025 · Creative Designer & AI Artist · España">© 2025 · Creative Designer & AI Artist · Spain</span>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+// CURSOR
+const cursor=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx-4+'px';cursor.style.top=my-4+'px';});
+(function anim(){rx+=(mx-rx-16)*0.15;ry+=(my-ry-16)*0.15;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(anim);})();
+document.querySelectorAll('a,button,.proj-tile,.cat-card,.proj-card').forEach(el=>{el.addEventListener('mouseenter',()=>ring.classList.add('expand'));el.addEventListener('mouseleave',()=>ring.classList.remove('expand'));});
+
+// SWIPER
+const swiper=new Swiper('#featuredSwiper',{slidesPerView:'auto',spaceBetween:20,loop:true,grabCursor:true,speed:600});
+document.getElementById('prev').onclick=()=>swiper.slidePrev();
+document.getElementById('next').onclick=()=>swiper.slideNext();
+
+// REVEAL
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:0.08,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// NAV
+window.addEventListener('scroll',()=>document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>20));
+
+// FILTER
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+  btn.onclick=function(){
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    this.classList.add('active');
+    const f=this.dataset.filter;
+    document.querySelectorAll('.proj-tile').forEach(tile=>{
+      const cats=tile.dataset.cat||'';
+      const show=f==='all'||cats.includes(f);
+      tile.style.transition='opacity 0.3s,transform 0.3s';
+      tile.style.opacity=show?'1':'0';
+      tile.style.transform=show?'':'scale(0.97)';
+      tile.style.pointerEvents=show?'':'none';
+      tile.style.display='block';
+    });
+  };
+});
+
+// LANGUAGE TOGGLE
+let currentLang = 'en';
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('[data-en][data-es]').forEach(el => {
+    el.textContent = el.dataset[lang];
+  });
+  document.documentElement.lang = lang === 'en' ? 'en' : 'es';
+  document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+  document.getElementById('btnEs').classList.toggle('active', lang === 'es');
+}
+document.getElementById('btnEn').onclick = () => setLang('en');
+document.getElementById('btnEs').onclick = () => setLang('es');
+</script>
+</body>
+</html>
