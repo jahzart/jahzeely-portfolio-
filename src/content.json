@@ -1578,51 +1578,6 @@
         },
         {
           "label": {
-            "en": "Social media posts",
-            "es": "Posts para redes"
-          },
-          "cols": 3,
-          "items": [
-            {
-              "src": "assets/projects/lumgoals/post-1.jpg",
-              "size": [
-                900,
-                1125
-              ]
-            },
-            {
-              "src": "assets/projects/lumgoals/post-2.jpg",
-              "size": [
-                900,
-                1125
-              ]
-            },
-            {
-              "src": "assets/projects/lumgoals/post-3.jpg",
-              "size": [
-                900,
-                1125
-              ]
-            },
-            {
-              "src": "assets/projects/lumgoals/post-4.jpg",
-              "size": [
-                900,
-                1125
-              ]
-            },
-            {
-              "src": "assets/projects/lumgoals/post-5.jpg",
-              "size": [
-                900,
-                1125
-              ]
-            }
-          ],
-          "posts": true
-        },
-        {
-          "label": {
             "en": "Light theme",
             "es": "Tema claro"
           },
@@ -1663,7 +1618,8 @@
                 1042
               ]
             }
-          ]
+          ],
+          "phones": true
         },
         {
           "label": {
@@ -1707,7 +1663,54 @@
                 1039
               ]
             }
-          ]
+          ],
+          "phones": true,
+          "dark": true
+        },
+        {
+          "label": {
+            "en": "Social media posts",
+            "es": "Posts para redes"
+          },
+          "cols": 3,
+          "items": [
+            {
+              "src": "assets/projects/lumgoals/post-1.jpg",
+              "size": [
+                900,
+                1125
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/post-2.jpg",
+              "size": [
+                900,
+                1125
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/post-3.jpg",
+              "size": [
+                900,
+                1125
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/post-4.jpg",
+              "size": [
+                900,
+                1125
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/post-5.jpg",
+              "size": [
+                900,
+                1125
+              ]
+            }
+          ],
+          "posts": true
         }
       ],
       "handle": "lumgoals"

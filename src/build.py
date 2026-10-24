@@ -417,6 +417,11 @@ def build_detail(i):
             if s.get('posts'):
                 label = tb(s['label'], 'span', 'label s-label') if s.get('label') else ''
                 return f'{label}<div class="p-feed">{"".join(post_card(x, p["handle"], title, rel) for x in s["items"])}</div>'
+            if s.get('phones'):
+                label = tb(s['label'], 'span', 'label s-label') if s.get('label') else ''
+                phones = ''.join(f'<div class="phone" data-clip><div class="phone-screen" data-lightbox>'
+                                 f'<img src="{a(src(x["src"], rel))}" alt="{a(title)}" loading="lazy"></div></div>' for x in s['items'])
+                return f'{label}<div class="phones{" dark" if s.get("dark") else ""}">{phones}</div>'
             cells = ''.join(f'<div class="s-cell" style="aspect-ratio:{x["size"][0]}/{x["size"][1]}" data-lightbox data-clip>'
                             f'<img src="{a(src(x["src"], rel))}" alt="{a(title)}" loading="lazy"></div>' for x in s['items'])
             label = tb(s['label'], 'span', 'label s-label') if s.get('label') else ''
