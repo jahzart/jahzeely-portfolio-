@@ -77,7 +77,8 @@ SERVICES = [
     ('AI Lab', 'AI Lab', 'Photography, video and experiences created with AI.', 'Fotografía, video y experiencias creadas con IA.', 'lab'),
 ]
 
-FEATURED = ['asimov', 'curious-cafe', 'zen', 'period-app', 'kenzo', 'cryptomonitor']
+FEATURED = ['curious-cafe', 'zen', 'kenzo', 'asimov', 'period-app', 'cryptomonitor']
+FEATURED_BIG = 'asimov'  # ocupa 2 columnas x 2 filas en el mosaico
 TOOLS = ['Adobe Illustrator', 'Photoshop', 'InDesign', 'After Effects', 'Figma', 'Branding', 'Motion Graphics', 'AI Tools']
 FILTERS = [('all', 'All', 'Todos'), ('branding', 'Branding', 'Branding'), ('packaging', 'Packaging', 'Packaging'),
            ('digital', 'Digital', 'Digital'), ('illustration', 'Illustration', 'Ilustración'), ('logo', 'Logo', 'Logo')]
@@ -200,7 +201,7 @@ def build_home():
     works = []
     for s in FEATURED:
         p = BY_SLUG[s]
-        works.append(f'''<a class="work" href="{project_link(p, rel)}"><div class="work-img" data-parallax><img src="{a(p['cover'])}" alt="{a(p['title'])}" loading="lazy"></div><h3>{escape(p['title'])}</h3>{tb(p['category'])}</a>''')
+        works.append(f'''<a class="work{' big' if s == FEATURED_BIG else ''}" href="{project_link(p, rel)}"><div class="work-img" data-parallax><img src="{a(p['cover'])}" alt="{a(p['title'])}" loading="lazy"></div><h3>{escape(p['title'])}</h3>{tb(p['category'])}</a>''')
 
     lab_rows = [
         ('AI · Photography', 'AI · Fotografía', 'Generative Photography', 'Fotografía Generativa'),
