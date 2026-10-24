@@ -1851,7 +1851,8 @@
       "url_label": {
         "en": "Visit Lumgoals",
         "es": "Ir a Lumgoals"
-      }
+      },
+      "feature_img": "assets/projects/lumgoals/feature.jpg"
     },
     {
       "slug": "jahzart",
