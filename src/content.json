@@ -2889,6 +2889,177 @@
           3900
         ]
       ]
+    },
+    {
+      "slug": "garnier",
+      "title": "Garnier Hair Food Papaya",
+      "layout": "sections",
+      "filter": "ai",
+      "ai": [
+        "ai-photo",
+        "ai-video"
+      ],
+      "category": {
+        "en": "AI Photography & Video",
+        "es": "Fotografía y video con IA"
+      },
+      "year": "2026",
+      "client": "Garnier (concept)",
+      "behance": null,
+      "cover": "assets/covers/garnier.jpg",
+      "tools": [
+        "Magnific",
+        "Nano Banana Pro",
+        "Kling",
+        "Photoshop"
+      ],
+      "subtitle": {
+        "en": "A conceptual product campaign for Garnier Fructis Hair Food Papaya, created entirely with AI: studio photography and animated loops.",
+        "es": "Una campaña conceptual de producto para Garnier Fructis Hair Food Papaya, creada completamente con IA: fotografía de estudio y animaciones en loop."
+      },
+      "heading": {
+        "en": "Fresh papaya, studio style",
+        "es": "Papaya fresca, estilo estudio"
+      },
+      "paragraphs": [
+        {
+          "en": "I directed a full product shoot without a camera: a bold set with a mustard backdrop, red gingham cloth and a glossy orange podium, where the real papaya is the star next to the mask.",
+          "es": "Dirigí una sesión de producto completa sin cámara: un set atrevido con fondo mostaza, tela de cuadros vichy roja y un podio naranja brillante, donde la papaya real es protagonista junto a la mascarilla."
+        },
+        {
+          "en": "The series moves from the whole fruit to the product bursting out of it, the creamy texture, a levitation shot and a flat lay, and then comes alive in short animated loops for social media.",
+          "es": "La serie va de la fruta entera al producto saliendo de ella, la textura cremosa, una toma en levitación y un flat lay, y luego cobra vida en animaciones cortas en loop para redes."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Art direction",
+            "es": "Dirección de arte"
+          },
+          "desc": {
+            "en": "Set design, palette and shot list inspired by the product colors.",
+            "es": "Diseño del set, paleta y lista de tomas inspirada en los colores del producto."
+          }
+        },
+        {
+          "title": {
+            "en": "AI photography",
+            "es": "Fotografía con IA"
+          },
+          "desc": {
+            "en": "Image generation with the real product as reference, keeping the label faithful.",
+            "es": "Generación de imágenes con el producto real como referencia, manteniendo la etiqueta fiel."
+          }
+        },
+        {
+          "title": {
+            "en": "Animation",
+            "es": "Animación"
+          },
+          "desc": {
+            "en": "Seamless loops animated from the stills for reels and stories.",
+            "es": "Loops animados a partir de las fotos para reels y stories."
+          }
+        }
+      ],
+      "sections": [
+        {
+          "label": {
+            "en": "Photography",
+            "es": "Fotografía"
+          },
+          "cols": 4,
+          "items": [
+            {
+              "src": "assets/projects/garnier/papaya-1.jpg",
+              "size": [
+                1200,
+                1600
+              ]
+            },
+            {
+              "src": "assets/projects/garnier/podium.jpg",
+              "size": [
+                1200,
+                1607
+              ]
+            },
+            {
+              "src": "assets/projects/garnier/explosion.jpg",
+              "size": [
+                1200,
+                1600
+              ]
+            },
+            {
+              "src": "assets/projects/garnier/open.jpg",
+              "size": [
+                1200,
+                1607
+              ]
+            },
+            {
+              "src": "assets/projects/garnier/float.jpg",
+              "size": [
+                1200,
+                1607
+              ]
+            },
+            {
+              "src": "assets/projects/garnier/texture.jpg",
+              "size": [
+                1200,
+                1607
+              ]
+            },
+            {
+              "src": "assets/projects/garnier/flatlay.jpg",
+              "size": [
+                1200,
+                1607
+              ]
+            },
+            {
+              "src": "assets/projects/garnier/papaya-2.jpg",
+              "size": [
+                1200,
+                1600
+              ]
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Animations",
+            "es": "Animaciones"
+          },
+          "cols": 3,
+          "items": [
+            {
+              "src": "assets/projects/garnier/podium-loop.mp4",
+              "size": [
+                720,
+                1280
+              ]
+            },
+            {
+              "src": "assets/projects/garnier/explosion-loop.mp4",
+              "size": [
+                720,
+                1280
+              ]
+            },
+            {
+              "src": "assets/projects/garnier/texture-loop.mp4",
+              "size": [
+                720,
+                1280
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "external": []

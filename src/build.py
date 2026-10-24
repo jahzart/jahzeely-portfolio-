@@ -67,7 +67,7 @@ FEATURED = ['curious-cafe', 'zen', 'kenzo', 'asimov', 'period-app', 'cryptomonit
 FEATURED_BIG = 'asimov'  # ocupa 2 columnas x 2 filas en el mosaico
 TOOLS = ['Adobe Illustrator', 'Photoshop', 'InDesign', 'After Effects', 'Figma', 'Branding', 'Motion Graphics', 'AI Tools']
 FILTERS = [('all', 'All', 'Todos'), ('branding', 'Branding', 'Branding'), ('packaging', 'Packaging', 'Packaging'),
-           ('digital', 'Digital', 'Digital'), ('social', 'Social Media', 'Social Media'), ('illustration', 'Illustration', 'Ilustración'), ('logo', 'Logo', 'Logo')]
+           ('digital', 'Digital', 'Digital'), ('social', 'Social Media', 'Social Media'), ('illustration', 'Illustration', 'Ilustración'), ('logo', 'Logo', 'Logo'), ('ai', 'AI Lab', 'AI Lab')]
 
 
 # ---------- shared pieces ----------
@@ -189,12 +189,18 @@ def build_home():
         p = BY_SLUG[s]
         works.append(f'''<a class="work{' big' if s == FEATURED_BIG else ''}" href="{project_link(p, rel)}"><div class="work-img" data-parallax><img src="{a(src(p['cover'], rel))}" alt="{a(p['title'])}" loading="lazy"></div><h3>{escape(p['title'])}</h3>{tb(p['category'])}</a>''')
 
+    # A row links to the AI projects once it has at least one; otherwise it says "Coming soon"
     lab_rows = [
-        ('AI · Photography', 'AI · Fotografía', 'Generative Photography', 'Fotografía Generativa'),
-        ('AI · Video', 'AI · Video', 'Generative Video', 'Video Generativo'),
-        ('AI · Application', 'AI · Aplicación', 'AI Digital Experience', 'Experiencia Digital AI'),
+        ('AI · Photography', 'AI · Fotografía', 'Generative Photography', 'Fotografía Generativa', 'ai-photo'),
+        ('AI · Video', 'AI · Video', 'Generative Video', 'Video Generativo', 'ai-video'),
+        ('AI · Application', 'AI · Aplicación', 'AI Digital Experience', 'Experiencia Digital AI', 'ai-app'),
     ]
-    lab = ''.join(f'<div class="lab-row" data-reveal>{t(k, ke, "span", "kind")}{t(n, ne, "h3")}{t("Coming soon", "Próximamente", "span", "status")}</div>' for k, ke, n, ne in lab_rows)
+    def lab_row(k, ke, n, ne, tag):
+        if any(tag in p.get('ai', []) for p in PROJECTS):
+            return (f'<a class="lab-row" href="projects.html?filter=ai" data-reveal>{t(k, ke, "span", "kind")}{t(n, ne, "h3")}'
+                    f'<span class="status">{t("View projects", "Ver proyectos")} {ARROW_NE}</span></a>')
+        return f'<div class="lab-row" data-reveal>{t(k, ke, "span", "kind")}{t(n, ne, "h3")}{t("Coming soon", "Próximamente", "span", "status")}</div>'
+    lab = ''.join(lab_row(*r) for r in lab_rows)
     socials = ''.join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in SOCIALS)
     tools = ''.join(f'<li>+ {escape(x)}</li>' for x in TOOLS)
     star = ' <span style="color:var(--accent)">✦</span> '
@@ -434,6 +440,16 @@ def build_detail(i):
                 phones = ''.join(f'<div class="phone" data-clip><div class="phone-screen" data-lightbox>'
                                  f'<img src="{a(src(x["src"], rel))}" alt="{a(title)}" loading="lazy"></div></div>' for x in s['items'])
                 return f'{label}<div class="phones{" dark" if s.get("dark") else ""}">{phones}</div>'
+            def cell(x):
+                ratio = f'aspect-ratio:{x["size"][0]}/{x["size"][1]}'
+                if x['src'].endswith('.mp4'):
+                    return (f'<div class="s-cell s-video" style="{ratio}" data-clip><video src="{a(src(x["src"], rel))}" '
+                            f'poster="{a(src(x["src"][:-4] + ".jpg", rel))}" autoplay muted loop playsinline preload="metadata"></video></div>')
+                return (f'<div class="s-cell" style="{ratio}" data-lightbox data-clip>'
+                        f'<img src="{a(src(x["src"], rel))}" alt="{a(title)}" loading="lazy"></div>')
+            if any(x['src'].endswith('.mp4') for x in s['items']):
+                label = tb(s['label'], 'span', 'label s-label') if s.get('label') else ''
+                return f'{label}<div class="s-grid" style="--cols:{s["cols"]}">{"".join(cell(x) for x in s["items"])}</div>'
             cells = ''.join(f'<div class="s-cell" style="aspect-ratio:{x["size"][0]}/{x["size"][1]}" data-lightbox data-clip>'
                             f'<img src="{a(src(x["src"], rel))}" alt="{a(title)}" loading="lazy"></div>' for x in s['items'])
             label = tb(s['label'], 'span', 'label s-label') if s.get('label') else ''
