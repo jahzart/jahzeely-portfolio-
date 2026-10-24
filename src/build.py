@@ -56,7 +56,7 @@ SVC_IMG = ['branding', 'logos', 'social', 'packaging', 'illustration', 'flyers',
 SERVICES = [
     ('Branding', 'Branding', 'Complete visual identities that communicate the essence of each brand.', 'Identidades visuales completas que comunican la esencia de cada marca.', 'filter:branding'),
     ('Logos', 'Logos', 'Unique and memorable symbols with strategic intention.', 'Símbolos únicos y memorables con intención estratégica.', 'filter:logo'),
-    ('Social Media', 'Social Media', 'Visual content for social networks that connects and converts.', 'Contenido visual para redes que conecta y convierte.', 'behance'),
+    ('Social Media', 'Social Media', 'Visual content for social networks that connects and converts.', 'Contenido visual para redes que conecta y convierte.', 'filter:social'),
     ('Packaging', 'Packaging', 'Packages that live on shelves and in consumer memory.', 'Empaques que viven en estantes y en la memoria.', 'filter:packaging'),
     ('Illustration', 'Ilustración', 'Original visual worlds, traditional and digital.', 'Mundos visuales propios, tradicional y digital.', 'filter:illustration'),
     ('Flyers', 'Flyers', 'Print and digital pieces with immediate visual impact.', 'Piezas impresas y digitales con impacto visual inmediato.', 'behance'),
@@ -68,7 +68,7 @@ FEATURED = ['curious-cafe', 'zen', 'kenzo', 'asimov', 'period-app', 'cryptomonit
 FEATURED_BIG = 'asimov'  # ocupa 2 columnas x 2 filas en el mosaico
 TOOLS = ['Adobe Illustrator', 'Photoshop', 'InDesign', 'After Effects', 'Figma', 'Branding', 'Motion Graphics', 'AI Tools']
 FILTERS = [('all', 'All', 'Todos'), ('branding', 'Branding', 'Branding'), ('packaging', 'Packaging', 'Packaging'),
-           ('digital', 'Digital', 'Digital'), ('illustration', 'Illustration', 'Ilustración'), ('logo', 'Logo', 'Logo')]
+           ('digital', 'Digital', 'Digital'), ('social', 'Social Media', 'Social Media'), ('illustration', 'Illustration', 'Ilustración'), ('logo', 'Logo', 'Logo')]
 
 
 # ---------- shared pieces ----------
@@ -370,14 +370,8 @@ def gallery_rows(items, alt, rel):
     return html
 
 
-def build_detail(i):
-    rel = '../'
-    p = PROJECTS[i]
-    nxt = PROJECTS[(i + 1) % len(PROJECTS)]
+def detail_gallery(p, title, rel):
     g = p['gallery']
-    title = p['title']
-    paras = p['paragraphs']
-
     # The cover leads the page, so the whole Behance gallery goes below it
     items = list(zip(g, p['gallery_sizes']))
     first = gallery_rows(items[:3], title, rel)
@@ -386,6 +380,24 @@ def build_detail(i):
     # with small text that must stay readable
     solo = lambda key: ''.join(img_block(src(x['src'], rel), title) for x in p.get(key, []))
     rest = solo('after_process') + rest + solo('gallery_end')
+
+    return first, rest
+
+
+def build_detail(i):
+    rel = '../'
+    p = PROJECTS[i]
+    nxt = PROJECTS[(i + 1) % len(PROJECTS)]
+    title = p['title']
+    paras = p['paragraphs']
+
+    if p.get('layout') == 'social':
+        # Social projects: feed posts in an Instagram-like grid, stories in a row
+        cell = lambda x, cls: f'<div class="{cls}" data-lightbox data-clip><img src="{a(src(x["src"], rel))}" alt="{a(title)}" loading="lazy"></div>'
+        first = f'<div class="s-feed">{"".join(cell(x, "s-post") for x in p["posts"])}</div>'
+        rest = f'<div class="s-stories">{"".join(cell(x, "s-story") for x in p["stories"])}</div>' if p['stories'] else ''
+    else:
+        first, rest = detail_gallery(p, title, rel)
 
     tools = ''.join(f'<li>+ {escape(x)}</li>' for x in p['tools'])
     steps = ''.join(f'<li>{n}. <b>{tb(s["title"])}.</b> {tb(s["desc"])}</li>' for n, s in enumerate(p['process'], 1))
@@ -407,7 +419,7 @@ def build_detail(i):
       <div><dt>{t('Service', 'Servicio')}</dt><dd>{tb(p['category'])}</dd></div>
       <div><dt>{t('Year', 'Año')}</dt><dd>{escape(p['year'])}</dd></div>
     </dl>
-    <a href="{a(p['behance'])}" target="_blank" rel="noopener">{t('View on Behance', 'Ver en Behance')}{ARROW_NE}</a>
+    {f'<a href="{a(p["behance"])}" target="_blank" rel="noopener">' + t('View on Behance', 'Ver en Behance') + ARROW_NE + '</a>' if p.get('behance') else ''}
   </div>
 </section>
 <section class="wrap d-sec">

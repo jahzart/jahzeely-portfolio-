@@ -982,6 +982,418 @@
           925
         ]
       ]
+    },
+    {
+      "slug": "vmc-corp",
+      "title": "VMC Corp",
+      "layout": "social",
+      "filter": "social",
+      "category": {
+        "en": "Social Media",
+        "es": "Social Media"
+      },
+      "year": "2022 - 2024",
+      "client": "VMC Corp",
+      "behance": null,
+      "cover": "assets/covers/vmc-corp.jpg",
+      "tools": [
+        "Photoshop",
+        "Illustrator",
+        "Canva"
+      ],
+      "subtitle": {
+        "en": "Social media content for VMC Corp, an immigration services firm helping Latino families navigate US processes.",
+        "es": "Contenido para redes sociales de VMC Corp, una firma de servicios migratorios que acompaña a familias latinas en sus trámites en Estados Unidos."
+      },
+      "heading": {
+        "en": "Clear information, built on trust",
+        "es": "Información clara que genera confianza"
+      },
+      "paragraphs": [
+        {
+          "en": "Three years of posts and stories that explain complex immigration topics, from asylum and work permits to TPS and citizenship, in a warm and approachable way.",
+          "es": "Tres años de posts y stories que explican temas migratorios complejos, desde asilo y permisos de trabajo hasta TPS y ciudadanía, de forma cercana y fácil de entender."
+        },
+        {
+          "en": "A consistent visual system of blush pink, beige and navy with elegant serif headlines gives the brand a professional, human voice and makes every post instantly recognizable in the feed.",
+          "es": "Un sistema visual constante en rosa empolvado, beige y azul marino con titulares en serif elegante le da a la marca una voz profesional y humana, y hace que cada post se reconozca al instante en el feed."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Content planning",
+            "es": "Planificación de contenido"
+          },
+          "desc": {
+            "en": "Monthly calendar of topics based on the latest immigration news and the questions clients ask the most.",
+            "es": "Calendario mensual de temas basado en las novedades migratorias y las preguntas más frecuentes de los clientes."
+          }
+        },
+        {
+          "title": {
+            "en": "Visual system",
+            "es": "Sistema visual"
+          },
+          "desc": {
+            "en": "Templates for posts, carousels and stories with a fixed palette, typography and contact footer.",
+            "es": "Plantillas para posts, carruseles y stories con paleta, tipografía y pie de contacto fijos."
+          }
+        },
+        {
+          "title": {
+            "en": "Design and delivery",
+            "es": "Diseño y entrega"
+          },
+          "desc": {
+            "en": "Weekly design of feed posts and their story versions, ready to publish.",
+            "es": "Diseño semanal de posts para el feed y sus versiones en story, listos para publicar."
+          }
+        }
+      ],
+      "posts": [
+        {
+          "src": "assets/projects/vmc/post-01.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-02.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-03.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-04.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-05.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-06.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-07.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-08.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-09.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-10.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-11.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-12.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-13.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-14.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-15.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-16.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-17.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-18.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-19.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-20.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-21.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-22.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-23.jpg",
+          "size": [
+            900,
+            900
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/post-24.jpg",
+          "size": [
+            900,
+            900
+          ]
+        }
+      ],
+      "stories": [
+        {
+          "src": "assets/projects/vmc/storie-01.jpg",
+          "size": [
+            720,
+            1280
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/storie-02.jpg",
+          "size": [
+            720,
+            1280
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/storie-03.jpg",
+          "size": [
+            720,
+            1280
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/storie-04.jpg",
+          "size": [
+            720,
+            1280
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/storie-05.jpg",
+          "size": [
+            720,
+            1280
+          ]
+        },
+        {
+          "src": "assets/projects/vmc/storie-06.jpg",
+          "size": [
+            720,
+            1280
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "high-end-boat",
+      "title": "High-End Boat Detailing",
+      "layout": "social",
+      "filter": "social",
+      "category": {
+        "en": "Social Media",
+        "es": "Social Media"
+      },
+      "year": "2023",
+      "client": "High-End Boat Detailing LLC",
+      "behance": null,
+      "cover": "assets/covers/high-end-boat.jpg",
+      "tools": [
+        "Photoshop",
+        "Illustrator",
+        "Canva"
+      ],
+      "subtitle": {
+        "en": "Social media content for High-End Boat Detailing, a premium boat cleaning and detailing service in Puerto Rico.",
+        "es": "Contenido para redes sociales de High-End Boat Detailing, un servicio premium de limpieza y detallado de embarcaciones en Puerto Rico."
+      },
+      "heading": {
+        "en": "Every detail, every moment",
+        "es": "Cada detalle, en cada momento"
+      },
+      "paragraphs": [
+        {
+          "en": "Posts and stories that sell a premium service through the sea itself: aerial yacht shots, turquoise water and a bold voice that invites owners to book their next wash.",
+          "es": "Posts y stories que venden un servicio premium a través del propio mar: tomas aéreas de yates, agua turquesa y una voz directa que invita a los dueños a reservar su próximo lavado."
+        },
+        {
+          "en": "A navy, turquoise and gold palette with a strong geometric typeface and outlined repeated headlines gives the brand a luxurious, nautical look.",
+          "es": "Una paleta azul marino, turquesa y dorado con una tipografía geométrica fuerte y titulares repetidos en contorno le dan a la marca un aire náutico y de lujo."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Brand voice",
+            "es": "Voz de marca"
+          },
+          "desc": {
+            "en": "Short, confident headlines in English and Spanish focused on shine, care and trust.",
+            "es": "Titulares cortos y seguros en inglés y español centrados en brillo, cuidado y confianza."
+          }
+        },
+        {
+          "title": {
+            "en": "Art direction",
+            "es": "Dirección de arte"
+          },
+          "desc": {
+            "en": "Selection of aerial and lifestyle photography that puts the boats and the sea at the center.",
+            "es": "Selección de fotografía aérea y lifestyle que pone las embarcaciones y el mar en el centro."
+          }
+        },
+        {
+          "title": {
+            "en": "Templates",
+            "es": "Plantillas"
+          },
+          "desc": {
+            "en": "Feed and story layouts with the logo, the gold accent and a clear call to action.",
+            "es": "Diseños para feed y stories con el logo, el acento dorado y un llamado a la acción claro."
+          }
+        }
+      ],
+      "posts": [
+        {
+          "src": "assets/projects/high-end-boat/post-01.jpg",
+          "size": [
+            900,
+            900
+          ],
+          "kind": "post"
+        },
+        {
+          "src": "assets/projects/high-end-boat/post-02.jpg",
+          "size": [
+            900,
+            900
+          ],
+          "kind": "post"
+        },
+        {
+          "src": "assets/projects/high-end-boat/post-03.jpg",
+          "size": [
+            900,
+            900
+          ],
+          "kind": "post"
+        },
+        {
+          "src": "assets/projects/high-end-boat/post-04.jpg",
+          "size": [
+            900,
+            900
+          ],
+          "kind": "post"
+        }
+      ],
+      "stories": [
+        {
+          "src": "assets/projects/high-end-boat/story-05.jpg",
+          "size": [
+            720,
+            1280
+          ],
+          "kind": "story"
+        },
+        {
+          "src": "assets/projects/high-end-boat/story-06.jpg",
+          "size": [
+            720,
+            1280
+          ],
+          "kind": "story"
+        },
+        {
+          "src": "assets/projects/high-end-boat/story-07.jpg",
+          "size": [
+            720,
+            1280
+          ],
+          "kind": "story"
+        }
+      ]
     }
   ],
   "external": [
