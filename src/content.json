@@ -3217,6 +3217,156 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "boj",
+      "title": "Beauty of Joseon Green Plum",
+      "layout": "sections",
+      "filter": "ai",
+      "ai": [
+        "ai-photo",
+        "ai-video"
+      ],
+      "category": {
+        "en": "AI Photography & Video",
+        "es": "Fotografía y video con IA"
+      },
+      "year": "2026",
+      "client": "Beauty of Joseon (concept)",
+      "behance": null,
+      "cover": "assets/covers/boj.jpg",
+      "tools": [
+        "Magnific",
+        "Nano Banana Pro",
+        "Kling",
+        "Photoshop"
+      ],
+      "subtitle": {
+        "en": "A conceptual campaign for the Beauty of Joseon Green Plum Refreshing Cleanser, created with AI: fresh, clean photography and animated loops.",
+        "es": "Una campaña conceptual para el Green Plum Refreshing Cleanser de Beauty of Joseon, creada con IA: fotografía fresca y limpia y animaciones en loop."
+      },
+      "heading": {
+        "en": "A fresh start, every day",
+        "es": "Un comienzo fresco, cada día"
+      },
+      "paragraphs": [
+        {
+          "en": "A light, low pH gel cleanser with 24% plum water and 3% mung bean seed extract that gently removes impurities while keeping the skin balanced and comfortable, without tightness.",
+          "es": "Un limpiador en gel ligero y de pH bajo, con 24 % de agua de ciruela y 3 % de extracto de semillas de judía mungo, que elimina suavemente las impurezas y mantiene la piel equilibrada y cómoda, sin tirantez."
+        },
+        {
+          "en": "The art direction follows the product itself: mint water, transparent gel, foam and fresh green plums, combined in five looks, from a spa bathroom and rippling water to a cobalt still life with fluted glass and orchids, and a scientific key visual with molecules.",
+          "es": "La dirección de arte nace del propio producto: agua menta, gel transparente, espuma y ciruelas verdes frescas, combinados en cinco looks, desde un baño tipo spa y agua en movimiento hasta un bodegón cobalto con vidrio acanalado y orquídeas, y un key visual científico con moléculas."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Moodboard",
+            "es": "Moodboard"
+          },
+          "desc": {
+            "en": "References of water, gel textures and minimal still lifes.",
+            "es": "Referencias de agua, texturas de gel y bodegones minimalistas."
+          }
+        },
+        {
+          "title": {
+            "en": "AI photography",
+            "es": "Fotografía con IA"
+          },
+          "desc": {
+            "en": "Five photorealistic looks with the real bottle and label as reference.",
+            "es": "Cinco looks fotorrealistas con la botella y la etiqueta reales como referencia."
+          }
+        },
+        {
+          "title": {
+            "en": "Animation",
+            "es": "Animación"
+          },
+          "desc": {
+            "en": "Vertical loops for reels and stories.",
+            "es": "Loops verticales para reels y stories."
+          }
+        }
+      ],
+      "sections": [
+        {
+          "label": {
+            "en": "Photography",
+            "es": "Fotografía"
+          },
+          "cols": 3,
+          "items": [
+            {
+              "src": "assets/projects/boj/bath.jpg",
+              "size": [
+                1200,
+                1489
+              ]
+            },
+            {
+              "src": "assets/projects/boj/water.jpg",
+              "size": [
+                1200,
+                1489
+              ]
+            },
+            {
+              "src": "assets/projects/boj/orchid.jpg",
+              "size": [
+                1200,
+                1489
+              ]
+            },
+            {
+              "src": "assets/projects/boj/mol.jpg",
+              "size": [
+                1200,
+                1489
+              ]
+            },
+            {
+              "src": "assets/projects/boj/foam.jpg",
+              "size": [
+                1200,
+                1489
+              ]
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Animations",
+            "es": "Animaciones"
+          },
+          "cols": 3,
+          "items": [
+            {
+              "src": "assets/projects/boj/water-loop.mp4",
+              "size": [
+                720,
+                1280
+              ]
+            },
+            {
+              "src": "assets/projects/boj/mol-loop.mp4",
+              "size": [
+                720,
+                1280
+              ]
+            },
+            {
+              "src": "assets/projects/boj/orchid-loop.mp4",
+              "size": [
+                720,
+                1280
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "external": []
