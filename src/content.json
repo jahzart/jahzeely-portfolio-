@@ -1936,6 +1936,13 @@
           "url": "meetfrens.app",
           "items": [
             {
+              "src": "assets/projects/frens/desktop-0.jpg",
+              "size": [
+                1600,
+                1000
+              ]
+            },
+            {
               "src": "assets/projects/frens/desktop-1.jpg",
               "size": [
                 1600,
@@ -1951,13 +1958,6 @@
             },
             {
               "src": "assets/projects/frens/desktop-3.jpg",
-              "size": [
-                1600,
-                1000
-              ]
-            },
-            {
-              "src": "assets/projects/frens/desktop-4.jpg",
               "size": [
                 1600,
                 1000
@@ -2066,7 +2066,7 @@
       "gallery": [
         "assets/projects/roverpass/logo-dark.jpg",
         "assets/projects/roverpass/logo-light.jpg",
-        "assets/projects/roverpass/billboard-2.jpg",
+        "assets/projects/roverpass/merch.jpg",
         "assets/projects/roverpass/icon-coral.jpg",
         "assets/projects/roverpass/icon-navy.jpg",
         "assets/projects/roverpass/stacked-coral.jpg",
@@ -2082,8 +2082,8 @@
           1080
         ],
         [
-          1500,
-          1000
+          1920,
+          1433
         ],
         [
           1080,
@@ -2234,6 +2234,460 @@
           1024
         ]
       ]
+    },
+    {
+      "slug": "volantina",
+      "title": "Volantina Voladora",
+      "filter": "illustration",
+      "category": {
+        "en": "Illustration & Book",
+        "es": "Ilustración y libro"
+      },
+      "year": "2025",
+      "client": "Jahzeely Pérez",
+      "behance": null,
+      "url": "https://www.amazon.es/dp/B0G388HRJT",
+      "url_label": {
+        "en": "Buy on Amazon",
+        "es": "Comprar en Amazon"
+      },
+      "cover": "assets/covers/volantina.jpg",
+      "tools": [
+        "Procreate",
+        "Photoshop",
+        "Illustrator"
+      ],
+      "subtitle": {
+        "en": "My children's book: I wrote it, illustrated it and designed it, from the cover to the inside pages. Available on Amazon.",
+        "es": "Mi libro infantil: lo escribí, lo ilustré y lo diseñé, desde la portada hasta las páginas interiores. Disponible en Amazon."
+      },
+      "heading": {
+        "en": "A magical and moving adventure",
+        "es": "Una aventura mágica y emotiva"
+      },
+      "paragraphs": [
+        {
+          "en": "When a kite escapes into the wind, Volantina flies too. Her journey takes her to a place where memories come to life and the sky seems to hold answers. Among books that breathe and creatures that defy forgetting, she meets Leo, a boy who is also looking for his way. Together they discover that sometimes the real flight begins when you stop running and dare to look inside yourself.",
+          "es": "Cuando una cometa escapa al viento, Volantina también vuela. Su viaje la lleva a un lugar donde los recuerdos cobran vida y el cielo parece guardar respuestas. Entre libros que respiran y criaturas que desafían el olvido, conoce a Leo, un niño que también busca su camino. Juntos descubrirán que a veces el verdadero vuelo comienza cuando dejas de huir y te atreves a mirar dentro de ti."
+        },
+        {
+          "en": "The cover combines a deep violet night with golden art nouveau ornaments, and the inside illustrations use soft watercolor to follow Volantina from the city to the enchanted forest.",
+          "es": "La portada combina una noche violeta profunda con ornamentos dorados estilo art nouveau, y las ilustraciones interiores usan acuarela suave para seguir a Volantina desde la ciudad hasta el bosque encantado."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Story",
+            "es": "Historia"
+          },
+          "desc": {
+            "en": "Writing the story and planning each scene of the book.",
+            "es": "Escritura del cuento y planificación de cada escena del libro."
+          }
+        },
+        {
+          "title": {
+            "en": "Illustration",
+            "es": "Ilustración"
+          },
+          "desc": {
+            "en": "Character design for Volantina, Leo and the forest creatures, plus every inside illustration.",
+            "es": "Diseño de personajes de Volantina, Leo y las criaturas del bosque, y cada ilustración interior."
+          }
+        },
+        {
+          "title": {
+            "en": "Editorial design",
+            "es": "Diseño editorial"
+          },
+          "desc": {
+            "en": "Cover, back cover, typography, layout and the Amazon A+ content.",
+            "es": "Portada, contraportada, tipografía, maquetación y el contenido A+ de Amazon."
+          }
+        }
+      ],
+      "gallery": [
+        "assets/projects/volantina/cover-spread.jpg",
+        "assets/projects/volantina/banner.jpg",
+        "assets/projects/volantina/01.jpg",
+        "assets/projects/volantina/02.jpg",
+        "assets/projects/volantina/03.jpg",
+        "assets/projects/volantina/04.jpg",
+        "assets/projects/volantina/05.jpg",
+        "assets/projects/volantina/06.jpg",
+        "assets/projects/volantina/07.jpg",
+        "assets/projects/volantina/08.jpg",
+        "assets/projects/volantina/book-table.jpg"
+      ],
+      "gallery_sizes": [
+        [
+          1920,
+          1409
+        ],
+        [
+          970,
+          600
+        ],
+        [
+          1000,
+          1490
+        ],
+        [
+          1000,
+          1490
+        ],
+        [
+          1000,
+          1490
+        ],
+        [
+          1000,
+          1490
+        ],
+        [
+          1000,
+          1490
+        ],
+        [
+          1000,
+          1490
+        ],
+        [
+          1000,
+          1490
+        ],
+        [
+          1000,
+          1490
+        ],
+        [
+          1920,
+          1071
+        ]
+      ]
+    },
+    {
+      "slug": "celestial",
+      "title": "Celestial Cards",
+      "layout": "cards",
+      "filter": "illustration",
+      "category": {
+        "en": "Illustration",
+        "es": "Ilustración"
+      },
+      "year": "2022",
+      "client": "Jahzart",
+      "behance": "https://www.behance.net/gallery/142601487/Neptuno-Card",
+      "cover": "assets/covers/neptuno.jpg",
+      "tools": [
+        "Procreate",
+        "Photoshop",
+        "Illustrator"
+      ],
+      "subtitle": {
+        "en": "A collection of ten illustrated cards inspired by the Sun, the Moon and the planets, in an art nouveau style, created as NFTs.",
+        "es": "Una colección de diez cartas ilustradas inspiradas en el Sol, la Luna y los planetas, en estilo art nouveau, creada como NFTs."
+      },
+      "heading": {
+        "en": "The solar system as characters",
+        "es": "El sistema solar como personajes"
+      },
+      "paragraphs": [
+        {
+          "en": "Each card gives a celestial body its own personality: a portrait on the front and an ornamental back built from the symbol of that planet, with colors and patterns that tell its story.",
+          "es": "Cada carta le da a un astro su propia personalidad: un retrato en el frente y un reverso ornamental construido a partir del símbolo de ese planeta, con colores y patrones que cuentan su historia."
+        },
+        {
+          "en": "Hover over each card to flip it and see its back.",
+          "es": "Pasa el cursor sobre cada carta para darle la vuelta y ver su reverso."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Moodboard",
+            "es": "Moodboard"
+          },
+          "desc": {
+            "en": "Research on art nouveau, astrology and planetary symbols.",
+            "es": "Investigación de art nouveau, astrología y símbolos planetarios."
+          }
+        },
+        {
+          "title": {
+            "en": "Characters",
+            "es": "Personajes"
+          },
+          "desc": {
+            "en": "A portrait for every celestial body with its own palette.",
+            "es": "Un retrato para cada astro con su propia paleta."
+          }
+        },
+        {
+          "title": {
+            "en": "Card backs",
+            "es": "Reversos"
+          },
+          "desc": {
+            "en": "Symmetrical ornaments designed from each planet symbol.",
+            "es": "Ornamentos simétricos diseñados a partir del símbolo de cada planeta."
+          }
+        }
+      ],
+      "cards": [
+        {
+          "front": "assets/projects/celestial/sol-front.jpg",
+          "back": "assets/projects/celestial/sol-back.jpg",
+          "name": "Sol"
+        },
+        {
+          "front": "assets/projects/celestial/mercurio-front.jpg",
+          "back": "assets/projects/celestial/mercurio-back.jpg",
+          "name": "Mercurio"
+        },
+        {
+          "front": "assets/projects/celestial/venus-front.jpg",
+          "back": "assets/projects/celestial/venus-back.jpg",
+          "name": "Venus"
+        },
+        {
+          "front": "assets/projects/celestial/tierra-front.jpg",
+          "back": "assets/projects/celestial/tierra-back.jpg",
+          "name": "Tierra"
+        },
+        {
+          "front": "assets/projects/celestial/luna-front.jpg",
+          "back": "assets/projects/celestial/luna-back.jpg",
+          "name": "Luna"
+        },
+        {
+          "front": "assets/projects/celestial/marte-front.jpg",
+          "back": "assets/projects/celestial/marte-back.jpg",
+          "name": "Marte"
+        },
+        {
+          "front": "assets/projects/celestial/jupiter-front.jpg",
+          "back": "assets/projects/celestial/jupiter-back.jpg",
+          "name": "Júpiter"
+        },
+        {
+          "front": "assets/projects/celestial/saturno-front.jpg",
+          "back": "assets/projects/celestial/saturno-back.jpg",
+          "name": "Saturno"
+        },
+        {
+          "front": "assets/projects/celestial/urano-front.jpg",
+          "back": "assets/projects/celestial/urano-back.jpg",
+          "name": "Urano"
+        },
+        {
+          "front": "assets/projects/celestial/neptuno-front.jpg",
+          "back": "assets/projects/celestial/neptuno-back.jpg",
+          "name": "Neptuno"
+        }
+      ]
+    },
+    {
+      "slug": "jahzart-art",
+      "title": "Jahzart Lettering Art",
+      "filter": "illustration",
+      "category": {
+        "en": "Illustration",
+        "es": "Ilustración"
+      },
+      "year": "2023",
+      "client": "Jahzart",
+      "behance": null,
+      "cover": "assets/covers/jahzart-art.jpg",
+      "tools": [
+        "Procreate",
+        "Photoshop"
+      ],
+      "subtitle": {
+        "en": "A series of illustrations with groovy lettering and positive messages, created for prints and merch under my brand Jahzart.",
+        "es": "Una serie de ilustraciones con lettering groovy y mensajes positivos, creada para prints y merch bajo mi marca Jahzart."
+      },
+      "heading": {
+        "en": "Good vibes, hand drawn",
+        "es": "Buenas vibras, dibujadas a mano"
+      },
+      "paragraphs": [
+        {
+          "en": "Each piece pairs a hand-drawn illustration with warped, retro lettering: a lucky cat, a crystal ball, a butterfly, a girl with daisies and boots full of flowers.",
+          "es": "Cada pieza combina una ilustración hecha a mano con un lettering retro y deformado: un gato de la suerte, una bola de cristal, una mariposa, una chica con margaritas y unas botas llenas de flores."
+        },
+        {
+          "en": "Saturated purples, pinks and greens with paper textures give the series a nostalgic, 70s-inspired look that works great on prints, stickers and apparel.",
+          "es": "Morados, rosas y verdes saturados con texturas de papel le dan a la serie un aire nostálgico inspirado en los 70, ideal para prints, stickers y ropa."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Messages",
+            "es": "Mensajes"
+          },
+          "desc": {
+            "en": "Choosing short, positive phrases for each piece.",
+            "es": "Selección de frases cortas y positivas para cada pieza."
+          }
+        },
+        {
+          "title": {
+            "en": "Illustration",
+            "es": "Ilustración"
+          },
+          "desc": {
+            "en": "Hand drawing and coloring with paper textures.",
+            "es": "Dibujo y color a mano con texturas de papel."
+          }
+        },
+        {
+          "title": {
+            "en": "Lettering",
+            "es": "Lettering"
+          },
+          "desc": {
+            "en": "Warped retro lettering composed around each illustration.",
+            "es": "Lettering retro deformado compuesto alrededor de cada ilustración."
+          }
+        }
+      ],
+      "gallery": [
+        "assets/projects/jahzart-art/mock-war-boots.jpg",
+        "assets/projects/jahzart-art/war-boots.jpg",
+        "assets/projects/jahzart-art/mock-feeling-lucky.jpg",
+        "assets/projects/jahzart-art/feeling-lucky.jpg",
+        "assets/projects/jahzart-art/mock-la-magia.jpg",
+        "assets/projects/jahzart-art/la-magia.jpg",
+        "assets/projects/jahzart-art/mock-mariposa.jpg",
+        "assets/projects/jahzart-art/mariposa.jpg",
+        "assets/projects/jahzart-art/mock-peace-love.jpg",
+        "assets/projects/jahzart-art/peace-love.jpg"
+      ],
+      "gallery_sizes": [
+        [
+          1600,
+          1200
+        ],
+        [
+          1200,
+          1200
+        ],
+        [
+          1600,
+          1200
+        ],
+        [
+          1200,
+          1200
+        ],
+        [
+          1600,
+          1200
+        ],
+        [
+          1080,
+          1080
+        ],
+        [
+          1600,
+          1200
+        ],
+        [
+          1200,
+          1200
+        ],
+        [
+          1600,
+          1200
+        ],
+        [
+          1200,
+          1200
+        ]
+      ]
+    },
+    {
+      "slug": "caracas",
+      "title": "Bienvenidos a Caracas",
+      "filter": "illustration",
+      "category": {
+        "en": "Illustration",
+        "es": "Ilustración"
+      },
+      "year": "2024",
+      "client": "Caracas",
+      "behance": null,
+      "cover": "assets/covers/caracas.jpg",
+      "tools": [
+        "Illustrator"
+      ],
+      "subtitle": {
+        "en": "Panoramic illustration for a large-format banner that welcomes people to Caracas.",
+        "es": "Ilustración panorámica para una gigantografía que da la bienvenida a Caracas."
+      },
+      "heading": {
+        "en": "A city full of characters",
+        "es": "Una ciudad llena de personajes"
+      },
+      "paragraphs": [
+        {
+          "en": "Buildings, landmarks and patterns of Caracas turn into playful characters with big eyes and bright colors, in a single continuous scene designed to be read from the street.",
+          "es": "Edificios, íconos y patrones de Caracas se convierten en personajes divertidos con ojos grandes y colores vivos, en una sola escena continua pensada para leerse desde la calle."
+        },
+        {
+          "en": "A pop palette of pink, sky blue, red and yellow with thick outlines keeps the artwork bold and legible at a very large size.",
+          "es": "Una paleta pop de rosa, celeste, rojo y amarillo con contornos gruesos mantiene la pieza fuerte y legible en gran formato."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Concept",
+            "es": "Concepto"
+          },
+          "desc": {
+            "en": "City landmarks and local textures as the main characters.",
+            "es": "Íconos de la ciudad y texturas locales como protagonistas."
+          }
+        },
+        {
+          "title": {
+            "en": "Illustration",
+            "es": "Ilustración"
+          },
+          "desc": {
+            "en": "Vector illustration in one continuous panoramic composition.",
+            "es": "Ilustración vectorial en una sola composición panorámica continua."
+          }
+        },
+        {
+          "title": {
+            "en": "Large format",
+            "es": "Gran formato"
+          },
+          "desc": {
+            "en": "Preparation of the artwork for printing at building scale.",
+            "es": "Preparación del arte para imprimir a escala de edificio."
+          }
+        }
+      ],
+      "gallery": [
+        "assets/projects/caracas/mural.jpg",
+        "assets/projects/caracas/facade.jpg"
+      ],
+      "gallery_sizes": [
+        [
+          2400,
+          493
+        ],
+        [
+          1920,
+          1071
+        ]
+      ]
     }
   ],
   "external": [
@@ -2256,16 +2710,6 @@
       "filter": "illustration",
       "url": "https://www.behance.net/gallery/146038337/Pack-de-10-iconos-de-gatitos",
       "cover": "assets/covers/gatitos.jpg"
-    },
-    {
-      "title": "Neptuno Card",
-      "category": {
-        "en": "Branding",
-        "es": "Branding"
-      },
-      "filter": "branding",
-      "url": "https://www.behance.net/gallery/142601487/Neptuno-Card",
-      "cover": "assets/covers/neptuno.jpg"
     }
   ]
 }

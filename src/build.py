@@ -410,6 +410,14 @@ def build_detail(i):
         cell = lambda x, cls: f'<div class="{cls}" data-lightbox data-clip><img src="{a(src(x["src"], rel))}" alt="{a(title)}" loading="lazy"></div>'
         first = f'<div class="p-feed">{"".join(post_card(x, p["handle"], title, rel) for x in p["posts"])}</div>'
         rest = f'<div class="p-feed p-stories">{"".join(post_card(x, p["handle"], title, rel) for x in p["stories"])}</div>' if p['stories'] else ''
+    elif p.get('layout') == 'cards':
+        # Two-sided cards: front portrait, hover (or tap) flips to the ornamental back
+        flip = ''.join(f'<figure class="flip" tabindex="0" data-clip><div class="flip-in">'
+                       f'<img class="flip-f" src="{a(src(x["front"], rel))}" alt="{a(x["name"])}" loading="lazy">'
+                       f'<img class="flip-b" src="{a(src(x["back"], rel))}" alt="" loading="lazy"></div>'
+                       f'<figcaption>{escape(x["name"])}</figcaption></figure>' for x in p['cards'])
+        first = f'<div class="flips">{flip}</div>'
+        rest = ''
     elif p.get('layout') == 'sections':
         # Labelled grids, each cell keeps the image's own proportions
         def section(s):
@@ -456,7 +464,7 @@ def build_detail(i):
       <div><dt>{t('Year', 'Año')}</dt><dd>{escape(p['year'])}</dd></div>
     </dl>
     {f'<a href="{a(p["behance"])}" target="_blank" rel="noopener">' + t('View on Behance', 'Ver en Behance') + ARROW_NE + '</a>' if p.get('behance') else ''}
-    {f'<a href="{a(p["url"])}" target="_blank" rel="noopener">' + t('Visit website', 'Ver sitio web') + ARROW_NE + '</a>' if p.get('url') else ''}
+    {f'<a href="{a(p["url"])}" target="_blank" rel="noopener">' + (tb(p['url_label']) if p.get('url_label') else t('Visit website', 'Ver sitio web')) + ARROW_NE + '</a>' if p.get('url') else ''}
   </div>
 </section>
 <section class="wrap d-sec">
