@@ -229,6 +229,9 @@ def build_home():
     {rows}
   </div>
 </section>'''
+    title_html = t('About me', 'Sobre mí', 'span', 'label') + t("Designer with an artist's soul", 'Diseñadora con alma de artista', 'h2', '', ' data-split')
+    about_title = f'<div class="about-title">{title_html}</div>' if exp else ''
+    about_title_inline = '' if exp else title_html
     socials = ''.join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in SOCIALS)
     tools = ''.join(f'<li>+ {escape(x)}</li>' for x in TOOLS)
     star = ' <span style="color:var(--accent)">✦</span> '
@@ -277,11 +280,11 @@ def build_home():
 <section class="big-type" aria-hidden="true"><div class="track">{big}</div></section>
 
 <section class="about" id="about">
-  <div class="wrap about-grid">
+  <div class="wrap about-grid{" no-stats" if exp else ""}">
     {stats_block}
+    {about_title}
     <div class="about-copy">
-      {t('About me', 'Sobre mí', 'span', 'label')}
-      {t("Designer with an artist's soul", 'Diseñadora con alma de artista', 'h2', '', ' data-split')}
+      {about_title_inline}
       {t("I'm Jahzeely Sinai, a passionate graphic designer with years of experience creating visual identities that endure. My work connects strategic branding, illustration and technology.", 'Soy Jahzeely Sinai, diseñadora gráfica apasionada con años de experiencia creando identidades visuales que perduran. Mi trabajo conecta branding estratégico, ilustración y tecnología.', 'p', '', ' data-reveal')}
       {t('Currently based in Spain, I work with international clients on projects ranging from full corporate identities to experiences powered by artificial intelligence.', 'Actualmente basada en España, trabajo con clientes internacionales en proyectos que van desde identidades corporativas hasta experiencias potenciadas con inteligencia artificial.', 'p', '', ' data-reveal')}
       <ul class="tools" data-reveal>{tools}</ul>

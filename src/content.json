@@ -3737,5 +3737,114 @@
       ]
     }
   ],
-  "external": []
+  "external": [],
+  "experience": [
+    {
+      "period": {
+        "en": "Sep 2023 - Present",
+        "es": "Sept 2023 - Actualidad"
+      },
+      "role": {
+        "en": "Brand Director",
+        "es": "Directora de marca"
+      },
+      "type": {
+        "en": "Full time",
+        "es": "Jornada completa"
+      },
+      "company": "RoverPass",
+      "current": true
+    },
+    {
+      "period": {
+        "en": "Sep 2023 - Present",
+        "es": "Sept 2023 - Actualidad"
+      },
+      "role": {
+        "en": "Graphic Designer",
+        "es": "Diseñadora gráfica"
+      },
+      "type": {
+        "en": "Part time",
+        "es": "Jornada parcial"
+      },
+      "company": "Parikh Financial",
+      "current": true
+    },
+    {
+      "period": {
+        "en": "Sep 2023 - Apr 2025",
+        "es": "Sept 2023 - Abr 2025"
+      },
+      "role": {
+        "en": "Graphic Designer",
+        "es": "Diseñadora gráfica"
+      },
+      "type": {
+        "en": "Full time",
+        "es": "Jornada completa"
+      },
+      "company": "Code Galaxy"
+    },
+    {
+      "period": {
+        "en": "Feb 2023 - May 2023",
+        "es": "Feb 2023 - May 2023"
+      },
+      "role": {
+        "en": "Graphic Designer",
+        "es": "Diseñadora gráfica"
+      },
+      "type": {
+        "en": "Full time",
+        "es": "Jornada completa"
+      },
+      "company": "designforce.co"
+    },
+    {
+      "period": {
+        "en": "Sep 2021 - Mar 2022",
+        "es": "Sept 2021 - Mar 2022"
+      },
+      "role": {
+        "en": "Social Media Designer",
+        "es": "Diseñadora de redes sociales"
+      },
+      "type": {
+        "en": "Full time",
+        "es": "Jornada completa"
+      },
+      "company": "Vilo Technologies"
+    },
+    {
+      "period": {
+        "en": "Mar 2020 - Dec 2022",
+        "es": "Mar 2020 - Dic 2022"
+      },
+      "role": {
+        "en": "Packaging Designer",
+        "es": "Diseñadora de packaging"
+      },
+      "type": {
+        "en": "Freelance",
+        "es": "Autónoma"
+      },
+      "company": "Siker Arg"
+    },
+    {
+      "period": {
+        "en": "Sep 2018 - Jun 2021",
+        "es": "Sept 2018 - Jun 2021"
+      },
+      "role": {
+        "en": "UI Designer",
+        "es": "Diseñadora UI"
+      },
+      "type": {
+        "en": "Part time",
+        "es": "Jornada parcial"
+      },
+      "company": "Mipto Tech"
+    }
+  ]
 }

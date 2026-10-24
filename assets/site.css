@@ -189,7 +189,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .stat b { display: block; font-family: var(--font-display); font-weight: 400; font-size: 96px; line-height: 1; }
 .stat span { color: var(--muted); font-size: 15px; }
 .about-copy .label { display: block; margin-bottom: 40px; }
-.about-copy h2 { font-size: clamp(32px, 3.4vw, 50px); font-weight: 400; line-height: 1.12; letter-spacing: -.01em; }
+.about-copy h2, .about-title h2 { font-size: clamp(32px, 3.4vw, 50px); font-weight: 400; line-height: 1.12; letter-spacing: -.01em; }
 .about-copy p { font-size: clamp(20px, 1.7vw, 24px); line-height: 1.45; color: var(--muted); margin-top: 28px; }
 .tools { display: flex; flex-wrap: wrap; gap: 6px 26px; margin: 36px 0 48px; font-size: 17px; }
 
@@ -448,13 +448,16 @@ a.lab-row:hover h3 { color: var(--accent); }
 .xp { padding: 0 0 140px; }
 .xp-head, .xp-row { display: grid; grid-template-columns: 1fr 1.4fr 1fr; column-gap: 40px; }
 .xp-head { padding: 0 24px 18px; font-size: 14px; color: var(--muted); border-bottom: 1px solid var(--ink); }
-.xp-row { padding: 30px 24px 46px; border-bottom: 1px solid var(--ink); transition: background .3s; }
+.xp-row { padding: 20px 24px 22px; border-bottom: 1px solid var(--ink); transition: background .3s; }
 .xp-row:hover { background: var(--soft); }
 .xp-row.now { background: #e9efff; }
 .xp-time, .xp-co { font-size: 18px; font-weight: 600; }
-.xp-role h3 { font-family: "Playfair Display", Georgia, serif; font-style: italic; font-weight: 400; font-size: clamp(26px, 2.4vw, 36px); line-height: 1.1; }
-.xp-role span { display: block; margin-top: 6px; font-size: 15px; color: var(--muted); font-weight: 600; }
+.xp-role h3 { font-family: "Playfair Display", Georgia, serif; font-style: italic; font-weight: 400; font-size: clamp(22px, 2vw, 30px); line-height: 1.1; }
+.xp-role span { display: block; margin-top: 2px; font-size: 15px; color: var(--muted); font-weight: 600; }
 @media (max-width: 760px) {
   .xp-head { display: none; }
   .xp-row { grid-template-columns: 1fr; row-gap: 8px; padding: 22px 12px 28px; }
 }
+/* About without stats: title left, copy right */
+.about-grid.no-stats .about-title .label { display: block; margin-bottom: 40px; }
+.about-grid.no-stats .about-copy p:first-child { margin-top: 0; }
