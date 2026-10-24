@@ -182,7 +182,7 @@
   if (heroTitle) {
     var heroSplit = window.SplitText.create(heroTitle.querySelectorAll('.line'), { type: 'chars', mask: 'chars' });
     intro.from(heroSplit.chars, { yPercent: 105, duration: 1, stagger: .035, ease: 'expo.out' })
-      .from(heroTitle.querySelectorAll('.arrow'), { yPercent: 105, duration: 1, ease: 'expo.out' }, '<.15')
+      .from('.hero-photo', { opacity: 0, y: 60, duration: 1.4, ease: 'expo.out' }, .1)
       .from('.hero-bar', { opacity: 0, duration: .8 }, .2)
       .from('.hero-intro', { opacity: 0, y: 30, duration: 1, ease: 'expo.out' }, .5);
   }

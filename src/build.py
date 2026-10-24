@@ -45,32 +45,13 @@ def tb(d, tag='span', cls='', attrs=''):
 
 
 # ---------- icons ----------
-ARROW_UP = '<svg viewBox="0 0 100 130" aria-hidden="true"><path d="M50 8 L50 122 M10 50 L50 8 L90 50" fill="none" stroke="currentColor" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 ARROW_NE = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 12.5 12.5 3.5M5 3.5h7.5V11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 ARROW_TOP = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 ARROW_DOWN = '<svg viewBox="0 0 120 140" aria-hidden="true"><path d="M60 4v128M8 80l52 52 52-52" fill="none" stroke="currentColor" stroke-width="5"/></svg>'
 SPARK = '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0c1.6 10.6 8.4 18.4 20 20-11.6 1.6-18.4 9.4-20 20-1.6-10.6-8.4-18.4-20-20C11.6 18.4 18.4 10.6 20 0z" fill="currentColor"/></svg>'
 
-# Orange geometric artwork for each work category (original shapes)
-O = 'var(--accent)'
-SVC_ART = [
-    # Branding: circle with a quarter missing + square
-    f'<svg viewBox="0 0 240 240"><path d="M120 20a100 100 0 1 0 100 100H120z" fill="{O}"/><rect x="132" y="8" width="100" height="100" fill="{O}" opacity=".55"/></svg>',
-    # Logos: ring and core
-    f'<svg viewBox="0 0 240 240"><circle cx="120" cy="120" r="92" fill="none" stroke="{O}" stroke-width="34"/><circle cx="120" cy="120" r="30" fill="{O}"/></svg>',
-    # Social media: grid of tiles
-    f'<svg viewBox="0 0 240 240"><rect x="16" y="16" width="96" height="96" rx="22" fill="{O}"/><circle cx="176" cy="64" r="48" fill="{O}"/><rect x="16" y="128" width="96" height="96" rx="48" fill="{O}" opacity=".55"/><rect x="128" y="128" width="96" height="96" rx="22" fill="{O}"/></svg>',
-    # Packaging: isometric box
-    f'<svg viewBox="0 0 240 240"><path d="M120 18 214 66 120 114 26 66z" fill="{O}" opacity=".55"/><path d="M26 66v108l94 48V114z" fill="{O}"/><path d="M214 66v108l-94 48V114z" fill="{O}" opacity=".8"/></svg>',
-    # Illustration: rising sun with rays
-    f'<svg viewBox="0 0 240 240"><path d="M30 190a90 90 0 0 1 180 0z" fill="{O}"/><g stroke="{O}" stroke-width="12" stroke-linecap="round"><path d="M120 20v40M40 60l26 26M200 60l-26 26M8 130h34M232 130h-34"/></g><rect x="8" y="206" width="224" height="16" fill="{O}" opacity=".55"/></svg>',
-    # Flyers: stacked sheets
-    f'<svg viewBox="0 0 240 240"><rect x="58" y="24" width="124" height="168" fill="{O}" opacity=".35" transform="rotate(-14 120 108)"/><rect x="58" y="36" width="124" height="168" fill="{O}" opacity=".6" transform="rotate(-5 120 120)"/><rect x="58" y="50" width="124" height="168" fill="{O}" transform="rotate(5 120 134)"/></svg>',
-    # Websites & apps: window with blocks
-    f'<svg viewBox="0 0 240 240"><rect x="14" y="32" width="212" height="176" rx="14" fill="none" stroke="{O}" stroke-width="14"/><path d="M14 74h212" stroke="{O}" stroke-width="14"/><rect x="38" y="96" width="78" height="88" fill="{O}"/><rect x="132" y="96" width="70" height="36" fill="{O}" opacity=".55"/><rect x="132" y="148" width="70" height="36" fill="{O}" opacity=".55"/></svg>',
-    # AI lab: sparkles
-    f'<svg viewBox="0 0 240 240"><path d="M100 20c8 52 30 76 80 84-50 8-72 32-80 84-8-52-30-76-80-84 50-8 72-32 80-84z" fill="{O}"/><path d="M190 140c4 26 15 38 40 42-25 4-36 16-40 42-4-26-15-38-40-42 25-4 36-16 40-42z" fill="{O}" opacity=".55"/></svg>',
-]
+# Generated photo for each work category, in SERVICES order
+SVC_IMG = ['branding', 'logos', 'social', 'packaging', 'illustration', 'flyers', 'web', 'ai']
 
 SERVICES = [
     ('Branding', 'Branding', 'Complete visual identities that communicate the essence of each brand.', 'Identidades visuales completas que comunican la esencia de cada marca.', 'filter:branding'),
@@ -201,7 +182,7 @@ def build_home():
         svc_rows.append(f'''<article class="svc-row" style="z-index:{i + 1}">
   <div class="svc-num">S/ {i + 1:03d}</div>
   <div class="svc-body">{t(en, es, 'h3')}{t(den, des, 'p')}<a class="pill" href="{href}"{ext}>{btn}</a></div>
-  <div class="svc-art" aria-hidden="true">{SVC_ART[i]}</div>
+  <div class="svc-art" data-clip><img src="assets/categories/{SVC_IMG[i]}.jpg" alt="{a(en)}" loading="lazy"></div>
 </article>''')
 
     works = []
@@ -228,9 +209,10 @@ def build_home():
 <section class="hero on-dark">
   <div class="wrap hero-inner">
     <div class="hero-bar">{lang_switch()}{burger()}</div>
+    <div class="hero-photo" aria-hidden="true"><img src="assets/jahzeely.webp" alt="" width="900" height="1205"></div>
     <h1 class="hero-title" aria-label="Jahzeely Sinai">
       <span class="line" aria-hidden="true">Jahzeely</span>
-      <span class="line" aria-hidden="true">S<span class="arrow">{ARROW_UP}</span>nai</span>
+      <span class="line" aria-hidden="true">Sinai</span>
     </h1>
     <div class="hero-intro">
       {t('Design that connects and is never forgotten.', 'Diseño que conecta y no se olvida.', 'h2')}
