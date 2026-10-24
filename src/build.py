@@ -395,6 +395,10 @@ def build_detail(i):
     items = list(zip(g, p['gallery_sizes']))
     first = gallery_rows(items[:3], title, rel)
     rest = gallery_rows(items[3:], title, rel)
+    # Optional images that always get a full row to themselves, e.g. boards
+    # with small text that must stay readable
+    solo = lambda key: ''.join(img_block(src(x['src'], rel), title) for x in p.get(key, []))
+    rest = solo('after_process') + rest + solo('gallery_end')
 
     tools = ''.join(f'<li>+ {escape(x)}</li>' for x in p['tools'])
     steps = ''.join(f'<li>{n}. <b>{tb(s["title"])}.</b> {tb(s["desc"])}</li>' for n, s in enumerate(p['process'], 1))

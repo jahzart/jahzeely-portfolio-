@@ -252,6 +252,15 @@
           1400,
           792
         ]
+      ],
+      "after_process": [
+        {
+          "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/8ad29e170495063.645e99e3cfd63.jpg",
+          "size": [
+            1400,
+            2026
+          ]
+        }
       ]
     },
     {
@@ -623,6 +632,15 @@
           1400,
           1721
         ]
+      ],
+      "gallery_end": [
+        {
+          "src": "assets/gallery/zen-stand.jpg",
+          "size": [
+            1920,
+            1071
+          ]
+        }
       ]
     },
     {
