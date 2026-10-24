@@ -188,7 +188,7 @@ def build_home():
             href, ext = BEHANCE, ' target="_blank" rel="noopener"'
             btn = '<span>Behance</span>' + ARROW_NE
         svc_rows.append(f'''<article class="svc-row" style="z-index:{i + 1}">
-  <div class="svc-num">S/ {i + 1:03d}</div>
+  <div class="svc-num">{i + 1:02d}</div>
   <div class="svc-body">{t(en, es, 'h3')}{t(den, des, 'p')}<a class="pill" href="{href}"{ext}>{btn}</a></div>
   <div class="svc-art" data-clip><img src="{bust(f'assets/categories/{SVC_IMG[i]}.jpg')}" alt="{a(en)}" loading="lazy"></div>
 </article>''')
