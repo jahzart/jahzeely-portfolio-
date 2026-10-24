@@ -1,0 +1,684 @@
+{
+  "projects": [
+    {
+      "slug": "asimov",
+      "title": "Asimov Branding",
+      "subtitle": {
+        "en": "Complete visual identity for a forward-thinking technology brand inspired by science fiction and rational thinking.",
+        "es": "Identidad visual completa para una marca tecnológica de vanguardia inspirada en la ciencia ficción y el pensamiento racional."
+      },
+      "category": {
+        "en": "Branding",
+        "es": "Branding"
+      },
+      "year": "2024",
+      "client": "Asimov",
+      "heading": {
+        "en": "A brand built for the future",
+        "es": "Una marca construida para el futuro"
+      },
+      "paragraphs": [
+        {
+          "en": "Asimov is a technology brand named after the legendary science fiction author Isaac Asimov. The challenge was to create a visual identity that felt both intellectual and modern, a brand that could live in the world of cutting-edge tech while honoring the heritage of rational, forward-thinking ideas.",
+          "es": "Asimov es una marca tecnológica nombrada en honor al legendario autor de ciencia ficción Isaac Asimov. El reto fue crear una identidad visual que se sintiera tanto intelectual como moderna, una marca que pudiera vivir en el mundo tech más avanzado mientras honra el legado del pensamiento racional."
+        },
+        {
+          "en": "The final identity balances geometric precision with a sense of motion and discovery. A restrained color palette, custom typography treatment and a mark that references both the letter 'A' and a stylized orbit make this brand immediately recognizable.",
+          "es": "La identidad final equilibra precisión geométrica con sentido del movimiento y descubrimiento. Una paleta de color contenida, tratamiento tipográfico personalizado y un símbolo que referencia la letra 'A' y una órbita estilizada hacen que esta marca sea inmediatamente reconocible."
+        }
+      ],
+      "tools": [
+        "Adobe Illustrator",
+        "Photoshop",
+        "InDesign"
+      ],
+      "behance": "https://www.behance.net/gallery/175818569/Asimov-Branding",
+      "gallery": [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3fde6e175818569.64b9ea4ca8e23.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/source/c86ef6175818569.64b9ea4cb0f25.gif",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6a68a6175818569.64b9ea4cb2baa.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7a3203175818569.64b9ea4cabbe9.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/96a25b175818569.64b9ea4caed4a.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a15685175818569.64b9ea4cae18d.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4d2dd7175818569.64b9ea4cac79a.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/514b74175818569.64b9ea4cb1f8d.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/91495a175818569.64b9ea4caf8f1.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/548162175818569.64b9ea4cb04b2.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f088d5175818569.64b9ea4b73233.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/89defe175818569.64b9ea4b71ea2.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e22d64175818569.64b9ea4b7432f.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c1574e175818569.64b9ea4cad354.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1986ca175818569.64b9ea4cab018.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8c6cc4175818569.64b9ea4ca9d1c.jpg"
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Research & Strategy",
+            "es": "Investigación y Estrategia"
+          },
+          "desc": {
+            "en": "Deep dive into the brand's values, target audience and competitive landscape to establish a clear creative direction.",
+            "es": "Análisis profundo de los valores de la marca, audiencia objetivo y panorama competitivo para establecer una dirección creativa clara."
+          }
+        },
+        {
+          "title": {
+            "en": "Concept Development",
+            "es": "Desarrollo de Concepto"
+          },
+          "desc": {
+            "en": "Exploration of multiple visual concepts through sketches, moodboards and initial digital explorations.",
+            "es": "Exploración de múltiples conceptos visuales a través de bocetos, moodboards y primeras exploraciones digitales."
+          }
+        },
+        {
+          "title": {
+            "en": "Refinement & Delivery",
+            "es": "Refinamiento y Entrega"
+          },
+          "desc": {
+            "en": "Final polish of chosen concept, building the full brand system with typography, color, iconography and usage guidelines.",
+            "es": "Pulido final del concepto elegido, construcción del sistema de marca completo con tipografía, color, iconografía y guías de uso."
+          }
+        }
+      ],
+      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/569f88175818569.Y3JvcCw1ODM0LDQ1NjMsMCww.jpg",
+      "filter": "branding"
+    },
+    {
+      "slug": "curious-cafe",
+      "title": "Curious Cafe Branding",
+      "subtitle": {
+        "en": "A playful and warm brand identity for an independent café that celebrates curiosity, creativity and great coffee.",
+        "es": "Una identidad de marca juguetona y cálida para un café independiente que celebra la curiosidad, la creatividad y el buen café."
+      },
+      "category": {
+        "en": "Branding",
+        "es": "Branding"
+      },
+      "year": "2023",
+      "client": "Curious",
+      "heading": {
+        "en": "Where curiosity meets coffee",
+        "es": "Donde la curiosidad se encuentra con el café"
+      },
+      "paragraphs": [
+        {
+          "en": "Curious Cafe needed a brand that felt approachable yet distinctive, a visual identity that would make customers feel invited to explore, linger and discover. The concept was built around the idea of curiosity as a daily ritual.",
+          "es": "Curious Cafe necesitaba una marca que se sintiera accesible pero distintiva, una identidad visual que hiciera que los clientes se sintieran invitados a explorar y descubrir. El concepto se construyó alrededor de la idea de la curiosidad como ritual diario."
+        },
+        {
+          "en": "Warm earthy tones, hand-drawn illustration elements and a friendly logotype create a brand that feels both artisanal and modern. Every touchpoint, from packaging to social media, was considered as part of a cohesive world.",
+          "es": "Tonos cálidos terrosos, elementos de ilustración a mano y un logotipo amigable crean una marca que se siente artesanal y moderna. Cada punto de contacto fue considerado como parte de un mundo cohesivo."
+        }
+      ],
+      "tools": [
+        "Adobe Illustrator",
+        "Photoshop",
+        "After Effects"
+      ],
+      "behance": "https://www.behance.net/gallery/170495063/Curious-Cafe-Branding",
+      "gallery": [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/5f7e2d170495063.645e99e3ce75e.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/8ad29e170495063.645e99e3cfd63.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/7e8917170495063.645e99e3d12c7.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/165fe2170495063.645e99e3cd434.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/7c1870170495063.645e99e3cbea9.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/91982f170495063.645e99e3cab52.jpg"
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Brand Discovery",
+            "es": "Descubrimiento de Marca"
+          },
+          "desc": {
+            "en": "Workshop sessions with the client to uncover the café's personality, values and what makes it truly unique.",
+            "es": "Sesiones de trabajo con el cliente para descubrir la personalidad, valores y lo que hace única a la cafetería."
+          }
+        },
+        {
+          "title": {
+            "en": "Visual Identity Design",
+            "es": "Diseño de Identidad Visual"
+          },
+          "desc": {
+            "en": "Logo design, color palette, typography selection and illustration style that captures the playful spirit.",
+            "es": "Diseño de logotipo, paleta de color, selección tipográfica y estilo de ilustración."
+          }
+        },
+        {
+          "title": {
+            "en": "Brand Application",
+            "es": "Aplicación de Marca"
+          },
+          "desc": {
+            "en": "Full rollout across packaging, menus, cups, social media templates and signage guidelines.",
+            "es": "Implementación completa en packaging, menús, vasos, plantillas para redes sociales y señalización."
+          }
+        }
+      ],
+      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/0ed9d9170495063.Y3JvcCwxMDEyLDc5MiwzMDAsMA.jpg",
+      "filter": "branding"
+    },
+    {
+      "slug": "period-app",
+      "title": "Period App",
+      "subtitle": {
+        "en": "A compassionate and intuitive UI design for a women's health tracking app focused on clarity, empathy and ease of use.",
+        "es": "Diseño UI compasivo e intuitivo para una app de seguimiento de salud femenina enfocado en claridad, empatía y facilidad de uso."
+      },
+      "category": {
+        "en": "UI / App Design",
+        "es": "UI / Diseño de App"
+      },
+      "year": "2022",
+      "client": "Period",
+      "heading": {
+        "en": "Health tech with a human touch",
+        "es": "Tecnología de salud con toque humano"
+      },
+      "paragraphs": [
+        {
+          "en": "Period App is a menstrual health tracking application designed with empathy at its core. The brief was to create an interface that felt safe, non-clinical and genuinely supportive, a digital companion that women would want to open every day.",
+          "es": "Period App es una aplicación de seguimiento de salud menstrual diseñada con la empatía como núcleo. El brief era crear una interfaz que se sintiera segura, no clínica y genuinamente de apoyo, una compañera digital que las mujeres quisieran abrir cada día."
+        },
+        {
+          "en": "The design system prioritizes soft rounded forms, a warm but clean color palette and micro-interactions that feel encouraging rather than alarming. Every screen was user-tested and refined to ensure the experience felt natural and trustworthy.",
+          "es": "El sistema de diseño prioriza formas redondeadas suaves, una paleta de color cálida pero limpia y micro-interacciones que se sienten alentadoras. Cada pantalla fue probada con usuarios y refinada para asegurar que la experiencia se sintiera natural y confiable."
+        }
+      ],
+      "tools": [
+        "Figma",
+        "Photoshop",
+        "Illustrator"
+      ],
+      "behance": "https://www.behance.net/gallery/154142047/Period-App",
+      "gallery": [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/b630b9154142047.633cb0963bcdc.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/48e40b154142047.633cb0963efee.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/d9af01154142047.633cb09640910.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/574885154142047.633cb0963e313.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/00b93b154142047.633cb0963fccc.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/52e386154142047.633cb0963d6cb.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/75500c154142047.633cb0963cabe.png"
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "User Research",
+            "es": "Investigación de Usuarios"
+          },
+          "desc": {
+            "en": "Surveys, interviews and competitive analysis to understand what women actually need from a health tracking app.",
+            "es": "Encuestas, entrevistas y análisis competitivo para entender qué necesitan las mujeres de una app de salud."
+          }
+        },
+        {
+          "title": {
+            "en": "Wireframes & Prototyping",
+            "es": "Wireframes y Prototipado"
+          },
+          "desc": {
+            "en": "Low and high-fidelity wireframes, interactive prototypes and user flow mapping for key app screens.",
+            "es": "Wireframes de baja y alta fidelidad, prototipos interactivos y mapeo de flujos de usuario."
+          }
+        },
+        {
+          "title": {
+            "en": "UI Design & Testing",
+            "es": "Diseño UI y Pruebas"
+          },
+          "desc": {
+            "en": "Full visual design system, component library, and iterative user testing to validate design decisions.",
+            "es": "Sistema de diseño visual completo, librería de componentes y pruebas iterativas con usuarios."
+          }
+        }
+      ],
+      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/924bfa154142047.Y3JvcCw4MDgsNjMyLDAsMA.png",
+      "filter": "digital"
+    },
+    {
+      "slug": "siker",
+      "title": "Siker Nutrition",
+      "subtitle": {
+        "en": "Bold and energetic brand identity for a sports nutrition company targeting active, performance-driven individuals.",
+        "es": "Identidad de marca audaz y enérgica para una empresa de nutrición deportiva dirigida a individuos activos y orientados al rendimiento."
+      },
+      "category": {
+        "en": "Branding",
+        "es": "Branding"
+      },
+      "year": "2021",
+      "client": "Siker",
+      "heading": {
+        "en": "Fuel your performance",
+        "es": "Combustible para tu rendimiento"
+      },
+      "paragraphs": [
+        {
+          "en": "Siker Nutrition needed a brand that could stand out in the intensely competitive sports nutrition market. The identity had to communicate power, scientific credibility and modern lifestyle appeal simultaneously.",
+          "es": "Siker Nutrition necesitaba una marca que pudiera destacar en el intensamente competitivo mercado de nutrición deportiva. La identidad debía comunicar poder, credibilidad científica y atractivo de estilo de vida moderno."
+        },
+        {
+          "en": "The result is a high-contrast, bold visual system with a custom wordmark, dynamic motion graphics and packaging that commands attention on shelf and screen alike.",
+          "es": "El resultado es un sistema visual de alto contraste y audaz con un wordmark personalizado, motion graphics dinámicos y packaging que llama la atención tanto en estantería como en pantalla."
+        }
+      ],
+      "tools": [
+        "Adobe Illustrator",
+        "Photoshop",
+        "After Effects"
+      ],
+      "behance": "https://www.behance.net/gallery/117202311/Siker-Nutrition-Diseno-de-Identidad",
+      "gallery": [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/44e8e8117202311.60711e9a3c22f.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8802f2117202311.60711e9a4025f.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/source/11dd5b117202311.60711e9a40a27.gif",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f6d7ac117202311.60711e9a3ecd1.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/source/f859da117202311.60711e9a3a845.gif",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/acbaa7117202311.60711e9a3b524.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/41e98e117202311.60711e9a3aefc.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9f893b117202311.60711e9a3db11.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/disp/1a0506117202311.60711e99040a1.gif",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/disp/5f22cb117202311.60711e9903c05.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/disp/1344af117202311.60711e996c5e6.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8da4ae117202311.60711e9a3fbfe.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/22b5ea117202311.60711e9a3e122.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/eb190d117202311.60711e9a3c9f8.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/912831117202311.60711e9a3e7f8.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/source/a4dd43117202311.60711e9a3d001.gif",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d40bf3117202311.60711e9a3ba98.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/source/015758117202311.60711e9a3d4f1.gif"
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Market Research",
+            "es": "Investigación de Mercado"
+          },
+          "desc": {
+            "en": "Analysis of the sports nutrition category, target athlete profiles and shelf positioning strategy.",
+            "es": "Análisis de la categoría de nutrición deportiva, perfiles de atletas objetivo y estrategia de posicionamiento."
+          }
+        },
+        {
+          "title": {
+            "en": "Identity & Motion",
+            "es": "Identidad y Motion"
+          },
+          "desc": {
+            "en": "Wordmark design, visual system and motion graphics that bring the brand to life across digital channels.",
+            "es": "Diseño del wordmark, sistema visual y motion graphics que dan vida a la marca en canales digitales."
+          }
+        },
+        {
+          "title": {
+            "en": "Packaging Design",
+            "es": "Diseño de Packaging"
+          },
+          "desc": {
+            "en": "Product line packaging for multiple supplements with strong shelf presence and consistent brand language.",
+            "es": "Packaging de línea de productos para múltiples suplementos con fuerte presencia en estantería."
+          }
+        }
+      ],
+      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/b50935117202311.Y3JvcCw4MTAsNjM0LDMwMCww.gif",
+      "filter": "branding"
+    },
+    {
+      "slug": "zen",
+      "title": "Zen Infusiones Naturales",
+      "subtitle": {
+        "en": "Serene and minimal packaging design for a natural herbal tea brand that celebrates nature, balance and wellbeing.",
+        "es": "Diseño de packaging sereno y minimalista para una marca de infusiones naturales que celebra la naturaleza, el equilibrio y el bienestar."
+      },
+      "category": {
+        "en": "Packaging",
+        "es": "Packaging"
+      },
+      "year": "2023",
+      "client": "Zen",
+      "heading": {
+        "en": "Packaging that breathes tranquility",
+        "es": "Packaging que respira tranquilidad"
+      },
+      "paragraphs": [
+        {
+          "en": "Zen Infusiones Naturales required a packaging system that communicated purity, naturalness and calm the moment it was seen. Each blend needed its own visual identity while maintaining family cohesion across the line.",
+          "es": "Zen Infusiones Naturales requería un sistema de packaging que comunicara pureza, naturalidad y calma desde el primer vistazo. Cada mezcla necesitaba su propia identidad visual mientras mantenía cohesión de familia en toda la línea."
+        },
+        {
+          "en": "Botanical illustration, soft earthy typography and a restrained color coding system allow customers to intuitively navigate the range. The result is packaging that feels as calming to hold as the tea is to drink.",
+          "es": "Ilustración botánica, tipografía terrosa suave y un sistema de codificación de color contenido permiten a los clientes navegar la gama de forma intuitiva. El resultado es un packaging tan relajante de sostener como el té de beber."
+        }
+      ],
+      "tools": [
+        "Adobe Illustrator",
+        "Photoshop",
+        "InDesign"
+      ],
+      "behance": "https://www.behance.net/gallery/163562345/Zen-Infusiones-naturales",
+      "gallery": [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/ded410163562345.63e7e94d00b79.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/6f9fa1163562345.63e7e94d01d96.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/be5998163562345.63e7e94d03734.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/fcdf4f163562345.63e7e94d02a6a.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f10291163562345.63e7eecb27e6c.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/eb1a14163562345.63e7eecb28d8c.png"
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Research & Moodboard",
+            "es": "Investigación y Moodboard"
+          },
+          "desc": {
+            "en": "Research into natural wellness brands, botanical illustration traditions and retail shelf positioning.",
+            "es": "Investigación de marcas de bienestar natural, tradiciones de ilustración botánica y posicionamiento en estantería."
+          }
+        },
+        {
+          "title": {
+            "en": "Illustration & System",
+            "es": "Ilustración y Sistema"
+          },
+          "desc": {
+            "en": "Custom botanical illustrations for each blend, color system development and typographic hierarchy.",
+            "es": "Ilustraciones botánicas personalizadas para cada mezcla, sistema de color y jerarquía tipográfica."
+          }
+        },
+        {
+          "title": {
+            "en": "Dielines & Print",
+            "es": "Troqueles e Impresión"
+          },
+          "desc": {
+            "en": "Technical packaging dielines, print-ready files and supplier specifications for production.",
+            "es": "Troqueles técnicos de packaging, archivos para impresión y especificaciones de proveedores."
+          }
+        }
+      ],
+      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/9a0fe6163562345.Y3JvcCwxMzE2LDEwMzAsNDIsMA.png",
+      "filter": "packaging"
+    },
+    {
+      "slug": "kenzo",
+      "title": "Kenzo Galletas",
+      "subtitle": {
+        "en": "Warm and appetizing packaging for Kenzo's oat and flaxseed cookie line, balancing health-forward messaging with visual appeal.",
+        "es": "Packaging cálido y apetecible para la línea de galletas de avena y linaza de Kenzo, equilibrando mensajes saludables con atractivo visual."
+      },
+      "category": {
+        "en": "Packaging",
+        "es": "Packaging"
+      },
+      "year": "2022",
+      "client": "Kenzo",
+      "heading": {
+        "en": "Healthy snacking, beautifully packaged",
+        "es": "Snacks saludables, bellamente empaquetados"
+      },
+      "paragraphs": [
+        {
+          "en": "Kenzo needed packaging that could compete on shelf while clearly communicating its natural, wholesome ingredients. The challenge was to make 'healthy' look genuinely delicious, not clinical or bland.",
+          "es": "Kenzo necesitaba un packaging que pudiera competir en estantería mientras comunicaba claramente sus ingredientes naturales. El reto era hacer que 'saludable' se viera genuinamente delicioso, no clínico ni aburrido."
+        },
+        {
+          "en": "The solution uses warm golden tones, an organic logotype with friendly curves and close-up product photography that makes the cookies look irresistible. The nutritional information hierarchy was also redesigned for immediate readability.",
+          "es": "La solución usa tonos dorados cálidos, un logotipo orgánico con curvas amigables y fotografía del producto que hace las galletas irresistibles. La jerarquía de información nutricional también fue rediseñada para lectura inmediata."
+        }
+      ],
+      "tools": [
+        "Adobe Illustrator",
+        "Photoshop",
+        "InDesign"
+      ],
+      "behance": "https://www.behance.net/gallery/154626239/Kenzo-Galletas-de-avena-y-linaza",
+      "gallery": [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/461db9154626239.6345b151b7921.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/6d6e7c154626239.6345a9cd2a8fb.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/1c6012154626239.6345b1501f868.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e10c5b154626239.6345b1501ecf2.gif",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/fe5c2f154626239.6345a9cd2bdb0.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/48b9ff154626239.6345b151b89ab.png"
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Competitive Analysis",
+            "es": "Análisis Competitivo"
+          },
+          "desc": {
+            "en": "Shelf audit of health food packaging, identifying gaps and opportunities in the oat snack category.",
+            "es": "Auditoría de estantería de packaging de alimentos saludables, identificando oportunidades en snacks de avena."
+          }
+        },
+        {
+          "title": {
+            "en": "Concept & Visual Language",
+            "es": "Concepto y Lenguaje Visual"
+          },
+          "desc": {
+            "en": "Development of the warm, artisanal visual language including color, type and illustration style.",
+            "es": "Desarrollo del lenguaje visual cálido y artesanal incluyendo color, tipografía e ilustración."
+          }
+        },
+        {
+          "title": {
+            "en": "Packaging Production",
+            "es": "Producción de Packaging"
+          },
+          "desc": {
+            "en": "Final dielines for multiple SKUs, print specifications and quality control for manufacturing.",
+            "es": "Troqueles finales para múltiples SKUs, especificaciones de impresión y control de calidad."
+          }
+        }
+      ],
+      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/f2a3b5154626239.Y3JvcCwxNDAwLDEwOTUsMCw2NDg.png",
+      "filter": "packaging"
+    },
+    {
+      "slug": "cryptomonitor",
+      "title": "Cryptomonitor",
+      "subtitle": {
+        "en": "A complete graphic identity and web design for a cryptocurrency monitoring platform, merging trust with cutting-edge digital aesthetics.",
+        "es": "Identidad gráfica completa y diseño web para una plataforma de monitoreo de criptomonedas, fusionando confianza con estética digital de vanguardia."
+      },
+      "category": {
+        "en": "Branding & Web",
+        "es": "Branding & Web"
+      },
+      "year": "2021",
+      "client": "Cryptomonitor",
+      "heading": {
+        "en": "Trust in the world of crypto",
+        "es": "Confianza en el mundo cripto"
+      },
+      "paragraphs": [
+        {
+          "en": "Cryptomonitor is a real-time cryptocurrency monitoring platform that needed a brand presence as dynamic as the market it tracks. The identity had to convey both technological sophistication and the reliability users need when managing financial data.",
+          "es": "Cryptomonitor es una plataforma de monitoreo de criptomonedas en tiempo real que necesitaba una presencia de marca tan dinámica como el mercado que rastrea. La identidad debía transmitir sofisticación tecnológica y la confiabilidad que los usuarios necesitan al gestionar datos financieros."
+        },
+        {
+          "en": "A deep navy and electric blue palette, geometric precision in the logomark and a clean dashboard-inspired web design give Cryptomonitor an authoritative yet approachable presence in the fintech space.",
+          "es": "Una paleta azul marino profundo y azul eléctrico, precisión geométrica en el símbolo y un diseño web limpio inspirado en dashboards le dan a Cryptomonitor una presencia autoritaria pero accesible en el espacio fintech."
+        }
+      ],
+      "tools": [
+        "Adobe Illustrator",
+        "Photoshop",
+        "Figma",
+        "After Effects"
+      ],
+      "behance": "https://www.behance.net/gallery/126259497/Cryptomonitor-identidad-grafica-y-diseno-web",
+      "gallery": [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2cb514126259497.6129c1b83784e.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/dcd37f126259497.6129c1b837020.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/e5f670126259497.6129c1b837f45.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/source/b8d593126259497.612998c7d0a64.gif",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/4ad74d126259497.6129c1b838614.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0fe0a7126259497.612998c7d23b6.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs/aa72cb126259497.6129c1b7d1935.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs/7c742c126259497.6129c1b7d1dd6.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs/143dae126259497.6129c1b7d0ebe.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs/4c7f15126259497.6129c1b7d1489.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/source/a28066126259497.612998c7d1bfd.gif"
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Brand Strategy",
+            "es": "Estrategia de Marca"
+          },
+          "desc": {
+            "en": "Positioning research in the fintech/crypto space, defining brand pillars of trust, speed and transparency.",
+            "es": "Investigación de posicionamiento en fintech/cripto, definiendo pilares de marca: confianza, velocidad y transparencia."
+          }
+        },
+        {
+          "title": {
+            "en": "Identity Design",
+            "es": "Diseño de Identidad"
+          },
+          "desc": {
+            "en": "Logo system, color palette, typography and iconography for digital interfaces and marketing materials.",
+            "es": "Sistema de logotipo, paleta de color, tipografía e iconografía para interfaces digitales y marketing."
+          }
+        },
+        {
+          "title": {
+            "en": "Web Design",
+            "es": "Diseño Web"
+          },
+          "desc": {
+            "en": "Full website design including landing page, dashboard UI concepts and responsive mobile layouts.",
+            "es": "Diseño completo del sitio web incluyendo landing page, conceptos de dashboard UI y layouts móviles."
+          }
+        }
+      ],
+      "cover": "https://mir-s3-cdn-cf.behance.net/projects/max_808/bb9d12126259497.Y3JvcCw4MDAsNjI1LDIzNSwxNzQ.jpg",
+      "filter": "digital branding"
+    },
+    {
+      "slug": "arka",
+      "title": "ARKA Logotipo",
+      "subtitle": {
+        "en": "Custom logotype creation for ARKA, balancing architectural precision with an organic warmth that reflects the brand's core values.",
+        "es": "Creación de logotipo personalizado para ARKA, equilibrando precisión arquitectónica con una calidez orgánica que refleja los valores centrales de la marca."
+      },
+      "category": {
+        "en": "Logo",
+        "es": "Logo"
+      },
+      "year": "2022",
+      "client": "ARKA",
+      "heading": {
+        "en": "A mark built to last",
+        "es": "Un símbolo construido para durar"
+      },
+      "paragraphs": [
+        {
+          "en": "ARKA's logomark needed to carry the weight of a brand with roots in craftsmanship and vision. The brief called for a geometric yet human symbol, something that could scale from a business card to a building facade without losing its essence.",
+          "es": "El símbolo de ARKA necesitaba llevar el peso de una marca con raíces en la artesanía y la visión. El brief pedía un símbolo geométrico pero humano, algo que pudiera escalar desde una tarjeta de visita hasta la fachada de un edificio sin perder su esencia."
+        },
+        {
+          "en": "The final mark uses interlocking geometric forms that suggest both structure and growth. The paired logotype uses careful spacing and weight contrast to give the brand a premium, architectural feel.",
+          "es": "El símbolo final usa formas geométricas entrelazadas que sugieren tanto estructura como crecimiento. El logotipo usa espaciado cuidadoso y contraste de pesos para darle a la marca una sensación premium y arquitectónica."
+        }
+      ],
+      "tools": [
+        "Adobe Illustrator"
+      ],
+      "behance": "https://www.behance.net/gallery/145869331/ARKA-creacion-de-logotipo",
+      "gallery": [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c7ea1b145869331.62a67072c4a8c.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d2299f145869331.62a67072c5e7f.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e4ed99145869331.62a670725a931.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/disp/92e849145869331.62a670725af95.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/abf54b145869331.62a67072c784f.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/83e42b145869331.62a67072c7020.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/adfa0f145869331.62a67072c829b.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/63d45b145869331.62a67072c67d5.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/43a2d3145869331.62a67072c5347.jpg"
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Brief & Discovery",
+            "es": "Brief y Descubrimiento"
+          },
+          "desc": {
+            "en": "In-depth brand questionnaire and competitor analysis to define the logomark's visual personality.",
+            "es": "Cuestionario de marca profundo y análisis de competidores para definir la personalidad visual del símbolo."
+          }
+        },
+        {
+          "title": {
+            "en": "Sketching & Concepts",
+            "es": "Bocetos y Conceptos"
+          },
+          "desc": {
+            "en": "Multiple sketch directions explored, from abstract geometric to letterform-based approaches.",
+            "es": "Múltiples direcciones de boceto exploradas, desde enfoques geométricos abstractos hasta basados en letras."
+          }
+        },
+        {
+          "title": {
+            "en": "Refinement & Delivery",
+            "es": "Refinamiento y Entrega"
+          },
+          "desc": {
+            "en": "Digital refinement of selected concept, final file delivery in all formats with usage guidelines.",
+            "es": "Refinamiento digital del concepto seleccionado, entrega de archivos finales en todos los formatos."
+          }
+        }
+      ],
+      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/a1dc8c145869331.Y3JvcCwxODUwLDE0NDcsMjcsNTY3.png",
+      "filter": "logo"
+    }
+  ],
+  "external": [
+    {
+      "title": "Arepitas Venezolanas",
+      "category": {
+        "en": "Illustration",
+        "es": "Ilustración"
+      },
+      "filter": "illustration",
+      "url": "https://www.behance.net/gallery/162471669/Arepitas-Venezolanas-con-Carlitos-Cuento-ilustrado",
+      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/994154162471669.Y3JvcCwxMzE2LDEwMzAsMTksMA.png"
+    },
+    {
+      "title": "Pack Iconos Gatitos",
+      "category": {
+        "en": "Illustration",
+        "es": "Ilustración"
+      },
+      "filter": "illustration",
+      "url": "https://www.behance.net/gallery/146038337/Pack-de-10-iconos-de-gatitos",
+      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/c5160e146038337.Y3JvcCwzNjMyLDI4NDAsMTYxLDA.jpg"
+    },
+    {
+      "title": "Neptuno Card",
+      "category": {
+        "en": "Branding",
+        "es": "Branding"
+      },
+      "filter": "branding",
+      "url": "https://www.behance.net/gallery/142601487/Neptuno-Card",
+      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/327622142601487.Y3JvcCwzNDkxLDI3MzAsMCw4Mzg.jpg"
+    },
+    {
+      "title": "Portfolio 2024",
+      "category": {
+        "en": "Portfolio",
+        "es": "Portafolio"
+      },
+      "filter": "branding",
+      "url": "https://www.behance.net/gallery/174794993/Portfolio",
+      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/8cd580174794993.Y3JvcCwzMjYwLDI1NTAsMTYsMA.jpg"
+    }
+  ]
+}
