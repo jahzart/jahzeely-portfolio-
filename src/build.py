@@ -51,7 +51,7 @@ ARROW_DOWN = '<svg viewBox="0 0 120 140" aria-hidden="true"><path d="M60 4v128M8
 SPARK = '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0c1.6 10.6 8.4 18.4 20 20-11.6 1.6-18.4 9.4-20 20-1.6-10.6-8.4-18.4-20-20C11.6 18.4 18.4 10.6 20 0z" fill="currentColor"/></svg>'
 
 # Generated photo for each work category, in SERVICES order
-SVC_IMG = ['branding', 'logos', 'social', 'packaging', 'illustration', 'flyers', 'web', 'ai']
+SVC_IMG = ['branding', 'logos', 'social', 'packaging', 'illustration', 'web', 'ai']
 
 SERVICES = [
     ('Branding', 'Branding', 'Complete visual identities that communicate the essence of each brand.', 'Identidades visuales completas que comunican la esencia de cada marca.', 'filter:branding'),
@@ -59,7 +59,6 @@ SERVICES = [
     ('Social Media', 'Social Media', 'Visual content for social networks that connects and converts.', 'Contenido visual para redes que conecta y convierte.', 'filter:social'),
     ('Packaging', 'Packaging', 'Packages that live on shelves and in consumer memory.', 'Empaques que viven en estantes y en la memoria.', 'filter:packaging'),
     ('Illustration', 'Ilustración', 'Original visual worlds, traditional and digital.', 'Mundos visuales propios, tradicional y digital.', 'filter:illustration'),
-    ('Flyers', 'Flyers', 'Print and digital pieces with immediate visual impact.', 'Piezas impresas y digitales con impacto visual inmediato.', 'behance'),
     ('Websites & Apps', 'Websites & Apps', 'UI/UX for user-centered digital interfaces.', 'UI/UX para interfaces digitales centradas en el usuario.', 'filter:digital'),
     ('AI Lab', 'AI Lab', 'Photography, video and experiences created with AI.', 'Fotografía, video y experiencias creadas con IA.', 'lab'),
 ]
@@ -247,7 +246,7 @@ def build_home():
   <div class="wrap about-grid">
     <div class="stats">
       <div class="stat" data-reveal><b>12+</b>{t('Projects', 'Proyectos')}</div>
-      <div class="stat" data-reveal><b>8</b>{t('Categories', 'Categorías')}</div>
+      <div class="stat" data-reveal><b>7</b>{t('Categories', 'Categorías')}</div>
       <div class="stat" data-reveal><b>7+</b>{t('Years of experience', 'Años de experiencia')}</div>
     </div>
     <div class="about-copy">
