@@ -2687,28 +2687,193 @@
           1071
         ]
       ]
-    }
-  ],
-  "external": [
-    {
-      "title": "Arepitas Venezolanas",
-      "category": {
-        "en": "Illustration",
-        "es": "Ilustración"
-      },
-      "filter": "illustration",
-      "url": "https://www.behance.net/gallery/162471669/Arepitas-Venezolanas-con-Carlitos-Cuento-ilustrado",
-      "cover": "assets/covers/arepitas.jpg"
     },
     {
-      "title": "Pack Iconos Gatitos",
+      "slug": "arepitas",
+      "title": "Arepitas Venezolanas con Carlitos",
+      "filter": "illustration",
       "category": {
         "en": "Illustration",
         "es": "Ilustración"
       },
+      "year": "2023",
+      "client": "Jahzart",
+      "behance": "https://www.behance.net/gallery/162471669/Arepitas-Venezolanas-con-Carlitos-Cuento-ilustrado",
+      "cover": "assets/covers/arepitas.jpg",
+      "tools": [
+        "Photoshop",
+        "Illustrator"
+      ],
+      "subtitle": {
+        "en": "An illustrated recipe book for children from 3 to 7 years old to make Venezuelan arepas with Carlitos: La Reina Pepiada.",
+        "es": "Un recetario ilustrado para niños de 3 a 7 años para preparar arepas venezolanas con Carlitos: La Reina Pepiada."
+      },
+      "heading": {
+        "en": "Cooking as a story",
+        "es": "Cocinar como un cuento"
+      },
+      "paragraphs": [
+        {
+          "en": "Carlitos, a smiling little chef, guides kids step by step through one of the most loved Venezuelan recipes, the reina pepiada, turning the kitchen into a fun and safe adventure to share with the family.",
+          "es": "Carlitos, un pequeño chef sonriente, guía a los niños paso a paso por una de las recetas venezolanas más queridas, la reina pepiada, y convierte la cocina en una aventura divertida y segura para compartir en familia."
+        },
+        {
+          "en": "Warm colors, rounded shapes and a friendly character design make each step easy to follow, with simple visuals of ingredients and utensils that kids can recognize.",
+          "es": "Colores cálidos, formas redondeadas y un personaje cercano hacen que cada paso sea fácil de seguir, con ilustraciones simples de ingredientes y utensilios que los niños reconocen."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Recipe",
+            "es": "Receta"
+          },
+          "desc": {
+            "en": "Adapting the reina pepiada recipe into simple steps for kids.",
+            "es": "Adaptación de la receta de la reina pepiada a pasos simples para niños."
+          }
+        },
+        {
+          "title": {
+            "en": "Character",
+            "es": "Personaje"
+          },
+          "desc": {
+            "en": "Design of Carlitos and his kitchen world.",
+            "es": "Diseño de Carlitos y su mundo en la cocina."
+          }
+        },
+        {
+          "title": {
+            "en": "Illustration and layout",
+            "es": "Ilustración y maquetación"
+          },
+          "desc": {
+            "en": "Illustrated pages, cover and animated previews.",
+            "es": "Páginas ilustradas, portada y previsualizaciones animadas."
+          }
+        }
+      ],
+      "gallery": [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/766650162471669.63d6918cc5932.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/c404d9162471669.63d696bc668b0.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/e8e229162471669.63d696bc69096.png",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/c80e70162471669.63d696bc65658.png",
+        "assets/video/arepitas-1.mp4",
+        "assets/video/arepitas-2.mp4",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/5d8da1162471669.63d6ed21dd3b1.png"
+      ],
+      "gallery_sizes": [
+        [
+          1400,
+          1030
+        ],
+        [
+          1400,
+          1030
+        ],
+        [
+          1400,
+          1030
+        ],
+        [
+          1400,
+          2800
+        ],
+        [
+          600,
+          861
+        ],
+        [
+          600,
+          861
+        ],
+        [
+          1400,
+          2200
+        ]
+      ]
+    },
+    {
+      "slug": "gatitos",
+      "title": "Pack Iconos Gatitos",
       "filter": "illustration",
-      "url": "https://www.behance.net/gallery/146038337/Pack-de-10-iconos-de-gatitos",
-      "cover": "assets/covers/gatitos.jpg"
+      "category": {
+        "en": "Icon Design",
+        "es": "Diseño de íconos"
+      },
+      "year": "2022",
+      "client": "Jahzart",
+      "behance": "https://www.behance.net/gallery/146038337/Pack-de-10-iconos-de-gatitos",
+      "cover": "assets/covers/gatitos.jpg",
+      "tools": [
+        "Illustrator"
+      ],
+      "subtitle": {
+        "en": "A pack of 10 kawaii kitten icons for Instagram highlights, e-commerce, apps and websites.",
+        "es": "Un pack de 10 íconos kawaii de gatitos para destacados de Instagram, ecommerce, aplicaciones y sitios web."
+      },
+      "heading": {
+        "en": "Ten cats, one cute system",
+        "es": "Diez gatos, un sistema adorable"
+      },
+      "paragraphs": [
+        {
+          "en": "Each icon shows a kitten in a different everyday scene: a stroller, a gift box, a carrier, a brush, toys and more, all drawn with the same rounded shapes and soft palette so they work together as a set.",
+          "es": "Cada ícono muestra a un gatito en una escena distinta: un coche, una caja de regalo, un transportín, un cepillo, juguetes y más, todos con las mismas formas redondeadas y paleta suave para que funcionen como set."
+        },
+        {
+          "en": "The pack includes versions on purple, pink and yellow backgrounds, ready for Instagram highlights and digital shops.",
+          "es": "El pack incluye versiones sobre fondos morado, rosa y amarillo, listas para destacados de Instagram y tiendas digitales."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Concept",
+            "es": "Concepto"
+          },
+          "desc": {
+            "en": "Choosing ten pet-related themes for a kawaii set.",
+            "es": "Selección de diez temas sobre mascotas para un set kawaii."
+          }
+        },
+        {
+          "title": {
+            "en": "Drawing",
+            "es": "Dibujo"
+          },
+          "desc": {
+            "en": "Vector icons with a consistent stroke and rounded shapes.",
+            "es": "Íconos vectoriales con trazo constante y formas redondeadas."
+          }
+        },
+        {
+          "title": {
+            "en": "Formats",
+            "es": "Formatos"
+          },
+          "desc": {
+            "en": "Color variations and exports for social media and web.",
+            "es": "Variaciones de color y exportaciones para redes y web."
+          }
+        }
+      ],
+      "gallery": [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/78e7c0146038337.62a92655cfc30.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9ada4c146038337.62a92655d03af.jpg"
+      ],
+      "gallery_sizes": [
+        [
+          1400,
+          4160
+        ],
+        [
+          1400,
+          3900
+        ]
+      ]
     }
-  ]
+  ],
+  "external": []
 }
