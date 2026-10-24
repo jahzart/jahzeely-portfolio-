@@ -1394,6 +1394,117 @@
           "kind": "story"
         }
       ]
+    },
+    {
+      "slug": "sona",
+      "title": "Sona Strategic Advisors",
+      "filter": "logo branding",
+      "category": {
+        "en": "Logo",
+        "es": "Logo"
+      },
+      "year": "2026",
+      "client": "Sona Strategic Advisors",
+      "behance": null,
+      "cover": "assets/covers/sona.jpg",
+      "tools": [
+        "Adobe Illustrator",
+        "Photoshop"
+      ],
+      "subtitle": {
+        "en": "Logo design for Sona Strategic Advisors, a private capital firm that provides credit and equity backed by tangible assets.",
+        "es": "Diseño de logo para Sona Strategic Advisors, una firma de capital privado que ofrece crédito y participación accionaria respaldados por activos tangibles."
+      },
+      "heading": {
+        "en": "Gold, in a single continuous line",
+        "es": "Oro, en una sola línea continua"
+      },
+      "paragraphs": [
+        {
+          "en": "Sona means gold in Hindi. The symbol joins an S and an O in one continuous stroke that loops like an evergreen cycle, where lender and shareholder meet.",
+          "es": "Sona significa oro en hindi. El símbolo une una S y una O en un solo trazo continuo que se cierra como un ciclo evergreen, donde prestamista y accionista se encuentran."
+        },
+        {
+          "en": "The palette pairs deep navy with a matte gold that feels like metal or an ingot rather than shine, giving the brand a calm, solid and trustworthy presence.",
+          "es": "La paleta combina azul marino profundo con un dorado mate que se siente como metal o lingote y no como brillo, lo que le da a la marca una presencia sobria, sólida y confiable."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Brief and concept",
+            "es": "Brief y concepto"
+          },
+          "desc": {
+            "en": "Research on the firm, its investment model and the meaning of the name to define the core idea.",
+            "es": "Investigación de la firma, su modelo de inversión y el significado del nombre para definir la idea central."
+          }
+        },
+        {
+          "title": {
+            "en": "Proposals",
+            "es": "Propuestas"
+          },
+          "desc": {
+            "en": "Four logo directions presented with variations, typography, palette and mockups.",
+            "es": "Cuatro direcciones de logo presentadas con variantes, tipografía, paleta y mockups."
+          }
+        },
+        {
+          "title": {
+            "en": "Final identity",
+            "es": "Identidad final"
+          },
+          "desc": {
+            "en": "Refinement of the chosen symbol and delivery of the full set of versions for light, dark and gold backgrounds.",
+            "es": "Refinamiento del símbolo elegido y entrega del set completo de versiones para fondos claros, oscuros y dorados."
+          }
+        }
+      ],
+      "gallery": [
+        "assets/projects/sona/logo-06.jpg",
+        "assets/projects/sona/logo-05.jpg",
+        "assets/projects/sona/digital.jpg",
+        "assets/projects/sona/logo-08.jpg",
+        "assets/projects/sona/logo-09.jpg",
+        "assets/projects/sona/reception.jpg",
+        "assets/projects/sona/logo-03.jpg",
+        "assets/projects/sona/logo-12.jpg"
+      ],
+      "gallery_sizes": [
+        [
+          1200,
+          1200
+        ],
+        [
+          1200,
+          1200
+        ],
+        [
+          1920,
+          1433
+        ],
+        [
+          1200,
+          1200
+        ],
+        [
+          1200,
+          1200
+        ],
+        [
+          1920,
+          1071
+        ],
+        [
+          1200,
+          1200
+        ],
+        [
+          1200,
+          1200
+        ]
+      ]
     }
   ],
   "external": [
