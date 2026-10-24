@@ -406,9 +406,9 @@
       "gallery": [
         "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/44e8e8117202311.60711e9a3c22f.jpg",
         "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8802f2117202311.60711e9a4025f.jpg",
-        "https://mir-s3-cdn-cf.behance.net/project_modules/source/11dd5b117202311.60711e9a40a27.gif",
+        "assets/video/siker-zero-shake.mp4",
         "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f6d7ac117202311.60711e9a3ecd1.jpg",
-        "https://mir-s3-cdn-cf.behance.net/project_modules/source/f859da117202311.60711e9a3a845.gif",
+        "assets/video/siker-win.mp4",
         "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/acbaa7117202311.60711e9a3b524.jpg",
         "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/41e98e117202311.60711e9a3aefc.jpg",
         "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9f893b117202311.60711e9a3db11.jpg",
@@ -466,16 +466,16 @@
           796
         ],
         [
-          1400,
-          634
+          1600,
+          890
         ],
         [
           1400,
           796
         ],
         [
-          1400,
-          634
+          1600,
+          890
         ],
         [
           1400,

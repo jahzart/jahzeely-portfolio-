@@ -343,6 +343,11 @@ def img_block(src, alt, size=None):
     if size:
         ar = size[0] / size[1]
         style = f' style="flex:{ar:.3f} 1 0;aspect-ratio:{size[0]}/{size[1]}"'
+    if src.endswith('.mp4'):
+        # Looping clip that behaves like a GIF: muted autoplay, no controls
+        poster = src[:-4] + '.jpg'
+        return (f'<div class="d-img d-video"{style} data-clip><video src="{a(src)}" poster="{a(poster)}" '
+                f'autoplay muted loop playsinline preload="metadata" aria-label="{a(alt)}"></video></div>')
     return f'<div class="d-img"{style} data-lightbox data-clip><img src="{a(src)}" alt="{a(alt)}" loading="lazy"></div>'
 
 
