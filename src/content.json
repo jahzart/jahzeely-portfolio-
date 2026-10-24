@@ -1198,27 +1198,6 @@
             900,
             900
           ]
-        },
-        {
-          "src": "assets/projects/vmc/post-22.jpg",
-          "size": [
-            900,
-            900
-          ]
-        },
-        {
-          "src": "assets/projects/vmc/post-23.jpg",
-          "size": [
-            900,
-            900
-          ]
-        },
-        {
-          "src": "assets/projects/vmc/post-24.jpg",
-          "size": [
-            900,
-            900
-          ]
         }
       ],
       "stories": [
@@ -1264,7 +1243,8 @@
             1280
           ]
         }
-      ]
+      ],
+      "handle": "vmccorp"
     },
     {
       "slug": "high-end-boat",
@@ -1393,7 +1373,8 @@
           ],
           "kind": "story"
         }
-      ]
+      ],
+      "handle": "highendboat"
     },
     {
       "slug": "sona",
@@ -1505,6 +1486,231 @@
           1200
         ]
       ]
+    },
+    {
+      "slug": "lumgoals",
+      "title": "Lumgoals",
+      "layout": "sections",
+      "filter": "digital social",
+      "category": {
+        "en": "App Design & Social Media",
+        "es": "Diseño de App y Social Media"
+      },
+      "year": "2026",
+      "client": "Lumgoals",
+      "behance": null,
+      "cover": "assets/covers/lumgoals.jpg",
+      "tools": [
+        "Figma",
+        "Illustrator",
+        "Photoshop",
+        "AI Tools"
+      ],
+      "subtitle": {
+        "en": "My own manifestation app: goals, daily journal and vision boards in a soft, celestial interface, plus its launch social media posts.",
+        "es": "Mi propia app de manifestación: metas, diario y tableros de visión en una interfaz suave y celestial, junto con los posts de lanzamiento para redes."
+      },
+      "heading": {
+        "en": "Light up your goals",
+        "es": "Ilumina tus metas"
+      },
+      "paragraphs": [
+        {
+          "en": "Lumgoals helps people turn their intentions into action: they write a manifestation, follow action steps, keep a morning and evening journal and build vision boards with their own images.",
+          "es": "Lumgoals ayuda a convertir intenciones en acción: escribes una manifestación, sigues pasos de acción, llevas un diario de mañana y noche y creas tableros de visión con tus propias imágenes."
+        },
+        {
+          "en": "I designed the brand, the design system and every screen, with a light theme in periwinkle and lavender glass and a dark theme with neon glow, plus iridescent mood characters that make the app feel friendly. The launch posts carry the same look to Instagram.",
+          "es": "Diseñé la marca, el sistema de diseño y cada pantalla, con un tema claro en vidrio periwinkle y lavanda y un tema oscuro con glow neón, además de personajes iridiscentes de ánimo que hacen la app cercana. Los posts de lanzamiento llevan la misma estética a Instagram."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Brand and design system",
+            "es": "Marca y sistema de diseño"
+          },
+          "desc": {
+            "en": "Logo, palette, Playfair Display typography, glassmorphism cards and iridescent characters.",
+            "es": "Logo, paleta, tipografía Playfair Display, tarjetas en glassmorphism y personajes iridiscentes."
+          }
+        },
+        {
+          "title": {
+            "en": "App UI/UX",
+            "es": "UI/UX de la app"
+          },
+          "desc": {
+            "en": "Onboarding flow, home, manifestations, journal, vision boards and premium screens in light and dark themes.",
+            "es": "Onboarding, inicio, manifestaciones, diario, tableros de visión y pantallas premium en tema claro y oscuro."
+          }
+        },
+        {
+          "title": {
+            "en": "Launch content",
+            "es": "Contenido de lanzamiento"
+          },
+          "desc": {
+            "en": "Store banners and Instagram posts with QR and call to action for the launch.",
+            "es": "Banners para las tiendas y posts de Instagram con QR y llamado a la acción para el lanzamiento."
+          }
+        }
+      ],
+      "sections": [
+        {
+          "cols": 1,
+          "items": [
+            {
+              "src": "assets/projects/lumgoals/banner-1.jpg",
+              "size": [
+                1400,
+                742
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/banner-2.jpg",
+              "size": [
+                1400,
+                742
+              ]
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Social media posts",
+            "es": "Posts para redes"
+          },
+          "cols": 3,
+          "items": [
+            {
+              "src": "assets/projects/lumgoals/post-1.jpg",
+              "size": [
+                900,
+                1125
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/post-2.jpg",
+              "size": [
+                900,
+                1125
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/post-3.jpg",
+              "size": [
+                900,
+                1125
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/post-4.jpg",
+              "size": [
+                900,
+                1125
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/post-5.jpg",
+              "size": [
+                900,
+                1125
+              ]
+            }
+          ],
+          "posts": true
+        },
+        {
+          "label": {
+            "en": "Light theme",
+            "es": "Tema claro"
+          },
+          "cols": 5,
+          "items": [
+            {
+              "src": "assets/projects/lumgoals/light-1.jpg",
+              "size": [
+                480,
+                1039
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/light-2.jpg",
+              "size": [
+                480,
+                1042
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/light-3.jpg",
+              "size": [
+                480,
+                1039
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/light-4.jpg",
+              "size": [
+                480,
+                1039
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/light-5.jpg",
+              "size": [
+                480,
+                1042
+              ]
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Dark theme",
+            "es": "Tema oscuro"
+          },
+          "cols": 5,
+          "items": [
+            {
+              "src": "assets/projects/lumgoals/dark-1.jpg",
+              "size": [
+                480,
+                1039
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/dark-2.jpg",
+              "size": [
+                480,
+                1039
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/dark-3.jpg",
+              "size": [
+                480,
+                1039
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/dark-4.jpg",
+              "size": [
+                480,
+                1039
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/dark-5.jpg",
+              "size": [
+                480,
+                1039
+              ]
+            }
+          ]
+        }
+      ],
+      "handle": "lumgoals"
     }
   ],
   "external": [

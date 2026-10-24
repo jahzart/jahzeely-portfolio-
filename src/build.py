@@ -370,6 +370,21 @@ def gallery_rows(items, alt, rel):
     return html
 
 
+POST_ICONS = (
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.6 4.5 7.2 4.5c2 0 3.6 1.1 4.8 2.8 1.2-1.7 2.8-2.8 4.8-2.8 3.6 0 5.8 3.5 4.5 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/></svg>'
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.3 7.5L3.5 20.5l1.4-4.6A8.5 8.5 0 1 1 20.5 11.6z"/></svg>'
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.5 10.6 13.4M21.5 3.5l-6.8 17-4.1-7.1-7.1-4.1z"/></svg>'
+)
+POST_SAVE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h12v17l-6-4.4-6 4.4z"/></svg>'
+
+
+def post_card(x, handle, alt, rel):
+    """Feed post shown as a minimal Instagram-style card."""
+    return (f'<figure class="p-card" data-clip><figcaption class="p-head"><span class="p-avatar"></span>{escape(handle)}</figcaption>'
+            f'<div class="p-img" style="aspect-ratio:{x["size"][0]}/{x["size"][1]}" data-lightbox><img src="{a(src(x["src"], rel))}" alt="{a(alt)}" loading="lazy"></div>'
+            f'<div class="p-actions">{POST_ICONS}<span class="p-save">{POST_SAVE}</span></div></figure>')
+
+
 def detail_gallery(p, title, rel):
     g = p['gallery']
     # The cover leads the page, so the whole Behance gallery goes below it
@@ -394,8 +409,20 @@ def build_detail(i):
     if p.get('layout') == 'social':
         # Social projects: feed posts in an Instagram-like grid, stories in a row
         cell = lambda x, cls: f'<div class="{cls}" data-lightbox data-clip><img src="{a(src(x["src"], rel))}" alt="{a(title)}" loading="lazy"></div>'
-        first = f'<div class="s-feed">{"".join(cell(x, "s-post") for x in p["posts"])}</div>'
-        rest = f'<div class="s-stories">{"".join(cell(x, "s-story") for x in p["stories"])}</div>' if p['stories'] else ''
+        first = f'<div class="p-feed">{"".join(post_card(x, p["handle"], title, rel) for x in p["posts"])}</div>'
+        rest = f'<div class="p-feed p-stories">{"".join(post_card(x, p["handle"], title, rel) for x in p["stories"])}</div>' if p['stories'] else ''
+    elif p.get('layout') == 'sections':
+        # Labelled grids, each cell keeps the image's own proportions
+        def section(s):
+            if s.get('posts'):
+                label = tb(s['label'], 'span', 'label s-label') if s.get('label') else ''
+                return f'{label}<div class="p-feed">{"".join(post_card(x, p["handle"], title, rel) for x in s["items"])}</div>'
+            cells = ''.join(f'<div class="s-cell" style="aspect-ratio:{x["size"][0]}/{x["size"][1]}" data-lightbox data-clip>'
+                            f'<img src="{a(src(x["src"], rel))}" alt="{a(title)}" loading="lazy"></div>' for x in s['items'])
+            label = tb(s['label'], 'span', 'label s-label') if s.get('label') else ''
+            return f'{label}<div class="s-grid" style="--cols:{s["cols"]}">{cells}</div>'
+        first = section(p['sections'][0])
+        rest = ''.join(section(s) for s in p['sections'][1:])
     else:
         first, rest = detail_gallery(p, title, rel)
 
