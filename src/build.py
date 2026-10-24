@@ -117,7 +117,7 @@ def burger():
 
 
 def logo(rel):
-    return f'<a href="{rel}index.html" class="logo"><span class="logo-mark" aria-hidden="true">JS</span><span>Jahzeely Sinai<small>Design</small></span></a>'
+    return f'<a href="{rel}index.html" class="logo"><span>Jahzeely Sinai<small>Design</small></span></a>'
 
 
 def nav_items(rel):
