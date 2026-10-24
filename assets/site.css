@@ -441,3 +441,5 @@ a.lab-row:hover h3 { color: var(--accent); }
 
 /* SplitText masks clip at the text box; tight letter-spacing pushes the last glyph past it */
 [data-intro] > div, [data-split] > div { padding-right: .12em; margin-right: -.12em; }
+
+.d-cta { margin-top: 40px; }

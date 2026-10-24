@@ -478,6 +478,7 @@ def build_detail(i):
   <div class="wrap">
     <h1 class="d-title" data-intro>{escape(title)}</h1>
     <div class="d-cols">{tb(p['subtitle'], 'p', '', ' data-reveal')}{tb(paras[0], 'p', '', ' data-reveal')}</div>
+    {f'<a class="pill d-cta" href="{a(p["url"])}" target="_blank" rel="noopener" data-reveal>' + (tb(p['url_label']) if p.get('url_label') else t('Visit website', 'Ver sitio web')) + ARROW_NE + '</a>' if p.get('url') else ''}
   </div>
 </section>
 <section class="wrap d-cover">

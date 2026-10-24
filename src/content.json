@@ -1568,10 +1568,10 @@
               ]
             },
             {
-              "src": "assets/projects/lumgoals/banner-2.jpg",
+              "src": "assets/projects/lumgoals/woman-app.jpg",
               "size": [
-                1400,
-                742
+                1920,
+                1071
               ]
             }
           ]
@@ -1701,6 +1701,18 @@
           ],
           "phones": true,
           "dark": true
+        },
+        {
+          "cols": 1,
+          "items": [
+            {
+              "src": "assets/projects/lumgoals/woman-app-loop.mp4",
+              "size": [
+                1280,
+                720
+              ]
+            }
+          ]
         },
         {
           "label": {
@@ -1834,7 +1846,12 @@
           "posts": true
         }
       ],
-      "handle": "lumgoals"
+      "handle": "lumgoals",
+      "url": "https://lumgoals.com/",
+      "url_label": {
+        "en": "Visit Lumgoals",
+        "es": "Ir a Lumgoals"
+      }
     },
     {
       "slug": "jahzart",
