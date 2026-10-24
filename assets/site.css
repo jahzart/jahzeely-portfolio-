@@ -280,10 +280,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .d-tools li { font-size: 21px; color: #333; }
 .d-process li + li { margin-top: 6px; }
 .d-process b { color: var(--ink); font-weight: 500; }
-.d-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 30px 0 100px; }
-.d-imgs .full { grid-column: 1 / -1; }
-.d-img { overflow: hidden; background: var(--soft); cursor: zoom-in; }
+.d-imgs { display: flex; flex-direction: column; gap: 10px; margin: 30px 0 100px; }
+.d-row { display: flex; gap: 10px; }
+.d-img { overflow: hidden; background: var(--soft); cursor: zoom-in; min-width: 0; }
 .d-img img { width: 100%; height: auto; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.d-row .d-img img { height: 100%; object-fit: cover; }
 .d-img:hover img { transform: scale(1.02); }
 .d-next { padding-bottom: 40px; }
 .d-next a { border-top: 1px dashed var(--line); padding-top: 100px; }
@@ -350,7 +351,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .d-card dl { padding: 8px 20px; }
   .d-card div { grid-template-columns: 110px 1fr; font-size: 16px; }
   .d-card a { height: 72px; font-size: 18px; }
-  .d-imgs { grid-template-columns: 1fr; }
+  .d-row { flex-direction: column; }
+  .d-row .d-img { flex: none !important; width: 100%; }
   .d-next a { grid-template-columns: 1fr; }
   .lightbox { padding: 60px 10px; }
 }
