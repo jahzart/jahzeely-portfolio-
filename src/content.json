@@ -1379,7 +1379,7 @@
     {
       "slug": "sona",
       "title": "Sona Strategic Advisors",
-      "filter": "logo branding",
+      "filter": "logo",
       "category": {
         "en": "Logo",
         "es": "Logo"
@@ -2000,7 +2000,7 @@
     {
       "slug": "roverpass",
       "title": "RoverPass",
-      "filter": "logo branding",
+      "filter": "logo",
       "category": {
         "en": "Logo",
         "es": "Logo"
