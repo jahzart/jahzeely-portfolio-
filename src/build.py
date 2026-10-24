@@ -23,7 +23,7 @@ SOCIALS = [('Behance', BEHANCE), ('Instagram', 'https://instagram.com/jahzartdes
 YEAR = 2026
 SITE = 'https://jahzeely-portfolio.vercel.app/'
 GSAP = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/'
-FONTS = 'https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&display=swap'
+FONTS = 'https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&display=swap'
 
 
 def bust(path):
@@ -210,6 +210,25 @@ def build_home():
                     f'<span class="status">{t("View projects", "Ver proyectos")} {ARROW_NE}</span></a>')
         return f'<div class="lab-row" data-reveal>{t(k, ke, "span", "kind")}{t(n, ne, "h3")}{t("Coming soon", "Próximamente", "span", "status")}</div>'
     lab = ''.join(lab_row(*r) for r in lab_rows)
+    # Experience timeline replaces the number stats once content.json has entries
+    exp = DATA.get('experience', [])
+    stats_block = '' if exp else (
+        '<div class="stats">'
+        f'<div class="stat" data-reveal><b>12+</b>{t("Projects", "Proyectos")}</div>'
+        f'<div class="stat" data-reveal><b>7</b>{t("Categories", "Categorías")}</div>'
+        f'<div class="stat" data-reveal><b>7+</b>{t("Years of experience", "Años de experiencia")}</div></div>')
+    rows = ''.join(
+        f'<div class="xp-row{" now" if x.get("current") else ""}" data-reveal>'
+        f'{tb(x["period"], "span", "xp-time")}'
+        f'<div class="xp-role">{tb(x["role"], "h3")}{tb(x["type"], "span")}</div>'
+        f'<span class="xp-co">{escape(x["company"])}</span></div>' for x in exp)
+    experience_block = '' if not exp else f'''<section class="xp" id="experience">
+  <div class="wrap">
+    <div class="sec-head">{t('Experience', 'Experiencia', 'span', 'label')}<span class="label">{len(exp):02d}</span></div>
+    <div class="xp-head"><span>{t('Time', 'Periodo')}</span><span>{t('Role', 'Rol')}</span><span>{t('Company', 'Empresa')}</span></div>
+    {rows}
+  </div>
+</section>'''
     socials = ''.join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in SOCIALS)
     tools = ''.join(f'<li>+ {escape(x)}</li>' for x in TOOLS)
     star = ' <span style="color:var(--accent)">✦</span> '
@@ -259,11 +278,7 @@ def build_home():
 
 <section class="about" id="about">
   <div class="wrap about-grid">
-    <div class="stats">
-      <div class="stat" data-reveal><b>12+</b>{t('Projects', 'Proyectos')}</div>
-      <div class="stat" data-reveal><b>7</b>{t('Categories', 'Categorías')}</div>
-      <div class="stat" data-reveal><b>7+</b>{t('Years of experience', 'Años de experiencia')}</div>
-    </div>
+    {stats_block}
     <div class="about-copy">
       {t('About me', 'Sobre mí', 'span', 'label')}
       {t("Designer with an artist's soul", 'Diseñadora con alma de artista', 'h2', '', ' data-split')}
@@ -275,6 +290,7 @@ def build_home():
   </div>
 </section>
 
+{experience_block}
 <section class="lab on-dark" id="lab">
   <div class="wrap">
     <div class="lab-head">
