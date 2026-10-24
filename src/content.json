@@ -2792,6 +2792,22 @@
           1400,
           2200
         ]
+      ],
+      "gallery_end": [
+        {
+          "src": "assets/projects/arepitas/kitchen.jpg",
+          "size": [
+            1920,
+            1071
+          ]
+        },
+        {
+          "src": "assets/projects/arepitas/open.jpg",
+          "size": [
+            1920,
+            1433
+          ]
+        }
       ]
     },
     {
