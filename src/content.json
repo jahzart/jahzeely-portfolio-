@@ -1996,6 +1996,244 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "roverpass",
+      "title": "RoverPass",
+      "filter": "logo branding",
+      "category": {
+        "en": "Logo",
+        "es": "Logo"
+      },
+      "year": "2025",
+      "client": "RoverPass",
+      "behance": null,
+      "cover": "assets/covers/roverpass.jpg",
+      "tools": [
+        "Adobe Illustrator",
+        "Photoshop"
+      ],
+      "subtitle": {
+        "en": "New logo for RoverPass, an all-in-one campground and RV park management software.",
+        "es": "Nuevo logo para RoverPass, un software todo en uno para la gestión de campings y parques de casas rodantes."
+      },
+      "heading": {
+        "en": "An R that is also an RV",
+        "es": "Una R que también es una casa rodante"
+      },
+      "paragraphs": [
+        {
+          "en": "The symbol builds the letters R and P into the silhouette of an RV, with a wheel that becomes the counter of the P. It is simple enough to work as an app icon and strong enough to lead the brand on billboards.",
+          "es": "El símbolo construye las letras R y P dentro de la silueta de una casa rodante, con una rueda que se convierte en el hueco de la P. Es lo bastante simple para funcionar como ícono de app y lo bastante fuerte para liderar la marca en vallas."
+        },
+        {
+          "en": "The system includes horizontal and stacked versions, the isotype and color variations in coral, navy and white for every background.",
+          "es": "El sistema incluye versiones horizontal y apilada, el isotipo y variaciones de color en coral, azul marino y blanco para cualquier fondo."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Research",
+            "es": "Investigación"
+          },
+          "desc": {
+            "en": "Review of the previous brand and the outdoor hospitality market.",
+            "es": "Revisión de la marca anterior y del mercado de hospitalidad al aire libre."
+          }
+        },
+        {
+          "title": {
+            "en": "Symbol",
+            "es": "Símbolo"
+          },
+          "desc": {
+            "en": "Exploration of letterforms and RV shapes until the R, P and wheel worked as one mark.",
+            "es": "Exploración de letras y formas de casa rodante hasta que la R, la P y la rueda funcionaron como una sola marca."
+          }
+        },
+        {
+          "title": {
+            "en": "System",
+            "es": "Sistema"
+          },
+          "desc": {
+            "en": "Lockups, color versions and applications for digital and outdoor advertising.",
+            "es": "Versiones, colores y aplicaciones para medios digitales y publicidad exterior."
+          }
+        }
+      ],
+      "gallery": [
+        "assets/projects/roverpass/logo-dark.jpg",
+        "assets/projects/roverpass/logo-light.jpg",
+        "assets/projects/roverpass/billboard-2.jpg",
+        "assets/projects/roverpass/icon-coral.jpg",
+        "assets/projects/roverpass/icon-navy.jpg",
+        "assets/projects/roverpass/stacked-coral.jpg",
+        "assets/projects/roverpass/stacked-navy.jpg"
+      ],
+      "gallery_sizes": [
+        [
+          1080,
+          1080
+        ],
+        [
+          1080,
+          1080
+        ],
+        [
+          1500,
+          1000
+        ],
+        [
+          1080,
+          1080
+        ],
+        [
+          1080,
+          1080
+        ],
+        [
+          1080,
+          1080
+        ],
+        [
+          1080,
+          1080
+        ]
+      ]
+    },
+    {
+      "slug": "byivo",
+      "title": "By Ivo",
+      "filter": "logo branding",
+      "category": {
+        "en": "Logo",
+        "es": "Logo"
+      },
+      "year": "2022",
+      "client": "Ivony Nuez",
+      "behance": null,
+      "cover": "assets/covers/byivo.jpg",
+      "tools": [
+        "Adobe Illustrator",
+        "Procreate",
+        "Photoshop"
+      ],
+      "subtitle": {
+        "en": "Hand-lettered logo for By Ivo, a brand of lettering, phone cases and motivational art.",
+        "es": "Logo en lettering para By Ivo, una marca de lettering, fundas de celular y arte motivacional."
+      },
+      "heading": {
+        "en": "Lettering with a splash of joy",
+        "es": "Lettering con un toque de alegría"
+      },
+      "paragraphs": [
+        {
+          "en": "The logo is drawn by hand: a bold, flowing \"ivo\" with paint splashes that bring the energy of the brush into the mark, and a small golden \"by\" on top.",
+          "es": "El logo está dibujado a mano: un \"ivo\" fluido y con carácter, con salpicaduras de pintura que llevan la energía del pincel a la marca, y un pequeño \"by\" dorado encima."
+        },
+        {
+          "en": "A warm palette of pink, orange, cream and gold connects the logo with the colorful lettering of the products, from business cards to phone cases.",
+          "es": "Una paleta cálida de rosa, naranja, crema y dorado conecta el logo con el lettering colorido de los productos, desde las tarjetas hasta las fundas."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Proposals",
+            "es": "Propuestas"
+          },
+          "desc": {
+            "en": "Several lettering directions presented to the client.",
+            "es": "Varias direcciones de lettering presentadas a la clienta."
+          }
+        },
+        {
+          "title": {
+            "en": "Final logo",
+            "es": "Logo final"
+          },
+          "desc": {
+            "en": "Refinement of the chosen lettering and color versions for every background.",
+            "es": "Refinamiento del lettering elegido y versiones de color para cada fondo."
+          }
+        },
+        {
+          "title": {
+            "en": "Applications",
+            "es": "Aplicaciones"
+          },
+          "desc": {
+            "en": "Brandboard, business cards and product mockups.",
+            "es": "Brandboard, tarjetas de presentación y mockups de producto."
+          }
+        }
+      ],
+      "gallery": [
+        "assets/projects/byivo/logo-black.jpg",
+        "assets/projects/byivo/logo-pink.jpg",
+        "assets/projects/byivo/cards-1.jpg",
+        "assets/projects/byivo/cards-2.jpg",
+        "assets/projects/byivo/logo-cream.jpg",
+        "assets/projects/byivo/logo-orange.jpg",
+        "assets/projects/byivo/case-1.jpg",
+        "assets/projects/byivo/case-2.jpg",
+        "assets/projects/byivo/lettering-1.jpg",
+        "assets/projects/byivo/lettering-2.jpg",
+        "assets/projects/byivo/lettering-3.jpg",
+        "assets/projects/byivo/lettering-4.jpg"
+      ],
+      "gallery_sizes": [
+        [
+          1200,
+          675
+        ],
+        [
+          1200,
+          800
+        ],
+        [
+          1800,
+          1201
+        ],
+        [
+          1800,
+          1201
+        ],
+        [
+          1200,
+          225
+        ],
+        [
+          1081,
+          1081
+        ],
+        [
+          1600,
+          1131
+        ],
+        [
+          1600,
+          1227
+        ],
+        [
+          798,
+          1024
+        ],
+        [
+          773,
+          1024
+        ],
+        [
+          800,
+          1021
+        ],
+        [
+          710,
+          1024
+        ]
+      ]
     }
   ],
   "external": [
