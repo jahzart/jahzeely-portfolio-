@@ -192,7 +192,7 @@ def build_home():
         else:
             href, ext = BEHANCE, ' target="_blank" rel="noopener"'
             btn = '<span>Behance</span>' + ARROW_NE
-        svc_rows.append(f'''<article class="svc-row">
+        svc_rows.append(f'''<article class="svc-row" style="z-index:{i + 1}">
   <div class="svc-num">S/ {i + 1:03d}</div>
   <div class="svc-body">{t(en, es, 'h3')}{t(den, des, 'p')}<a class="pill" href="{href}"{ext}>{btn}</a></div>
   <div class="svc-art" aria-hidden="true">{SVC_ART[i]}</div>
@@ -211,7 +211,8 @@ def build_home():
     lab = ''.join(f'<div class="lab-row" data-reveal>{t(k, ke, "span", "kind")}{t(n, ne, "h3")}{t("Coming soon", "Próximamente", "span", "status")}</div>' for k, ke, n, ne in lab_rows)
     socials = ''.join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in SOCIALS)
     tools = ''.join(f'<li>+ {escape(x)}</li>' for x in TOOLS)
-    big = f'{t("7+ years", "7+ años")} <span style="color:var(--accent)">✦</span> {t("12+ projects", "12+ proyectos")} <span style="color:var(--accent)">✦</span> {t("8 categories", "8 categorías")}'
+    star = ' <span style="color:var(--accent)">✦</span> '
+    big = star.join([t('Unleash your brand', 'Desata tu marca'), t('Design that connects', 'Diseño que conecta'), t('Unleash your brand', 'Desata tu marca')])
 
     html = head('Jahzeely Sinai | Creative Designer & AI Artist',
                 'Branding, visual identity, illustration and digital experiences. Graphic designer and AI artist based in Spain.',

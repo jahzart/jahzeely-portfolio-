@@ -151,6 +151,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .svc-row {
   display: grid; grid-template-columns: 1fr 1.6fr 1.4fr; column-gap: 40px;
   padding: 40px 0; border-top: 1px dashed var(--line); background: var(--paper);
+  position: relative;
 }
 .svc-num { font-style: italic; font-size: 16px; }
 .svc-body { display: flex; flex-direction: column; }
