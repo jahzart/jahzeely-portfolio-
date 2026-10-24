@@ -3060,6 +3060,163 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "intylact",
+      "title": "Intylact · Florece en calma",
+      "layout": "sections",
+      "filter": "ai",
+      "ai": [
+        "ai-photo",
+        "ai-video"
+      ],
+      "category": {
+        "en": "AI Photography & Video",
+        "es": "Fotografía y video con IA"
+      },
+      "year": "2026",
+      "client": "Intylact (concept)",
+      "behance": null,
+      "cover": "assets/covers/intylact.jpg",
+      "tools": [
+        "Magnific",
+        "Nano Banana Pro",
+        "Kling",
+        "Photoshop"
+      ],
+      "subtitle": {
+        "en": "A conceptual campaign for Intylact intimate hydrating gel, created with AI: photorealistic photography and animated loops that keep the real product intact.",
+        "es": "Una campaña conceptual para el gel hidratante íntimo Intylact, creada con IA: fotografía fotorrealista y animaciones en loop que respetan el producto real."
+      },
+      "heading": {
+        "en": "Bloom in calm",
+        "es": "Florece en calma"
+      },
+      "paragraphs": [
+        {
+          "en": "The concept speaks about intimate care with freshness and serenity instead of taboo: clear water, open skies and soft pink and yellow flowers surround the product, echoing its salmon tube and pink to lilac box.",
+          "es": "El concepto habla del cuidado íntimo desde la frescura y la calma en lugar del tabú: agua cristalina, cielos abiertos y flores rosadas y amarillas rodean al producto y dialogan con su tubo salmón y su caja en degradado rosa a lila."
+        },
+        {
+          "en": "Starting from my first concept images, I refined the art direction to make every shot photorealistic and to keep the packaging exactly as it is, with legible labels, from the product on the water to a self-care moment and the gel texture.",
+          "es": "A partir de mis primeras imágenes conceptuales, refiné la dirección de arte para que cada toma fuera fotorrealista y el empaque quedara exactamente como es, con la etiqueta legible, desde el producto sobre el agua hasta un momento de autocuidado y la textura del gel."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Concept",
+            "es": "Concepto"
+          },
+          "desc": {
+            "en": "Moodboard and first ideas: water, sky and flowers as a metaphor for freshness and calm.",
+            "es": "Moodboard y primeras ideas: agua, cielo y flores como metáfora de frescura y calma."
+          }
+        },
+        {
+          "title": {
+            "en": "AI photography",
+            "es": "Fotografía con IA"
+          },
+          "desc": {
+            "en": "Photorealistic shots generated with the real packaging as reference, keeping every printed word.",
+            "es": "Tomas fotorrealistas generadas con el empaque real como referencia, conservando cada texto impreso."
+          }
+        },
+        {
+          "title": {
+            "en": "Animation",
+            "es": "Animación"
+          },
+          "desc": {
+            "en": "Seamless vertical loops for reels and stories.",
+            "es": "Loops verticales para reels y stories."
+          }
+        }
+      ],
+      "sections": [
+        {
+          "label": {
+            "en": "Photography",
+            "es": "Fotografía"
+          },
+          "cols": 3,
+          "items": [
+            {
+              "src": "assets/projects/intylact/water.jpg",
+              "size": [
+                1200,
+                1607
+              ]
+            },
+            {
+              "src": "assets/projects/intylact/podium.jpg",
+              "size": [
+                1200,
+                1607
+              ]
+            },
+            {
+              "src": "assets/projects/intylact/hand.jpg",
+              "size": [
+                1200,
+                1607
+              ]
+            },
+            {
+              "src": "assets/projects/intylact/woman.jpg",
+              "size": [
+                1200,
+                1607
+              ]
+            },
+            {
+              "src": "assets/projects/intylact/gel.jpg",
+              "size": [
+                1200,
+                1607
+              ]
+            },
+            {
+              "src": "assets/projects/intylact/clouds.jpg",
+              "size": [
+                1200,
+                1607
+              ]
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Animations",
+            "es": "Animaciones"
+          },
+          "cols": 3,
+          "items": [
+            {
+              "src": "assets/projects/intylact/water-loop.mp4",
+              "size": [
+                720,
+                1280
+              ]
+            },
+            {
+              "src": "assets/projects/intylact/hand-loop.mp4",
+              "size": [
+                720,
+                1280
+              ]
+            },
+            {
+              "src": "assets/projects/intylact/clouds-loop.mp4",
+              "size": [
+                720,
+                1280
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "external": []
