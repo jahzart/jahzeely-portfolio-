@@ -2171,37 +2171,18 @@
         }
       ],
       "gallery": [
-        "assets/projects/byivo/logo-black.jpg",
-        "assets/projects/byivo/logo-pink.jpg",
+        "assets/projects/byivo/logo-light.jpg",
+        "assets/projects/byivo/logo-dark.jpg",
         "assets/projects/byivo/store.jpg",
         "assets/projects/byivo/cards-1.jpg",
-        "assets/projects/byivo/logo-cream.jpg",
-        "assets/projects/byivo/logo-orange.jpg",
         "assets/projects/byivo/tote.jpg",
         "assets/projects/byivo/box.jpg",
-        "assets/projects/byivo/shirt.jpg",
-        "assets/projects/byivo/cards-2.jpg"
+        "assets/projects/byivo/shirt.jpg"
       ],
       "gallery_sizes": [
         [
-          1200,
-          675
-        ],
-        [
-          1200,
-          800
-        ],
-        [
-          1600,
-          1194
-        ],
-        [
-          1800,
-          1201
-        ],
-        [
-          1200,
-          225
+          1081,
+          1081
         ],
         [
           1081,
@@ -2212,16 +2193,20 @@
           1194
         ],
         [
-          1600,
-          1194
-        ],
-        [
-          1600,
-          1194
-        ],
-        [
           1800,
           1201
+        ],
+        [
+          1600,
+          1194
+        ],
+        [
+          1600,
+          1194
+        ],
+        [
+          1600,
+          1194
         ]
       ]
     },
@@ -2300,6 +2285,9 @@
       "gallery": [
         "assets/projects/volantina/cover-spread.jpg",
         "assets/projects/volantina/banner.jpg",
+        "assets/projects/volantina/reading-dad.jpg",
+        "assets/projects/volantina/reading-mom.jpg",
+        "assets/projects/volantina/bookstore.jpg",
         "assets/projects/volantina/01.jpg",
         "assets/projects/volantina/02.jpg",
         "assets/projects/volantina/03.jpg",
@@ -2318,6 +2306,18 @@
         [
           970,
           600
+        ],
+        [
+          1920,
+          1071
+        ],
+        [
+          1600,
+          1194
+        ],
+        [
+          1600,
+          1194
         ],
         [
           1000,
@@ -2355,6 +2355,15 @@
           1920,
           1071
         ]
+      ],
+      "after_process": [
+        {
+          "src": "assets/projects/volantina/sketches-board.jpg",
+          "size": [
+            1920,
+            1080
+          ]
+        }
       ]
     },
     {
