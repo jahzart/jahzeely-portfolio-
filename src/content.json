@@ -2121,8 +2121,8 @@
         "Photoshop"
       ],
       "subtitle": {
-        "en": "Hand-lettered logo for By Ivo, a brand of lettering, phone cases and motivational art.",
-        "es": "Logo en lettering para By Ivo, una marca de lettering, fundas de celular y arte motivacional."
+        "en": "Hand-lettered logo for By Ivo, a lettering and creative products brand.",
+        "es": "Logo en lettering para By Ivo, una marca de lettering y productos creativos."
       },
       "heading": {
         "en": "Lettering with a splash of joy",
@@ -2165,24 +2165,22 @@
             "es": "Aplicaciones"
           },
           "desc": {
-            "en": "Brandboard, business cards and product mockups.",
-            "es": "Brandboard, tarjetas de presentación y mockups de producto."
+            "en": "Brandboard and applications on signage, packaging, stationery and merch.",
+            "es": "Brandboard y aplicaciones en letrero, empaque, papelería y merch."
           }
         }
       ],
       "gallery": [
         "assets/projects/byivo/logo-black.jpg",
         "assets/projects/byivo/logo-pink.jpg",
+        "assets/projects/byivo/store.jpg",
         "assets/projects/byivo/cards-1.jpg",
-        "assets/projects/byivo/cards-2.jpg",
         "assets/projects/byivo/logo-cream.jpg",
         "assets/projects/byivo/logo-orange.jpg",
-        "assets/projects/byivo/case-1.jpg",
-        "assets/projects/byivo/case-2.jpg",
-        "assets/projects/byivo/lettering-1.jpg",
-        "assets/projects/byivo/lettering-2.jpg",
-        "assets/projects/byivo/lettering-3.jpg",
-        "assets/projects/byivo/lettering-4.jpg"
+        "assets/projects/byivo/tote.jpg",
+        "assets/projects/byivo/box.jpg",
+        "assets/projects/byivo/shirt.jpg",
+        "assets/projects/byivo/cards-2.jpg"
       ],
       "gallery_sizes": [
         [
@@ -2194,8 +2192,8 @@
           800
         ],
         [
-          1800,
-          1201
+          1600,
+          1194
         ],
         [
           1800,
@@ -2211,27 +2209,19 @@
         ],
         [
           1600,
-          1131
+          1194
         ],
         [
           1600,
-          1227
+          1194
         ],
         [
-          798,
-          1024
+          1600,
+          1194
         ],
         [
-          773,
-          1024
-        ],
-        [
-          800,
-          1021
-        ],
-        [
-          710,
-          1024
+          1800,
+          1201
         ]
       ]
     },
