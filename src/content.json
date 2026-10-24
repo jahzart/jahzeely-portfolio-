@@ -1531,8 +1531,8 @@
             "es": "Marca y sistema de diseño"
           },
           "desc": {
-            "en": "Logo, palette, Playfair Display typography, glassmorphism cards and iridescent characters.",
-            "es": "Logo, paleta, tipografía Playfair Display, tarjetas en glassmorphism y personajes iridiscentes."
+            "en": "Logo design: a four-point sparkle that suggests light and a wish coming true, paired with an italic serif wordmark, plus the palette, Playfair Display typography and iridescent characters.",
+            "es": "Diseño del logo: una estrella de cuatro puntas que sugiere luz y un deseo que se cumple, junto a un logotipo en serif cursiva, además de la paleta, la tipografía Playfair Display y los personajes iridiscentes."
           }
         },
         {
@@ -1572,6 +1572,41 @@
               "size": [
                 1400,
                 742
+              ]
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Logo design",
+            "es": "Diseño del logo"
+          },
+          "cols": 1,
+          "items": [
+            {
+              "src": "assets/projects/lumgoals/logo-board.jpg",
+              "size": [
+                1920,
+                1200
+              ]
+            }
+          ]
+        },
+        {
+          "cols": 2,
+          "items": [
+            {
+              "src": "assets/projects/lumgoals/logo-phone.jpg",
+              "size": [
+                1200,
+                896
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/logo-merch.jpg",
+              "size": [
+                1200,
+                896
               ]
             }
           ]
@@ -1666,6 +1701,92 @@
           ],
           "phones": true,
           "dark": true
+        },
+        {
+          "label": {
+            "en": "Social media reels",
+            "es": "Reels para redes"
+          },
+          "cols": 4,
+          "items": [
+            {
+              "src": "assets/projects/lumgoals/social/reel-01.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/social/reel-02.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/social/reel-03.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/social/reel-04.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/social/reel-05.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/social/reel-06.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/social/reel-07.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/social/reel-08.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/social/reel-09.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/social/reel-10.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/social/reel-11.mp4",
+              "size": [
+                540,
+                960
+              ]
+            }
+          ]
         },
         {
           "label": {
@@ -3368,6 +3489,218 @@
         }
       ],
       "feature_img": "assets/projects/boj/orchid.jpg"
+    },
+    {
+      "slug": "lumgoals-ai",
+      "title": "Lumgoals · Dreamscapes",
+      "layout": "sections",
+      "filter": "ai",
+      "ai": [
+        "ai-video",
+        "ai-photo"
+      ],
+      "category": {
+        "en": "AI Video",
+        "es": "Video con IA"
+      },
+      "year": "2026",
+      "client": "Lumgoals",
+      "behance": null,
+      "cover": "assets/covers/lumgoals-ai.jpg",
+      "tools": [
+        "AI image generation",
+        "AI video",
+        "ElevenLabs"
+      ],
+      "subtitle": {
+        "en": "A library of dreamy AI-generated scenes and loops created for the Lumgoals manifestation app and its social media.",
+        "es": "Una biblioteca de escenas y loops oníricos generados con IA para la app de manifestación Lumgoals y sus redes sociales."
+      },
+      "heading": {
+        "en": "Visualize it, then live it",
+        "es": "Visualízalo, luego vívelo"
+      },
+      "paragraphs": [
+        {
+          "en": "Each scene works as a visual affirmation: a woman sitting on a glittering moon, a waterfall of violet light, a heart-shaped traffic light, a ferris wheel at night or a cozy desk at sunset, all in the soft violet and pink palette of the brand.",
+          "es": "Cada escena funciona como una afirmación visual: una mujer sentada en una luna brillante, una cascada de luz violeta, un semáforo con corazones, una noria de noche o un escritorio acogedor al atardecer, todo en la paleta violeta y rosa de la marca."
+        },
+        {
+          "en": "Every image was generated in vertical and horizontal formats and animated into a short loop, ready to become reels with affirmations and voice-over.",
+          "es": "Cada imagen se generó en formato vertical y horizontal y se animó en un loop corto, lista para convertirse en reels con afirmaciones y voz en off."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Concept",
+            "es": "Concepto"
+          },
+          "desc": {
+            "en": "Scenes inspired by visualization and manifestation themes.",
+            "es": "Escenas inspiradas en la visualización y la manifestación."
+          }
+        },
+        {
+          "title": {
+            "en": "Generation",
+            "es": "Generación"
+          },
+          "desc": {
+            "en": "Images in 9:16 and 16:9 with a consistent violet aesthetic.",
+            "es": "Imágenes en 9:16 y 16:9 con una estética violeta coherente."
+          }
+        },
+        {
+          "title": {
+            "en": "Animation",
+            "es": "Animación"
+          },
+          "desc": {
+            "en": "Subtle loops that later carry affirmations and voice-over.",
+            "es": "Loops sutiles que luego llevan afirmaciones y voz en off."
+          }
+        }
+      ],
+      "sections": [
+        {
+          "label": {
+            "en": "Generated videos",
+            "es": "Videos generados"
+          },
+          "cols": 4,
+          "items": [
+            {
+              "src": "assets/projects/lumgoals-ai/autopista_violeta.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/bosque_mariposas.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/cascada_violeta.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/chica_estrella.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/cocina_atardecer.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/corazones_violeta.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/escritorio_vela.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/luna_mujer.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/mujer_lavanda.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/noria_violeta.mp4",
+              "size": [
+                540,
+                960
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/tv_billetes.mp4",
+              "size": [
+                540,
+                960
+              ]
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Horizontal formats",
+            "es": "Formatos horizontales"
+          },
+          "cols": 3,
+          "items": [
+            {
+              "src": "assets/projects/lumgoals-ai/luna_mujer-h.jpg",
+              "size": [
+                1600,
+                893
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/chica_estrella-h.jpg",
+              "size": [
+                1600,
+                893
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/cascada_violeta-h.jpg",
+              "size": [
+                1600,
+                893
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/noria_violeta-h.jpg",
+              "size": [
+                1600,
+                900
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/tv_billetes-h.jpg",
+              "size": [
+                1600,
+                893
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals-ai/bosque_mariposas-h.jpg",
+              "size": [
+                1600,
+                900
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "external": []
