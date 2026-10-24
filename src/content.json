@@ -1714,6 +1714,288 @@
         }
       ],
       "handle": "lumgoals"
+    },
+    {
+      "slug": "jahzart",
+      "title": "Jahzart",
+      "layout": "sections",
+      "filter": "digital",
+      "url": "https://www.jahzart.com/",
+      "category": {
+        "en": "Website",
+        "es": "Sitio web"
+      },
+      "year": "2026",
+      "client": "Jahzart",
+      "behance": null,
+      "cover": "assets/covers/jahzart.jpg",
+      "tools": [
+        "Figma",
+        "Vercel",
+        "Stripe",
+        "Sanity"
+      ],
+      "subtitle": {
+        "en": "My art website and online shop, designed and built entirely by me, where I sell my original watercolors and creative resources.",
+        "es": "Mi sitio web y tienda de arte, diseñado y desarrollado completamente por mí, donde vendo mis acuarelas originales y recursos creativos."
+      },
+      "heading": {
+        "en": "Original art, made with love",
+        "es": "Arte original, hecho con amor"
+      },
+      "paragraphs": [
+        {
+          "en": "An elegant gallery and shop for my watercolor, acrylic and gouache pieces: featured artworks, a full catalog, digital resources, reviews from real buyers, a blog and a bilingual experience in English and Spanish.",
+          "es": "Una galería y tienda elegante para mis piezas en acuarela, acrílico y gouache: obras destacadas, catálogo completo, recursos digitales, reseñas de compradores reales, blog y experiencia bilingüe en inglés y español."
+        },
+        {
+          "en": "The design lets the art breathe: lots of white space, a soft lilac accent, editorial serif headlines with italic touches and a layout that adapts beautifully to mobile.",
+          "es": "El diseño deja respirar al arte: mucho espacio en blanco, un acento lila suave, titulares serif editoriales con toques en cursiva y una maqueta que se adapta muy bien al móvil."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Design",
+            "es": "Diseño"
+          },
+          "desc": {
+            "en": "Visual identity, layout and components for the gallery, shop, blog and about pages.",
+            "es": "Identidad visual, maqueta y componentes para galería, tienda, blog y sobre mí."
+          }
+        },
+        {
+          "title": {
+            "en": "Development",
+            "es": "Desarrollo"
+          },
+          "desc": {
+            "en": "Static site with serverless functions, payments, content management and bilingual routing.",
+            "es": "Sitio estático con funciones serverless, pagos, gestor de contenido y rutas bilingües."
+          }
+        },
+        {
+          "title": {
+            "en": "Launch",
+            "es": "Lanzamiento"
+          },
+          "desc": {
+            "en": "Deploy on Vercel with its own domain, SEO and responsive testing.",
+            "es": "Publicación en Vercel con dominio propio, SEO y pruebas en móvil."
+          }
+        }
+      ],
+      "sections": [
+        {
+          "label": {
+            "en": "Desktop",
+            "es": "Escritorio"
+          },
+          "browser": true,
+          "url": "jahzart.com",
+          "items": [
+            {
+              "src": "assets/projects/jahzart/desktop-0.jpg",
+              "size": [
+                1600,
+                1000
+              ]
+            },
+            {
+              "src": "assets/projects/jahzart/desktop-1.jpg",
+              "size": [
+                1600,
+                1000
+              ]
+            },
+            {
+              "src": "assets/projects/jahzart/desktop-2.jpg",
+              "size": [
+                1600,
+                1000
+              ]
+            },
+            {
+              "src": "assets/projects/jahzart/desktop-3.jpg",
+              "size": [
+                1600,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Mobile",
+            "es": "Móvil"
+          },
+          "phones": true,
+          "items": [
+            {
+              "src": "assets/projects/jahzart/mobile-0.jpg",
+              "size": [
+                480,
+                1038
+              ]
+            },
+            {
+              "src": "assets/projects/jahzart/mobile-1.jpg",
+              "size": [
+                480,
+                1038
+              ]
+            },
+            {
+              "src": "assets/projects/jahzart/mobile-2.jpg",
+              "size": [
+                480,
+                1038
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "frens",
+      "title": "Frens",
+      "layout": "sections",
+      "filter": "digital",
+      "url": "https://meetfrens.app/en",
+      "category": {
+        "en": "Website",
+        "es": "Sitio web"
+      },
+      "year": "2026",
+      "client": "Frens",
+      "behance": null,
+      "cover": "assets/covers/frens.jpg",
+      "tools": [
+        "Figma",
+        "Next.js",
+        "GSAP",
+        "Vercel"
+      ],
+      "subtitle": {
+        "en": "Landing page for Frens, an app to make real plans with your friends, with a playful, bold and interactive design.",
+        "es": "Landing page de Frens, una app para hacer planes reales con tus amigos, con un diseño divertido, atrevido e interactivo."
+      },
+      "heading": {
+        "en": "Real frens, real plans",
+        "es": "Amigos reales, planes reales"
+      },
+      "paragraphs": [
+        {
+          "en": "The site tells the story of the app in a few scenes: a hero full of chat bubbles and photos that react to the mouse, the philosophy behind it, plans in action and three simple steps to get started.",
+          "es": "El sitio cuenta la historia de la app en pocas escenas: un hero lleno de burbujas de chat y fotos que reaccionan al mouse, la filosofía detrás, planes en acción y tres pasos simples para empezar."
+        },
+        {
+          "en": "A warm palette of cream, chocolate and orange with a pixel display typeface gives it a nostalgic, friendly personality that stands out from typical app landings.",
+          "es": "Una paleta cálida de crema, chocolate y naranja con una tipografía display pixelada le da una personalidad nostálgica y cercana que se diferencia de las landings típicas de apps."
+        }
+      ],
+      "process": [
+        {
+          "title": {
+            "en": "Concept",
+            "es": "Concepto"
+          },
+          "desc": {
+            "en": "Narrative around getting out of the screen and making plans with real friends.",
+            "es": "Narrativa sobre salir de la pantalla y hacer planes con amigos reales."
+          }
+        },
+        {
+          "title": {
+            "en": "Visual design",
+            "es": "Diseño visual"
+          },
+          "desc": {
+            "en": "Palette, pixel typography, chat-bubble collages and the notebook-style steps section.",
+            "es": "Paleta, tipografía pixelada, collages de burbujas de chat y la sección de pasos estilo cuaderno."
+          }
+        },
+        {
+          "title": {
+            "en": "Interaction",
+            "es": "Interacción"
+          },
+          "desc": {
+            "en": "Mouse-reactive hero, scroll animations, light and dark mode and bilingual content.",
+            "es": "Hero que reacciona al mouse, animaciones al hacer scroll, modo claro y oscuro y contenido bilingüe."
+          }
+        }
+      ],
+      "sections": [
+        {
+          "label": {
+            "en": "Desktop",
+            "es": "Escritorio"
+          },
+          "browser": true,
+          "url": "meetfrens.app",
+          "items": [
+            {
+              "src": "assets/projects/frens/desktop-1.jpg",
+              "size": [
+                1600,
+                1000
+              ]
+            },
+            {
+              "src": "assets/projects/frens/desktop-2.jpg",
+              "size": [
+                1600,
+                1000
+              ]
+            },
+            {
+              "src": "assets/projects/frens/desktop-3.jpg",
+              "size": [
+                1600,
+                1000
+              ]
+            },
+            {
+              "src": "assets/projects/frens/desktop-4.jpg",
+              "size": [
+                1600,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Mobile",
+            "es": "Móvil"
+          },
+          "phones": true,
+          "items": [
+            {
+              "src": "assets/projects/frens/mobile-0.jpg",
+              "size": [
+                480,
+                1038
+              ]
+            },
+            {
+              "src": "assets/projects/frens/mobile-1.jpg",
+              "size": [
+                480,
+                1038
+              ]
+            },
+            {
+              "src": "assets/projects/frens/mobile-2.jpg",
+              "size": [
+                480,
+                1038
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "external": [

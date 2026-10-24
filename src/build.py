@@ -416,6 +416,11 @@ def build_detail(i):
             if s.get('posts'):
                 label = tb(s['label'], 'span', 'label s-label') if s.get('label') else ''
                 return f'{label}<div class="p-feed">{"".join(post_card(x, p["handle"], title, rel) for x in s["items"])}</div>'
+            if s.get('browser'):
+                label = tb(s['label'], 'span', 'label s-label') if s.get('label') else ''
+                wins = ''.join(f'<div class="browser" data-clip><div class="browser-bar"><i></i><i></i><i></i><span>{escape(s["url"])}</span></div>'
+                               f'<div data-lightbox><img src="{a(src(x["src"], rel))}" alt="{a(title)}" loading="lazy"></div></div>' for x in s['items'])
+                return f'{label}<div class="browsers">{wins}</div>'
             if s.get('phones'):
                 label = tb(s['label'], 'span', 'label s-label') if s.get('label') else ''
                 phones = ''.join(f'<div class="phone" data-clip><div class="phone-screen" data-lightbox>'
@@ -451,6 +456,7 @@ def build_detail(i):
       <div><dt>{t('Year', 'Año')}</dt><dd>{escape(p['year'])}</dd></div>
     </dl>
     {f'<a href="{a(p["behance"])}" target="_blank" rel="noopener">' + t('View on Behance', 'Ver en Behance') + ARROW_NE + '</a>' if p.get('behance') else ''}
+    {f'<a href="{a(p["url"])}" target="_blank" rel="noopener">' + t('Visit website', 'Ver sitio web') + ARROW_NE + '</a>' if p.get('url') else ''}
   </div>
 </section>
 <section class="wrap d-sec">
