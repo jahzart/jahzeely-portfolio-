@@ -18,8 +18,14 @@ EMAIL = 'jahzeelysinai@gmail.com'
 BEHANCE = 'https://www.behance.net/jahzeelysinaiperez'
 SOCIALS = [('Behance', BEHANCE), ('Instagram', 'https://instagram.com/jahzartdesign'), ('Post.pro', 'https://post.pro/profile/jahzeelysinai')]
 YEAR = 2026
+SITE = 'https://jahzeely-portfolio.vercel.app/'
 GSAP = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/'
 FONTS = 'https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&display=swap'
+
+
+def src(path, rel):
+    """Local asset paths are made relative to the page; URLs pass through."""
+    return path if path.startswith('http') else rel + path
 
 
 def a(s):
@@ -86,7 +92,7 @@ FILTERS = [('all', 'All', 'Todos'), ('branding', 'Branding', 'Branding'), ('pack
 
 # ---------- shared pieces ----------
 def head(title, desc, rel, image=None):
-    og = f'<meta property="og:image" content="{a(image)}">' if image else ''
+    og = f'<meta property="og:image" content="{a(src(image, SITE))}">' if image else ''
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -201,7 +207,7 @@ def build_home():
     works = []
     for s in FEATURED:
         p = BY_SLUG[s]
-        works.append(f'''<a class="work{' big' if s == FEATURED_BIG else ''}" href="{project_link(p, rel)}"><div class="work-img" data-parallax><img src="{a(p['cover'])}" alt="{a(p['title'])}" loading="lazy"></div><h3>{escape(p['title'])}</h3>{tb(p['category'])}</a>''')
+        works.append(f'''<a class="work{' big' if s == FEATURED_BIG else ''}" href="{project_link(p, rel)}"><div class="work-img" data-parallax><img src="{a(src(p['cover'], rel))}" alt="{a(p['title'])}" loading="lazy"></div><h3>{escape(p['title'])}</h3>{tb(p['category'])}</a>''')
 
     lab_rows = [
         ('AI · Photography', 'AI · Fotografía', 'Generative Photography', 'Fotografía Generativa'),
@@ -311,14 +317,14 @@ def build_projects():
         for f in p['filter'].split():
             counts[f] += 1
         items.append(f'''<a class="pitem" href="{project_link(p, rel)}" data-cat="{p['filter']}">
-  <div class="pitem-img" data-parallax><img src="{a(p['cover'])}" alt="{a(p['title'])}" loading="lazy"></div>
+  <div class="pitem-img" data-parallax><img src="{a(src(p['cover'], rel))}" alt="{a(p['title'])}" loading="lazy"></div>
   <h2>{escape(p['title'])}</h2>
   <div class="meta">{tb(p['category'])}<i></i><span>{escape(p['year'])}</span></div>
 </a>''')
     for e in EXTERNAL:
         counts[e['filter']] += 1
         items.append(f'''<a class="pitem" href="{a(e['url'])}" target="_blank" rel="noopener" data-cat="{e['filter']}">
-  <div class="pitem-img" data-parallax><img src="{a(e['cover'])}" alt="{a(e['title'])}" loading="lazy"></div>
+  <div class="pitem-img" data-parallax><img src="{a(src(e['cover'], rel))}" alt="{a(e['title'])}" loading="lazy"></div>
   <h2>{escape(e['title'])}</h2>
   <div class="meta">{tb(e['category'])}<i></i><span class="ext">Behance{ARROW_NE}</span></div>
 </a>''')
@@ -361,12 +367,13 @@ def build_detail(i):
     title = p['title']
     paras = p['paragraphs']
 
+    # The cover leads the page, so the whole Behance gallery goes below it
     first = ''
+    if len(g) > 1:
+        first += img_block(g[0], title, False) + img_block(g[1], title, False)
     if len(g) > 2:
-        first += img_block(g[1], title, False) + img_block(g[2], title, False)
-    if len(g) > 3:
-        first += img_block(g[3], title, True)
-    rest, k, pair_turn = '', 4, False
+        first += img_block(g[2], title, True)
+    rest, k, pair_turn = '', 3, False
     while k < len(g):
         if pair_turn and k + 1 < len(g):
             rest += img_block(g[k], title, False) + img_block(g[k + 1], title, False)
@@ -389,7 +396,7 @@ def build_detail(i):
   </div>
 </section>
 <section class="wrap d-cover">
-  <div class="d-cover-img" data-parallax><img src="{a(g[0])}" alt="{a(title)}"></div>
+  <div class="d-cover-img" data-parallax><img src="{a(src(p['cover'], rel))}" alt="{a(title)}"></div>
   <div class="d-card">
     <dl>
       <div><dt>{t('Client', 'Cliente')}</dt><dd>{escape(p['client'] or title)}</dd></div>
@@ -413,7 +420,7 @@ def build_detail(i):
 <section class="wrap d-next">
   <a href="{nxt['slug']}.html">
     <div>{t('Next project', 'Siguiente proyecto', 'span', 'label')}<h2>{escape(nxt['title'])}</h2></div>
-    <div class="thumb"><img src="{a(nxt['cover'])}" alt="" loading="lazy"></div>
+    <div class="thumb"><img src="{a(src(nxt['cover'], rel))}" alt="" loading="lazy"></div>
   </a>
 </section>
 </main>

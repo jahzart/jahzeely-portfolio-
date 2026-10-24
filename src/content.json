@@ -83,7 +83,7 @@
           }
         }
       ],
-      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/569f88175818569.Y3JvcCw1ODM0LDQ1NjMsMCww.jpg",
+      "cover": "assets/covers/asimov.jpg",
       "filter": "branding"
     },
     {
@@ -159,7 +159,7 @@
           }
         }
       ],
-      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/0ed9d9170495063.Y3JvcCwxMDEyLDc5MiwzMDAsMA.jpg",
+      "cover": "assets/covers/curious-cafe.jpg",
       "filter": "branding"
     },
     {
@@ -236,7 +236,7 @@
           }
         }
       ],
-      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/924bfa154142047.Y3JvcCw4MDgsNjMyLDAsMA.png",
+      "cover": "assets/covers/period-app.jpg",
       "filter": "digital"
     },
     {
@@ -324,7 +324,7 @@
           }
         }
       ],
-      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/b50935117202311.Y3JvcCw4MTAsNjM0LDMwMCww.gif",
+      "cover": "assets/covers/siker.jpg",
       "filter": "branding"
     },
     {
@@ -400,7 +400,7 @@
           }
         }
       ],
-      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/9a0fe6163562345.Y3JvcCwxMzE2LDEwMzAsNDIsMA.png",
+      "cover": "assets/covers/zen.jpg",
       "filter": "packaging"
     },
     {
@@ -476,7 +476,7 @@
           }
         }
       ],
-      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/f2a3b5154626239.Y3JvcCwxNDAwLDEwOTUsMCw2NDg.png",
+      "cover": "assets/covers/kenzo.jpg",
       "filter": "packaging"
     },
     {
@@ -558,7 +558,7 @@
           }
         }
       ],
-      "cover": "https://mir-s3-cdn-cf.behance.net/projects/max_808/bb9d12126259497.Y3JvcCw4MDAsNjI1LDIzNSwxNzQ.jpg",
+      "cover": "assets/covers/cryptomonitor.jpg",
       "filter": "digital branding"
     },
     {
@@ -635,7 +635,7 @@
           }
         }
       ],
-      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/a1dc8c145869331.Y3JvcCwxODUwLDE0NDcsMjcsNTY3.png",
+      "cover": "assets/covers/arka.jpg",
       "filter": "logo"
     }
   ],
@@ -648,7 +648,7 @@
       },
       "filter": "illustration",
       "url": "https://www.behance.net/gallery/162471669/Arepitas-Venezolanas-con-Carlitos-Cuento-ilustrado",
-      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/994154162471669.Y3JvcCwxMzE2LDEwMzAsMTksMA.png"
+      "cover": "assets/covers/arepitas.jpg"
     },
     {
       "title": "Pack Iconos Gatitos",
@@ -658,7 +658,7 @@
       },
       "filter": "illustration",
       "url": "https://www.behance.net/gallery/146038337/Pack-de-10-iconos-de-gatitos",
-      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/c5160e146038337.Y3JvcCwzNjMyLDI4NDAsMTYxLDA.jpg"
+      "cover": "assets/covers/gatitos.jpg"
     },
     {
       "title": "Neptuno Card",
@@ -668,7 +668,7 @@
       },
       "filter": "branding",
       "url": "https://www.behance.net/gallery/142601487/Neptuno-Card",
-      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/327622142601487.Y3JvcCwzNDkxLDI3MzAsMCw4Mzg.jpg"
+      "cover": "assets/covers/neptuno.jpg"
     },
     {
       "title": "Portfolio 2024",
@@ -678,7 +678,7 @@
       },
       "filter": "branding",
       "url": "https://www.behance.net/gallery/174794993/Portfolio",
-      "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/8cd580174794993.Y3JvcCwzMjYwLDI1NTAsMTYsMA.jpg"
+      "cover": "assets/covers/portfolio-2024.jpg"
     }
   ]
 }
