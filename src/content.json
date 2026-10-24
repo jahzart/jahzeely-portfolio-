@@ -2067,6 +2067,29 @@
       "sections": [
         {
           "label": {
+            "en": "In context",
+            "es": "En contexto"
+          },
+          "cols": 1,
+          "items": [
+            {
+              "src": "assets/projects/frens/mockup-laptop.jpg",
+              "size": [
+                1920,
+                1071
+              ]
+            },
+            {
+              "src": "assets/projects/frens/mockup-phone.jpg",
+              "size": [
+                1920,
+                1433
+              ]
+            }
+          ]
+        },
+        {
+          "label": {
             "en": "Desktop",
             "es": "Escritorio"
           },
@@ -2119,13 +2142,6 @@
             },
             {
               "src": "assets/projects/frens/mobile-1.jpg",
-              "size": [
-                480,
-                1038
-              ]
-            },
-            {
-              "src": "assets/projects/frens/mobile-2.jpg",
               "size": [
                 480,
                 1038
