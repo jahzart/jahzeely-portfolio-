@@ -26,9 +26,15 @@ GSAP = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/'
 FONTS = 'https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&display=swap'
 
 
+def bust(path):
+    """Append the file's modification time so browsers fetch replaced files with the same name."""
+    full = os.path.join(ROOT, path)
+    return f'{path}?v={int(os.path.getmtime(full))}' if os.path.exists(full) else path
+
+
 def src(path, rel):
-    """Local asset paths are made relative to the page; URLs pass through."""
-    return path if path.startswith('http') else rel + path
+    """Local asset paths are made relative to the page (and versioned); URLs pass through."""
+    return path if path.startswith('http') else rel + bust(path)
 
 
 def a(s):
@@ -91,7 +97,7 @@ def head(title, desc, rel, image=None):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONTS}">
-<link rel="stylesheet" href="{rel}assets/site.css">
+<link rel="stylesheet" href="{rel}{bust('assets/site.css')}">
 </head>
 <body>
 '''
@@ -156,7 +162,7 @@ def footer(rel):
 def scripts(rel):
     libs = ''.join(f'<script src="{GSAP}{f}" defer></script>' for f in ['gsap.min.js', 'ScrollTrigger.min.js', 'ScrollSmoother.min.js', 'SplitText.min.js'])
     return f'''{libs}
-<script src="{rel}assets/site.js" defer></script>
+<script src="{rel}{bust('assets/site.js')}" defer></script>
 </body>
 </html>
 '''
@@ -184,7 +190,7 @@ def build_home():
         svc_rows.append(f'''<article class="svc-row" style="z-index:{i + 1}">
   <div class="svc-num">S/ {i + 1:03d}</div>
   <div class="svc-body">{t(en, es, 'h3')}{t(den, des, 'p')}<a class="pill" href="{href}"{ext}>{btn}</a></div>
-  <div class="svc-art" data-clip><img src="assets/categories/{SVC_IMG[i]}.jpg" alt="{a(en)}" loading="lazy"></div>
+  <div class="svc-art" data-clip><img src="{bust(f'assets/categories/{SVC_IMG[i]}.jpg')}" alt="{a(en)}" loading="lazy"></div>
 </article>''')
 
     works = []
@@ -217,7 +223,7 @@ def build_home():
 <section class="hero on-dark">
   <div class="wrap hero-inner">
     <div class="hero-bar">{lang_switch()}{burger()}</div>
-    <div class="hero-photo" aria-hidden="true"><img src="assets/jahzeely.webp" alt="" width="900" height="1205"></div>
+    <div class="hero-photo" aria-hidden="true"><img src="{bust('assets/jahzeely.webp')}" alt="" width="900" height="1205"></div>
     <h1 class="hero-title" aria-label="Jahzeely Sinai">
       <span class="line" aria-hidden="true">Jahzeely</span>
       <span class="line" aria-hidden="true">Sinai</span>
