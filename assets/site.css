@@ -247,8 +247,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .filters button[aria-pressed="true"] { color: var(--ink); border-color: var(--ink); }
 .plist { display: flex; flex-direction: column; gap: 110px; padding-bottom: 60px; }
 .pitem[hidden] { display: none; }
-.pitem-img { overflow: hidden; aspect-ratio: 1400 / 560; background: var(--soft); }
-.pitem-img img { width: 100%; height: 120%; object-fit: cover; transition: transform 1.1s cubic-bezier(.2,.7,.2,1); }
+.pitem-img { overflow: hidden; aspect-ratio: 16 / 9; background: var(--soft); }
+.pitem-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.1s cubic-bezier(.2,.7,.2,1); }
 .pitem:hover .pitem-img img { transform: scale(1.03); }
 .pitem h2 { font-size: clamp(28px, 2.6vw, 38px); font-weight: 400; margin-top: 26px; line-height: 1.2; }
 .pitem .meta { display: flex; align-items: center; gap: 16px; font-size: 15px; color: var(--muted); margin-top: 10px; }
@@ -261,8 +261,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .d-cols { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; margin-top: 50px; }
 .d-cols p { font-size: clamp(18px, 1.7vw, 24px); line-height: 1.35; color: #444; }
 .d-cover { position: relative; margin-bottom: 200px; }
-.d-cover-img { overflow: hidden; aspect-ratio: 1400 / 880; background: var(--soft); }
-.d-cover-img img { width: 100%; height: 115%; object-fit: cover; }
+.d-cover-img { overflow: hidden; aspect-ratio: 16 / 9; background: var(--soft); }
+.d-cover-img img { width: 100%; height: 100%; object-fit: cover; }
 .d-card { position: absolute; right: 93px; bottom: -100px; width: 432px; background: var(--paper); box-shadow: 0 30px 60px rgba(0,0,0,.08); }
 .d-card dl { margin: 0; padding: 22px 40px; }
 .d-card div { display: grid; grid-template-columns: 126px 1fr; padding: 22px 0; border-bottom: 1px solid #e6e6e6; font-size: 18px; }
@@ -343,11 +343,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .page-hero-grid { grid-template-columns: 1fr; }
   .page-title .row2 { gap: 20px; }
   .plist { gap: 70px; }
-  .pitem-img { aspect-ratio: 4 / 3; }
   .d-hero { padding: 80px 0 50px; }
   .d-cols { grid-template-columns: 1fr; row-gap: 20px; }
   .d-cover { margin-bottom: 60px; }
-  .d-cover-img { aspect-ratio: 4 / 3; }
   .d-card { position: static; width: auto; box-shadow: none; border: 1px solid #e6e6e6; border-top: 0; }
   .d-card dl { padding: 8px 20px; }
   .d-card div { grid-template-columns: 110px 1fr; font-size: 16px; }

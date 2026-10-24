@@ -669,16 +669,6 @@
       "filter": "branding",
       "url": "https://www.behance.net/gallery/142601487/Neptuno-Card",
       "cover": "assets/covers/neptuno.jpg"
-    },
-    {
-      "title": "Portfolio 2024",
-      "category": {
-        "en": "Portfolio",
-        "es": "Portafolio"
-      },
-      "filter": "branding",
-      "url": "https://www.behance.net/gallery/174794993/Portfolio",
-      "cover": "assets/covers/portfolio-2024.jpg"
     }
   ]
 }

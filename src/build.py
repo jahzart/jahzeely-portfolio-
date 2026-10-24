@@ -317,14 +317,14 @@ def build_projects():
         for f in p['filter'].split():
             counts[f] += 1
         items.append(f'''<a class="pitem" href="{project_link(p, rel)}" data-cat="{p['filter']}">
-  <div class="pitem-img" data-parallax><img src="{a(src(p['cover'], rel))}" alt="{a(p['title'])}" loading="lazy"></div>
+  <div class="pitem-img" data-clip><img src="{a(src(p['cover'], rel))}" alt="{a(p['title'])}" loading="lazy"></div>
   <h2>{escape(p['title'])}</h2>
   <div class="meta">{tb(p['category'])}<i></i><span>{escape(p['year'])}</span></div>
 </a>''')
     for e in EXTERNAL:
         counts[e['filter']] += 1
         items.append(f'''<a class="pitem" href="{a(e['url'])}" target="_blank" rel="noopener" data-cat="{e['filter']}">
-  <div class="pitem-img" data-parallax><img src="{a(src(e['cover'], rel))}" alt="{a(e['title'])}" loading="lazy"></div>
+  <div class="pitem-img" data-clip><img src="{a(src(e['cover'], rel))}" alt="{a(e['title'])}" loading="lazy"></div>
   <h2>{escape(e['title'])}</h2>
   <div class="meta">{tb(e['category'])}<i></i><span class="ext">Behance{ARROW_NE}</span></div>
 </a>''')
@@ -396,7 +396,7 @@ def build_detail(i):
   </div>
 </section>
 <section class="wrap d-cover">
-  <div class="d-cover-img" data-parallax><img src="{a(src(p['cover'], rel))}" alt="{a(title)}"></div>
+  <div class="d-cover-img" data-clip><img src="{a(src(p['cover'], rel))}" alt="{a(title)}"></div>
   <div class="d-card">
     <dl>
       <div><dt>{t('Client', 'Cliente')}</dt><dd>{escape(p['client'] or title)}</dd></div>
