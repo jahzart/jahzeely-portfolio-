@@ -72,7 +72,7 @@ SERVICES = [
     ('AI Lab', 'AI Lab', 'Photography, video and experiences created with AI.', 'Fotografía, video y experiencias creadas con IA.', 'filter:ai'),
 ]
 
-FEATURED = ['curious-cafe', 'zen', 'kenzo', 'boj', 'lumgoals', 'cryptomonitor']
+FEATURED = ['curious-cafe', 'caracas', 'kenzo', 'boj', 'lumgoals', 'cryptomonitor']
 FEATURED_BIG = 'boj'  # ocupa 2 columnas x 2 filas en el mosaico
 TOOLS = ['Adobe Illustrator', 'Photoshop', 'InDesign', 'After Effects', 'Figma', 'Branding', 'Motion Graphics', 'AI Tools']
 FILTERS = [('all', 'All', 'Todos'), ('branding', 'Branding', 'Branding'), ('packaging', 'Packaging', 'Packaging'),
