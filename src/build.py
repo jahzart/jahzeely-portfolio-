@@ -44,7 +44,6 @@ ARROW_NE = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 12.5 12.5 
 ARROW_TOP = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 ARROW_DOWN = '<svg viewBox="0 0 120 140" aria-hidden="true"><path d="M60 4v128M8 80l52 52 52-52" fill="none" stroke="currentColor" stroke-width="5"/></svg>'
 SPARK = '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0c1.6 10.6 8.4 18.4 20 20-11.6 1.6-18.4 9.4-20 20-1.6-10.6-8.4-18.4-20-20C11.6 18.4 18.4 10.6 20 0z" fill="currentColor"/></svg>'
-BADGE = '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0c1.6 10.6 8.4 18.4 20 20-11.6 1.6-18.4 9.4-20 20-1.6-10.6-8.4-18.4-20-20C11.6 18.4 18.4 10.6 20 0z" fill="#fff"/></svg>'
 
 # Orange geometric artwork for each work category (original shapes)
 O = 'var(--accent)'
@@ -180,7 +179,7 @@ def project_link(p, rel):
 # ---------- home ----------
 def build_home():
     rel = ''
-    A, C = BY_SLUG['asimov'], BY_SLUG['curious-cafe']
+    A = BY_SLUG['asimov']
     svc_rows = []
     for i, (en, es, den, des, target) in enumerate(SERVICES):
         if target.startswith('filter:'):
@@ -219,28 +218,17 @@ def build_home():
     html += overlays(rel)
     html += f'''<main>
 <section class="hero on-dark">
-  <div class="wrap hero-grid">
-    <div class="hero-img"><img src="{a(A['cover'])}" alt="Asimov Branding" data-speed=".9"></div>
-    <div class="hero-top">
-      <div class="hero-badge" aria-hidden="true">{BADGE}</div>
-      <p>{t('Branding, visual identity,', 'Branding, identidad visual,')} <b>{t('illustration and digital', 'ilustración y experiencias')}</b> {t('experiences.', 'digitales.')}</p>
-    </div>
-    <div class="hero-box">
-      {logo(rel)}
-      {t('Graphic Designer · AI Artist · Spain', 'Diseñadora Gráfica · AI Artist · España', 'span', 'tag')}
-      <div class="ctrls">{lang_switch()}{burger()}</div>
-    </div>
+  <div class="wrap hero-inner">
+    <div class="hero-bar">{lang_switch()}{burger()}</div>
     <h1 class="hero-title" aria-label="Jahzeely Sinai">
-      <span class="hero-chip" aria-hidden="true"><img src="{a(C['cover'])}" alt=""></span>
       <span class="line" aria-hidden="true">Jahzeely</span>
       <span class="line" aria-hidden="true">S<span class="arrow">{ARROW_UP}</span>nai</span>
     </h1>
     <div class="hero-intro">
-      <span class="label">Jahzeely Sinai Pérez</span>
+      {t('Design that connects and is never forgotten.', 'Diseño que conecta y no se olvida.', 'h2')}
       <div>
-        {t('Design that connects and is never forgotten.', 'Diseño que conecta y no se olvida.', 'h2', '', ' data-split')}
-        {t('Branding, visual identity, illustration and digital experiences. Creating soulful work from Spain for the world.', 'Branding, identidad visual, ilustración y experiencias digitales. Creando trabajo con alma desde España para el mundo.', 'p', '', ' data-reveal')}
-        <a class="pill light" href="projects.html" data-reveal>{t('View projects', 'Ver proyectos')}</a>
+        {t('Branding, visual identity, illustration and digital experiences. Creating soulful work from Spain for the world.', 'Branding, identidad visual, ilustración y experiencias digitales. Creando trabajo con alma desde España para el mundo.', 'p')}
+        <a class="pill light" href="projects.html">{t('View projects', 'Ver proyectos')}</a>
       </div>
     </div>
   </div>

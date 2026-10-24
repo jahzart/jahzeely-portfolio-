@@ -183,10 +183,8 @@
     var heroSplit = window.SplitText.create(heroTitle.querySelectorAll('.line'), { type: 'chars', mask: 'chars' });
     intro.from(heroSplit.chars, { yPercent: 105, duration: 1, stagger: .035, ease: 'expo.out' })
       .from(heroTitle.querySelectorAll('.arrow'), { yPercent: 105, duration: 1, ease: 'expo.out' }, '<.15')
-      .from('.hero-img', { clipPath: 'inset(100% 0 0 0)', duration: 1.1, ease: 'expo.inOut' }, 0)
-      .from('.hero-chip', { clipPath: 'inset(0 0 100% 0)', duration: .9, ease: 'expo.inOut' }, .3)
-      .from('.hero-top, .hero-box', { opacity: 0, y: 20, duration: .8, stagger: .1 }, .2)
-      .from('.hero-badge svg', { rotate: -180, duration: 1.2, ease: 'expo.out' }, .2);
+      .from('.hero-bar', { opacity: 0, duration: .8 }, .2)
+      .from('.hero-intro', { opacity: 0, y: 30, duration: 1, ease: 'expo.out' }, .5);
   }
   /* Page title (projects / detail) */
   document.querySelectorAll('[data-intro]').forEach(function (el, i) {
