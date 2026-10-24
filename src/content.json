@@ -34,7 +34,7 @@
       ],
       "behance": "https://www.behance.net/gallery/175818569/Asimov-Branding",
       "gallery": [
-        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3fde6e175818569.64b9ea4ca8e23.jpg",
+        "assets/gallery/asimov-charging.jpg",
         "https://mir-s3-cdn-cf.behance.net/project_modules/source/c86ef6175818569.64b9ea4cb0f25.gif",
         "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6a68a6175818569.64b9ea4cb2baa.jpg",
         "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7a3203175818569.64b9ea4cabbe9.jpg",
@@ -87,8 +87,8 @@
       "filter": "branding",
       "gallery_sizes": [
         [
-          1400,
-          1905
+          1200,
+          1607
         ],
         [
           1400,
@@ -187,7 +187,7 @@
       "behance": "https://www.behance.net/gallery/170495063/Curious-Cafe-Branding",
       "gallery": [
         "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/5f7e2d170495063.645e99e3ce75e.jpg",
-        "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/8ad29e170495063.645e99e3cfd63.jpg",
+        "assets/gallery/curious-cafe-cup.jpg",
         "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/7e8917170495063.645e99e3d12c7.jpg",
         "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/165fe2170495063.645e99e3cd434.jpg",
         "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/7c1870170495063.645e99e3cbea9.jpg",
@@ -233,8 +233,8 @@
           792
         ],
         [
-          1400,
-          2026
+          1200,
+          1607
         ],
         [
           1400,

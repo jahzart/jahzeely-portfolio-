@@ -364,7 +364,7 @@ def img_block(src, alt, size=None):
     return f'<div class="d-img"{style} data-lightbox data-clip><img src="{a(src)}" alt="{a(alt)}" loading="lazy"></div>'
 
 
-def gallery_rows(items, alt):
+def gallery_rows(items, alt, rel):
     """Alternate single and paired rows. Two images only share a row when their
     shapes are close enough that neither ends up a thin sliver."""
     html, k, pair_turn = '', 0, True
@@ -373,11 +373,11 @@ def gallery_rows(items, alt):
             (u1, s1), (u2, s2) = items[k], items[k + 1]
             r1, r2 = s1[0] / s1[1], s2[0] / s2[1]
             if max(r1, r2) / min(r1, r2) <= 3:
-                html += f'<div class="d-row">{img_block(u1, alt, s1)}{img_block(u2, alt, s2)}</div>'
+                html += f'<div class="d-row">{img_block(src(u1, rel), alt, s1)}{img_block(src(u2, rel), alt, s2)}</div>'
                 k += 2
                 pair_turn = False
                 continue
-        html += img_block(items[k][0], alt)
+        html += img_block(src(items[k][0], rel), alt)
         k += 1
         pair_turn = True
     return html
@@ -393,8 +393,8 @@ def build_detail(i):
 
     # The cover leads the page, so the whole Behance gallery goes below it
     items = list(zip(g, p['gallery_sizes']))
-    first = gallery_rows(items[:3], title)
-    rest = gallery_rows(items[3:], title)
+    first = gallery_rows(items[:3], title, rel)
+    rest = gallery_rows(items[3:], title, rel)
 
     tools = ''.join(f'<li>+ {escape(x)}</li>' for x in p['tools'])
     steps = ''.join(f'<li>{n}. <b>{tb(s["title"])}.</b> {tb(s["desc"])}</li>' for n, s in enumerate(p['process'], 1))
