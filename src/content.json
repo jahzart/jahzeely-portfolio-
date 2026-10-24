@@ -1716,6 +1716,56 @@
         },
         {
           "label": {
+            "en": "Website",
+            "es": "Sitio web"
+          },
+          "cols": 1,
+          "items": [
+            {
+              "src": "assets/projects/lumgoals/web/mockup.jpg",
+              "size": [
+                1920,
+                1433
+              ]
+            }
+          ]
+        },
+        {
+          "browser": true,
+          "url": "lumgoals.com",
+          "items": [
+            {
+              "src": "assets/projects/lumgoals/web/desktop-0.jpg",
+              "size": [
+                1600,
+                1000
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/web/desktop-1.jpg",
+              "size": [
+                1600,
+                1000
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/web/desktop-2.jpg",
+              "size": [
+                1600,
+                1000
+              ]
+            },
+            {
+              "src": "assets/projects/lumgoals/web/desktop-4.jpg",
+              "size": [
+                1600,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "label": {
             "en": "Social media reels",
             "es": "Reels para redes"
           },
