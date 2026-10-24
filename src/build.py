@@ -63,7 +63,7 @@ SERVICES = [
     ('Packaging', 'Packaging', 'Packages that live on shelves and in consumer memory.', 'Empaques que viven en estantes y en la memoria.', 'filter:packaging'),
     ('Illustration', 'Ilustración', 'Original visual worlds, traditional and digital.', 'Mundos visuales propios, tradicional y digital.', 'filter:illustration'),
     ('Websites & Apps', 'Websites & Apps', 'UI/UX for user-centered digital interfaces.', 'UI/UX para interfaces digitales centradas en el usuario.', 'filter:digital'),
-    ('AI Lab', 'AI Lab', 'Photography, video and experiences created with AI.', 'Fotografía, video y experiencias creadas con IA.', 'lab'),
+    ('AI Lab', 'AI Lab', 'Photography, video and experiences created with AI.', 'Fotografía, video y experiencias creadas con IA.', 'filter:ai'),
 ]
 
 FEATURED = ['curious-cafe', 'zen', 'kenzo', 'asimov', 'period-app', 'cryptomonitor']
