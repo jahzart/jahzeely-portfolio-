@@ -10,7 +10,10 @@ from html import escape
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = json.load(open(os.path.join(ROOT, 'src', 'content.json'), encoding='utf-8'))
-PROJECTS = DATA['projects']
+# Newest first: by the last year in the 'year' field (e.g. "2022 - 2024" counts as 2024);
+# within the same year, the project added most recently to content.json goes first
+PROJECTS = [p for _, p in sorted(enumerate(DATA['projects']),
+                                 key=lambda ip: (int(ip[1]['year'].split('-')[-1].strip()), ip[0]), reverse=True)]
 EXTERNAL = DATA['external']
 BY_SLUG = {p['slug']: p for p in PROJECTS}
 
